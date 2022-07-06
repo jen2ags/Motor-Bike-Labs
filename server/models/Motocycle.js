@@ -2,6 +2,9 @@ const { Schema, model } = require('mongoose');
 
 const motoSchema = new Schema(
   {
+    motoId: {
+      type: ID
+    },
     name: {
       type: String
     },
