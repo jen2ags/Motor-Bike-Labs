@@ -1,8 +1,8 @@
 [
     {
         "make": "Honda",
-        "model": "", 
-        "price": "",
+        "model": "Stateline", 
+        "price": "$8,000",
         "image": "",
         "link": "" 
          
@@ -10,8 +10,8 @@
 
     {
         "make": "Kawasaki",
-        "model": "", 
-        "price": "",
+        "model": "Ninja ZX-6R", 
+        "price": "$14,000",
         "image": "",
         "link": "" 
          
@@ -19,8 +19,8 @@
 
     {
         "make": "Yamaha",
-        "model": "", 
-        "price": "",
+        "model": "MT-03", 
+        "price": "$7,000",
         "image": "",
         "link": "" 
          
@@ -28,8 +28,8 @@
 
     {
         "make": "Suzuki",
-        "model": "", 
-        "price": "",
+        "model": "V-Storm", 
+        "price": "$10,000",
         "image": "",
         "link": "" 
          
@@ -37,8 +37,8 @@
 
     {
         "make": "BMW",
-        "model": "", 
-        "price": "",
+        "model": "R NINE T", 
+        "price": "$13,000",
         "image": "",
         "link": "" 
          
@@ -46,8 +46,8 @@
 
     {
         "make": "Ducati",
-        "model": "", 
-        "price": "",
+        "model": "Panigale V45", 
+        "price": "$24,000",
         "image": "",
         "link": "" 
          
@@ -55,107 +55,8 @@
 
     {
         "make": "Harley-Davidson",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Aptilia",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Triumph",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "KTM",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Ducati",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Honda",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Harley-Davidson",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Kawasaki",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "BMW",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Honda",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Suzuki",
-        "model": "", 
-        "price": "",
-        "image": "",
-        "link": "" 
-         
-    },
-
-    {
-        "make": "Harley-Davidson",
-        "model": "", 
-        "price": "",
+        "model": "Softail Fat Boy", 
+        "price": "$7,500",
         "image": "",
         "link": "" 
          
@@ -163,8 +64,107 @@
 
     {
         "make": "Aprilia",
-        "model": "", 
-        "price": "",
+        "model": "RS 660", 
+        "price": "$8,500",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Triumph",
+        "model": "Street Triple R ABS", 
+        "price": "$6,500",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "KTM",
+        "model": "Duke 890 R", 
+        "price": "$13,000",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Ducati",
+        "model": "SuperSport S", 
+        "price": "$10,000",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Honda",
+        "model": "Gold Wing", 
+        "price": "$9,500",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Harley-Davidson",
+        "model": "CVO Pro Street Breakout", 
+        "price": "$20,000",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Kawasaki",
+        "model": "Ninja ZX-14", 
+        "price": "$8,500",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "BMW",
+        "model": "800 GS Adventure", 
+        "price": "$12,000",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Honda",
+        "model": "Valkyrie", 
+        "price": "$5,250",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Suzuki",
+        "model": "GSX-R600", 
+        "price": "$9,000",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Harley-Davidson",
+        "model": "Road King", 
+        "price": "$16,000",
+        "image": "",
+        "link": "" 
+         
+    },
+
+    {
+        "make": "Aprilia",
+        "model": "RSV4 RR", 
+        "price": "$15,750",
         "image": "",
         "link": "" 
          
@@ -172,8 +172,8 @@
 
     {
         "make": "Yamaha",
-        "model": "", 
-        "price": "",
+        "model": "Bolt", 
+        "price": "$7,500",
         "image": "",
         "link": "" 
          
