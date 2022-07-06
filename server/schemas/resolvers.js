@@ -1,4 +1,3 @@
-
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Motocycle } = require('../models/index')
 const { signToken } = require('../utils/auth');
@@ -13,7 +12,7 @@ const resolvers = {
         .select('-__v -password')
     },
     
-    moto: async () => {
+    motorcycle: async () => {
       return Motocycle.find()
         .select('-__v -password')
     }
@@ -54,6 +53,7 @@ const resolvers = {
       return {token, user};
     },
 
+
     // remove a sigle user (We can set this mutation to be called only if the user is an admin!!)
     removeUser: async (parent, { _id }) => {
       const updatedUser = await User.findOneAndDelete(
@@ -61,6 +61,8 @@ const resolvers = {
       );
       return updatedUser;
     }
+
+    // addReview: async (parent, { _})
   }
 };
 

@@ -6,10 +6,10 @@ type User {
   _id: ID
   username: String
   email: String
-  motoSchema: [Motocycle]
+  motorSchema: [Motorcycle]
 }
 
-type Motocycle {
+type Motorcycle {
   _id: ID
   name: String
   motoType: String
@@ -18,20 +18,29 @@ type Motocycle {
   link: String
 }
 
+type Review {
+  _id: ID
+  reviewBody: String
+  createdAt: String
+  username: String
+}
+
 type Auth {
   token: ID!
   user: User
 }
 
 type Query {
+  me: User
   users: [User]
-  moto: [Motocycle]
+  motorcycle: [Motorcycle]
 }
 
 type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth
   removeUser(_id: ID!): User
   login(email: String!, password: String!): Auth
+  addReview(_id: ID!, reviewBody: String!): Motorcycle
 }`;
 
 

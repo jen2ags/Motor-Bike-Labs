@@ -1,11 +1,11 @@
 const { Schema, model } = require('mongoose');
 
-const motoSchema = new Schema(
+const motorSchema = new Schema(
   {
-    name: {
+    make: {
       type: String
     },
-    motoType: {
+    model: {
       type: String
     },
     price:{
@@ -26,6 +26,6 @@ const motoSchema = new Schema(
 );
 
 
-const Motocycle = model('Motocycle', motoSchema);
+const Motorcycle = model('Motorcycle', motorSchema);
 
-module.exports = Motocycle;
+module.exports = Motorcycle;

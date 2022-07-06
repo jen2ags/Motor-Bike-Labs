@@ -21,10 +21,10 @@ const userSchema = new Schema(
       minlength: 5
     },
 
-    motoSchema: [
+    motorSchema: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Motocycle'
+        ref: 'Motorcycle'
       }
     ]
   },
@@ -49,7 +49,6 @@ userSchema.pre('save', async function(next) {
 userSchema.methods.isCorrectPassword = async function(password) {
   return bcrypt.compare(password, this.password);
 };
-
 
 
 userSchema.virtual('MotoCount').get(function() {
