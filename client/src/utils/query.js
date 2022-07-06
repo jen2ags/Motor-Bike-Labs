@@ -7,7 +7,7 @@ export const USER = gql`
       _id
       username
       email
-      motoSchema {
+      motorSchema {
         _id
         name
         motoType
