@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 // import homepage component
-import '../Components/Home/style.css';
+import './loginPage.css';
 // import image from images folder
 import undraw from '../images/undraw_nakamoto_-2-iv6.svg';
 // import useMutation from the apollo client. (this will allow us to use the mutations that we has as a middleware on the server side)
@@ -13,22 +13,24 @@ import Login from './Login'
 
 // Login component
 function SignUp() {
-  // set a state to handle the night mood 
-  const [showMoon, setShowSignUp] = useState(false);
-  // update state to show the sun logo instead of moon
+  // set a state that will let me see the signup component or the login component
+  const [showLogin, setShowLogin] = useState(false);
+  // update state to show the Login component instead of the signup 
   function updateToggle(){
-    if(showMoon===true){
-      setShowSignUp(false)
+    if(showLogin===true){
+      setShowLogin(false)
     }
     else{
-      setShowSignUp(true)
+      setShowLogin(true)
     }
   }
 
+  // state to handle user input 
   const [signup, userSignUp] = useState({ username: '', email: '', password: '' });
 
-  // get the addUser mutation from the useMutation apollo/client
+  // get the addUser mutation from the useMutation apollo/client, this will give us access to create a user 
   const [ addUser ] = useMutation(ADD_USER);
+
   // Update the state once the user enter new values 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -114,7 +116,8 @@ function SignUp() {
             </ul>
 
             <div className='login-content-context'>
-              {showMoon ? (
+              {/* if user click on the loggin button, then it will change the state to true and render the login component */}
+              {showLogin ? (
                 <Login />
                 ):null
               }
