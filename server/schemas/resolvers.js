@@ -1,11 +1,9 @@
-
 const { AuthenticationError } = require('apollo-server-express');
 const { User, Motocycle } = require('../models/index')
 const { signToken } = require('../utils/auth');
 
 // Resolvers do work in a similar fashion to how a controller file works 
 const resolvers = {
-
   // a query can only retrieve data from the database
   Query: {
     // get all users
@@ -14,7 +12,7 @@ const resolvers = {
         .select('-__v -password')
     },
     
-    moto: async () => {
+    motorcycle: async () => {
       return Motocycle.find()
         .select('-__v -password')
     }
@@ -50,10 +48,11 @@ const resolvers = {
         throw new AuthenticationError('Incorrect password');
       }
 
-      const token = signToken(user)
+      const token = signToken(user )
 
       return {token, user};
     },
+
 
     // remove a sigle user (We can set this mutation to be called only if the user is an admin!!)
     removeUser: async (parent, { _id }) => {
@@ -61,7 +60,7 @@ const resolvers = {
         { _id }
       );
       return updatedUser;
-    },
+    }
 
     // addReview: async (parent, { _})
   }

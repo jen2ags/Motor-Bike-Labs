@@ -6,7 +6,7 @@ type User {
   _id: ID
   username: String
   email: String
-  motorcycles: [Motorcycle]
+  motorSchema: [Motorcycle]
 }
 
 type Motorcycle {
@@ -31,8 +31,9 @@ type Auth {
 }
 
 type Query {
+  me: User
   users: [User]
-  moto: [Motorcycle]
+  motorcycle: [Motorcycle]
 }
 
 type Mutation {
