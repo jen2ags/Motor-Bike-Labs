@@ -1,4 +1,5 @@
-# Motor-Bike-Labs
+# Motor Bike Labs
+
 
 ## Purpose
 
@@ -21,6 +22,7 @@ https://github.com/jen2ags/Motor-Bike-Labs
 
 ## Heroku Deployed Application
 https://moto-bike-labs.herokuapp.com/
+
 
 ## Screen Shot
 Login Screen:
