@@ -5,10 +5,10 @@ const motoSchema = new Schema(
     motoId: {
       type: ID
     },
-    name: {
+    make: {
       type: String
     },
-    motoType: {
+    model: {
       type: String
     },
     price:{
