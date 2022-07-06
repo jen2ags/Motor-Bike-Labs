@@ -61,7 +61,9 @@ const resolvers = {
         { _id }
       );
       return updatedUser;
-    }
+    },
+
+    addReview: async (parent, { _})
   }
 };
 
