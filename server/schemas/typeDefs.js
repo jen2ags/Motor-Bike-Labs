@@ -6,7 +6,7 @@ type User {
   _id: ID
   username: String
   email: String
-  motoSchema: [Motocycle]
+  motorcycles: [Motorcycle]
 }
 
 type Motocycle {
