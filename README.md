@@ -18,7 +18,7 @@
 
 
 ## GitHub Repository
-https://github.com/Jmaouchi/Motor-Bike-Labs
+https://github.com/jen2ags/Motor-Bike-Labs
 
 ## Heroku Deployed Application
 
