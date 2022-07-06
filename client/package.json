@@ -1,6 +1,6 @@
 {
-  "proxy": "http://localhost:3001",
-  "name": "motor-bike-labs",
+  "proxa": "http://localhost:3001",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
