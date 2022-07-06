@@ -6,16 +6,23 @@ type User {
   _id: ID
   username: String
   email: String
-  motoSchema: [Motocycle]
+  motorcycles: [Motorcycle]
 }
 
 type Motocycle {
-  _id: ID
+  motoId: ID!
   name: String
   motoType: String
   price: String
   image: String
   link: String
+}
+
+type Review {
+  _id: ID
+  reviewBody: String
+  createdAt: String
+  username: String
 }
 
 type Auth {
@@ -32,6 +39,8 @@ type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth
   removeUser(_id: ID!): User
   login(email: String!, password: String!): Auth
+  //singleMoto()
+  addReview(motoId: ID!, reviewBody: String!): Motocycle
 }`;
 
 

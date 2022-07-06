@@ -2,10 +2,13 @@ const { Schema, model } = require('mongoose');
 
 const motoSchema = new Schema(
   {
-    name: {
+    motoId: {
+      type: ID
+    },
+    make: {
       type: String
     },
-    motoType: {
+    model: {
       type: String
     },
     price:{
