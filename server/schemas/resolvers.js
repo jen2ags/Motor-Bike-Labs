@@ -54,7 +54,6 @@ const resolvers = {
       return {token, user};
     },
 
-
     // remove a sigle user (We can set this mutation to be called only if the user is an admin!!)
     removeUser: async (parent, { _id }) => {
       const updatedUser = await User.findOneAndDelete(
