@@ -5,7 +5,7 @@ const { signToken } = require('../utils/auth');
 
 // Resolvers do work in a similar fashion to how a controller file works 
 const resolvers = {
-  
+
   // a query can only retrieve data from the database
   Query: {
     // get all users
@@ -50,7 +50,7 @@ const resolvers = {
         throw new AuthenticationError('Incorrect password');
       }
 
-      const token = signToken(user )
+      const token = signToken(user)
 
       return {token, user};
     },
@@ -63,7 +63,7 @@ const resolvers = {
       return updatedUser;
     },
 
-    addReview: async (parent, { _})
+    // addReview: async (parent, { _})
   }
 };
 

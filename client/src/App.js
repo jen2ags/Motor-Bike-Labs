@@ -29,7 +29,7 @@ function App() {
 
 // set httpLink to get the data 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3001/graphql',  // uri stands for Uniform Resource Identifier
+  uri: '/graphql',  // uri stands for Uniform Resource Identifier
 });
 
 // set the authLink to get the token from localStorage

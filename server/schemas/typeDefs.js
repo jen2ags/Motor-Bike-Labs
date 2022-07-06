@@ -9,8 +9,8 @@ type User {
   motorcycles: [Motorcycle]
 }
 
-type Motocycle {
-  motoId: ID!
+type Motorcycle {
+  _id: ID
   name: String
   motoType: String
   price: String
@@ -32,15 +32,14 @@ type Auth {
 
 type Query {
   users: [User]
-  moto: [Motocycle]
+  moto: [Motorcycle]
 }
 
 type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth
   removeUser(_id: ID!): User
   login(email: String!, password: String!): Auth
-  //singleMoto()
-  addReview(motoId: ID!, reviewBody: String!): Motocycle
+  addReview(_id: ID!, reviewBody: String!): Motorcycle
 }`;
 
 
