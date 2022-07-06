@@ -21,10 +21,10 @@ const userSchema = new Schema(
       minlength: 5
     },
 
-    motoSchema: [
+    motorcycles: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'Motocycle'
+        ref: 'Motorcycle'
       }
     ]
   },
