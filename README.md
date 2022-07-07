@@ -35,4 +35,4 @@ Favorites Page:
 ![Screenshot ]()
 
 ## Contribution
-Made by Cheryl Cruz, Jennifer Jennings, and Jugurta Maouchi
+Made by Cheryl Cruz, Jugurta Maouchi, and Jennifer Jennings
