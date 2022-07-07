@@ -48,3 +48,14 @@ export const SINGLE_MOTORCYCLE = gql`
 `;
 
 
+export const MOTOCYCLE = gql`
+  query{
+    motorcycle {
+      _id
+      image
+      image
+      price
+      motoType
+    } 
+  }
+`;
