@@ -8,6 +8,9 @@ const motorSchema = new Schema(
     model: {
       type: String
     },
+    year: {
+      type: String
+    },
     price:{
       type:String
     },

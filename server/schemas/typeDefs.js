@@ -13,6 +13,7 @@ type Motorcycle {
   _id: ID
   make: String
   model: String
+  mileage: String
   price: String
   image: String
 }
