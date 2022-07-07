@@ -13,9 +13,11 @@ type Motorcycle {
   _id: ID
   make: String
   model: String
+  year: String
   mileage: String
   price: String
   image: String
+  reviewSchema: [Review]
 }
 
 type Review {

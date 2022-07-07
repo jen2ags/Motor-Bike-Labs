@@ -11,13 +11,13 @@ const motorSchema = new Schema(
     year: {
       type: String
     },
+    mileage: {
+      type: String
+    },
     price:{
       type:String
     },
     image: {
-      type: String
-    },
-    link: {
       type: String
     }
   },
