@@ -15,191 +15,267 @@
 
     {
         "make": "Kawasaki",
-        "model": "Ninja ZX-6R",
-        "year": "",
-        "mileage": "", 
+        "model": "Ninja",
+        "year": "2021",
+        "mileage": "1,500", 
         "price": "$14,000",
-        "image": ""
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Yamaha",
-        "model": "MT-03", 
-        "year": "",
-        "mileage": "",
-        "price": "$7,000",
-        "image": "" 
+        "model": "MT", 
+        "year": "2021",
+        "mileage": "4,500",
+        "price": "$13,000",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        } 
          
     },
 
     {
         "make": "Suzuki",
-        "model": "V-Storm", 
-        "year": "",
-        "mileage": "",
+        "model": "V-Strom", 
+        "year": "2018",
+        "mileage": "6,000",
         "price": "$10,000",
-        "image": ""
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "BMW",
-        "model": "R NINE T", 
-        "year": "",
-        "mileage": "",
+        "model": "R NINET", 
+        "year": "2017",
+        "mileage": "8,130",
         "price": "$13,000",
-        "image": ""
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Ducati",
-        "model": "Panigale V45", 
-        "year": "",
-        "mileage": "",
-        "price": "$24,000",
-        "image": "" 
+        "model": "HYPERMOTARD", 
+        "year": "2019",
+        "mileage": "1,436",
+        "price": "$17,500",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        } 
          
     },
 
     {
         "make": "Harley-Davidson",
-        "model": "Softail Fat Boy",
-        "year": "",
-        "mileage": "", 
-        "price": "$7,500",
-        "image": ""
+        "model": "Softail",
+        "year": "2009",
+        "mileage": "45,378", 
+        "price": "$22,000",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Aprilia",
-        "model": "RS 660", 
-        "year": "",
-        "mileage": "",
-        "price": "$8,500",
-        "image": ""
+        "model": "RS", 
+        "year": "2022",
+        "mileage": "1,400",
+        "price": "$12,500",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Triumph",
-        "model": "Street Triple R ABS", 
-        "year": "",
-        "mileage": "",
-        "price": "$6,500",
-        "image": "" 
+        "model": "Street Triple", 
+        "year": "2019",
+        "mileage": "12,045",
+        "price": "$11,500",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        } 
          
     },
 
     {
         "make": "KTM",
-        "model": "Duke 890 R", 
-        "year": "",
-        "mileage": "",
+        "model": "890", 
+        "year": "2020",
+        "mileage": "7,800",
         "price": "$13,000",
-        "image": ""
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Ducati",
-        "model": "SuperSport S", 
-        "year": "",
-        "mileage": "",
-        "price": "$10,000",
-        "image": ""
+        "model": "SuperSport", 
+        "year": "2020",
+        "mileage": "2,387",
+        "price": "$15,000",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Honda",
         "model": "Gold Wing", 
-        "year": "",
-        "mileage": "",
-        "price": "$9,500",
-        "image": "" 
+        "year": "2018",
+        "mileage": "9,279",
+        "price": "$24,500",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        } 
          
     },
 
     {
         "make": "Harley-Davidson",
-        "model": "CVO Pro Street Breakout",
-        "year": "",
-        "mileage": "", 
+        "model": "CVO Limited",
+        "year": "2014",
+        "mileage": "30,000", 
         "price": "$20,000",
-        "image": ""
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Kawasaki",
-        "model": "Ninja ZX-14",
-        "year": "",
-        "mileage": "", 
-        "price": "$8,500",
-        "image": ""
+        "model": "Vulcan",
+        "year": "2017",
+        "mileage": "600", 
+        "price": "$6,500",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "BMW",
-        "model": "800 GS Adventure",
-        "year": "",
-        "mileage": "", 
+        "model": "N MOTO",
+        "year": "2021",
+        "mileage": "13,090", 
         "price": "$12,000",
-        "image": ""
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Honda",
         "model": "Valkyrie",
-        "year": "",
-        "mileage": "", 
-        "price": "$5,250",
-        "image": ""
+        "year": "2014",
+        "mileage": "4,000", 
+        "price": "$9,250",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Suzuki",
-        "model": "GSX-R600",
-        "year": "",
-        "mileage": "", 
-        "price": "$9,000",
-        "image": ""
+        "model": "GSX-R",
+        "year": "2005",
+        "mileage": "8,000", 
+        "price": "$8,000",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Harley-Davidson",
         "model": "Road King",
-        "year": "",
-        "mileage": "", 
+        "year": "2001",
+        "mileage": "13,872", 
         "price": "$16,000",
-        "image": ""
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Aprilia",
-        "model": "RSV4 RR",
-        "year": "",
-        "mileage": "", 
-        "price": "$15,750",
-        "image": ""
+        "model": "RSV4",
+        "year": "2019",
+        "mileage": "3,981", 
+        "price": "$21,750",
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        }
          
     },
 
     {
         "make": "Yamaha",
         "model": "Bolt", 
-        "year": "",
-        "mileage": "",
+        "year": "2014",
+        "mileage": "4,500",
         "price": "$7,500",
-        "image": "" 
+        "image": {
+            "image_1":"", 
+            "image_2":"", 
+            "image_3": ""
+        } 
          
     }
 ]
