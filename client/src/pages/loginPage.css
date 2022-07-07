@@ -1,61 +1,66 @@
 /* ROOT */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
 }
 
-section{
-min-height: 100vh;
+section {
+  min-height: 100vh;
 }
 
 /* flex rows*/
-.rows{
+.rows {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
 }
 
-
 /* login image background */
 .login-background {
   position: sticky;
   position: -webkit-sticky;
-  background-image: url('https://cdn.discordapp.com/attachments/949836958677475338/994621759837962250/unknown.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('https://media.discordapp.net/attachments/949836958677475338/994674174318616586/edited_login_pic_motor.jpg');
+  background-size: contain;
   background-attachment: fixed;
-  
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  display: block;
 }
 
-/* login columns*/
-
-
+/* login columns */
+.image-col {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1000px;
+  display: flex;
+} 
 
 /* this should be relative in order for us to have rhe absolute :before */
-section .imgBx{
+section .imgBx {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.imgBx:before{
+.imgBx:before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:rgb(250, 8, 8);
+  background-color: rgb(250, 8, 8);
   z-index: -1; /* z index will make this div appears first than the image */
-  opacity:0.5; /* opacity */
+  opacity: 0.5; /* opacity */
 }
 
-
-
-.div-col{
+.div-col {
   width: 100%;
   display: flex;
   align-items: center;
@@ -63,7 +68,7 @@ section .imgBx{
   background-color: #2e3030;
 }
 
-section  .formBx{
+section .formBx {
   border-radius: 10px;
   opacity: 0.9;
   background-color: rgb(240, 116, 116);
@@ -72,12 +77,11 @@ section  .formBx{
   z-index: 1;
 }
 
-section  .formBx:hover{
+section .formBx:hover {
   cursor: pointer;
 }
 
-
-section  .formBx h2{
+section .formBx h2 {
   color: #131414;
   font-weight: 600;
   font-size: 1.5rem;
@@ -88,17 +92,17 @@ section  .formBx h2{
   letter-spacing: 1px;
 }
 
-.formBx-heading{
+.formBx-heading {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-section  .formBx .inputBx{
+section .formBx .inputBx {
   margin-bottom: 20px;
 }
 
-section  .formBx .inputBx span{
+section .formBx .inputBx span {
   font-size: 16px;
   margin-bottom: 5px;
   display: inline-block;
@@ -109,7 +113,7 @@ section  .formBx .inputBx span{
 }
 
 /* style the input */
-section  .formBx .inputBx input{
+section .formBx .inputBx input {
   width: 100%;
   padding: 10px 20px;
   outline: none;
@@ -117,11 +121,11 @@ section  .formBx .inputBx input{
   border: 1px solid black;
   letter-spacing: 1px;
   color: black;
-  background: rgb(250, 168, 168) ;
+  background: rgb(250, 168, 168);
   border-radius: 30px;
 }
 
-section  .formBx .inputBx input[type="submit"] {
+section .formBx .inputBx input[type='submit'] {
   background-color: white;
   color: black;
   outline: none;
@@ -130,43 +134,42 @@ section  .formBx .inputBx input[type="submit"] {
   cursor: pointer;
 }
 
-section  .formBx .inputBx input[type="submit"]:hover{
-  background-color:black;
+section .formBx .inputBx input[type='submit']:hover {
+  background-color: black;
   color: white;
 }
 
-section  .formBx .remember{
+section .formBx .remember {
   margin-bottom: 10px;
   color: black;
   font-weight: 400;
   font-size: 14px;
 }
 
-section  .formBx .inputBx p {
-  color:black;
+section .formBx .inputBx p {
+  color: black;
 }
 
-section  .formBx .inputBx p a{
+section .formBx .inputBx p a {
   color: rgb(5, 5, 199);
   padding: 5px;
-  border-radius:15px;
+  border-radius: 15px;
 }
 
-section  .fopxrmBx h3{
+section .fopxrmBx h3 {
   color: black;
   text-align: center;
   margin: 80px 0 10px;
   font-weight: 500;
-
 }
 
-section  .formBx .sci{
+section .formBx .sci {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-section  .formBx .sci li{
+section .formBx .sci li {
   list-style: none;
   display: flex;
   align-items: center;
@@ -176,52 +179,58 @@ section  .formBx .sci li{
   cursor: pointer;
 }
 
-section  .formBx .sci li .fa-brands{
+section .formBx .sci li .fa-brands {
   font-size: 32px;
 }
 
-section  .formBx .sci li .fa-brands:hover{
+section .formBx .sci li .fa-brands:hover {
   color: white;
   font-size: 40px;
 }
 
 /* the annimation */
-.div-col{
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.div-col {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-
-.div-col::before{
-  content: "";
+.div-col::before {
+  content: '';
   position: absolute;
   width: 500px; /* this is the width of the box */
-  background-image: -webkit-gradient(linear, left top, left bottom, from (rgb(76, 0, 255), to (rgb(241, 159, 173))));
-  background-image: linear-gradient(180deg, rgb(0, 179, 255), rgb(241, 159, 173));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from (rgb(76, 0, 255), to (rgb(241, 159, 173)))
+  );
+  background-image: linear-gradient(
+    180deg,
+    rgb(0, 179, 255),
+    rgb(241, 159, 173)
+  );
   height: 145%; /* this will make sure that the box it hitting the top of the borders */
   -webkit-animation: rotBGimg 3s linear infinite;
   animation: rotBGimg 3s linear infinite;
   -webkit-transition: all 0.2s linear;
-  transition: all 0.2s  linear;
-
+  transition: all 0.2s linear;
 }
 
 .div-col:after {
-  content: "";
+  content: '';
   position: absolute;
- 
-  inset:7px; /* this is what is going to do the job by creating a little gap between the after and the befor */
+
+  inset: 7px; /* this is what is going to do the job by creating a little gap between the after and the befor */
   border-radius: 15px;
 }
 
-
 @-webkit-keyframes rotBGimg {
-  from{
+  from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -230,10 +239,9 @@ section  .formBx .sci li .fa-brands:hover{
     transform: rotate(360deg);
   }
 }
-
 
 @keyframes rotBGimg {
-  from{
+  from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -243,71 +251,56 @@ section  .formBx .sci li .fa-brands:hover{
   }
 }
 
-
-.login-content-context{
+.login-content-context {
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-
 /* media query start */
 @media (max-width: 1550px) {
-  section  .formBx{
+  section .formBx {
     width: 50%;
     height: 80%;
   }
-  
 }
-
 
 @media (max-width: 968px) {
-  
-  
 }
 
-
-
 @media (max-width: 768px) {
-
-  .rows{
+  .rows {
     display: grid;
     grid-template-columns: 1fr;
-  
   }
 }
 
 @media (max-width: 558px) {
-
-  .rows{
+  .rows {
     display: grid;
     grid-template-columns: 1fr;
-  
   }
 
-
-  section  .formBx{
+  section .formBx {
     margin: 20px;
     width: 100%;
   }
 
-  .context{
-    margin-top:200px;
+  .context {
+    margin-top: 200px;
     margin-left: 30px;
   }
 
- 
-
-  .context h1{
+  .context h1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
-    margin-top:10px;
+    margin-top: 10px;
     font-weight: 400;
   }
 
-  .context p{
+  .context p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -315,14 +308,13 @@ section  .formBx .sci li .fa-brands:hover{
     font-weight: 100;
   }
 
-  .div-col::before{
+  .div-col::before {
     width: 100px; /* this is the width of the box */
   }
 
-
   .div-col:after {
-    background-color:  rgb(24, 10, 10);
-    inset:5px; /* this is what is going to do the job by creating a little gap between the after and the befor */
+    background-color: rgb(24, 10, 10);
+    inset: 5px; /* this is what is going to do the job by creating a little gap between the after and the befor */
     border-radius: 15px;
   }
 }

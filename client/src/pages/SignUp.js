@@ -70,10 +70,10 @@ function SignUp() {
       {/*main column wrapper*/}
       <section className='rows columns is-mobile'>
         {/*left column*/}
-        <div className='image-col  login-background column is-half'></div>
+        <div className='image-col  login-background column is-7'></div>
 
         {/*right column*/}
-        <div className='div-col column is-half login-half'>
+        <div className='div-col column is-5 login-half'>
           <div className='formBx'>
             <div className='formBx-heading'>
               <h2>Sign Up</h2>
