@@ -52,21 +52,6 @@ section .imgBx{
 }
 
 
-.context{
-  position: absolute;
-  margin-top: 400px;
-  margin-left: 150px;
-}
-
-.context h1{
-  font-size: 36px;
-  font-weight: 600;
-}
-
-.context p{
-  font-size: 20px;
-  font-weight: 200;
-}
 
 .div-col{
   width: 100%;
@@ -309,9 +294,7 @@ section  .formBx .sci li .fa-brands:hover{
     margin-left: 30px;
   }
 
-  .context-container{
-    background-color:"white"
-  }
+ 
 
   .context h1{
     display: flex;
