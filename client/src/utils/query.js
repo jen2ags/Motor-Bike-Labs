@@ -1,20 +1,37 @@
 
 import { gql } from '@apollo/client';
 
-export const USER = gql`
-  {
-    user {
+export const SINGLE_USER  = gql`
+{
+  sigleUser{
+    _id
+    username
+    email
+    motorSchema {
+      _id
+      image
+      price
+      motoType
+      name
+    }
+  }
+}
+`;
+
+export const USERS = gql`
+  query{
+    users{
       _id
       username
       email
       motorSchema {
         _id
-        name
-        motoType
-        price
         image
-        link
+        price
+        motoType
+        name
       }
     }
   }
 `;
+
