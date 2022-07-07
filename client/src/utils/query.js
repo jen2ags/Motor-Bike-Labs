@@ -48,7 +48,7 @@ export const SINGLE_MOTORCYCLE = gql`
 `;
 
 
-export const MOTOCYCLE = gql`
+export const MOTORCYCLE = gql`
   query{
     motorcycle {
       _id
