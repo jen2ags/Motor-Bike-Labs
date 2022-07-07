@@ -74,15 +74,15 @@ function SignUp() {
 
         {/*right column*/}
         <div className='div-col column is-3 login-half'>
-          <div className='formBx'>
-            <div className='formBx-heading'>
-              <h2 className="login-head">Sign Up</h2>
-              <h2 onClick={updateToggle} className="login-head">Login</h2>
+          <div className='formBx '>
+            <div className='formBx-heading mx-4'>
+              <h2 className="login-head title">Sign Up</h2>
+              <h2 onClick={updateToggle} className="login-head title my-6 ">Login</h2>
             </div>
-            <form onSubmit={handleFormSubmit}>
-              <div className='inputBx'>
-                <span className="user">Username</span>
-                <input
+            <form onSubmit={handleFormSubmit} className="field">
+              <div className='inputBx my-3 mx-4'>
+                <label className="user label">Username</label>
+                <input className="input"
                   type='text'
                   name='username'
                   id='username'
@@ -91,9 +91,9 @@ function SignUp() {
                 />
               </div>
 
-              <div className='inputBx'>
-                <span className="user">Email</span>
-                <input
+              <div className='inputBx my-3 mx-4'>
+                <label className="user label">Email</label>
+                <input className="input"
                   type='email'
                   name='email'
                   id='email'
@@ -102,9 +102,9 @@ function SignUp() {
                 ></input>
               </div>
 
-              <div className='inputBx'>
-                <span className="user">Password</span>
-                <input
+              <div className='inputBx my-3 mx-4'>
+                <label className="user label">Password</label>
+                <input className="input"
                   type='password'
                   name='password'
                   id='password'
@@ -113,36 +113,37 @@ function SignUp() {
                 ></input>
               </div>
 
-              <div className='remember user'>
+              <div className='remember user mx-4'>
                 <input type='checkbox' />
                 <label htmlFor=''> Remember Me</label>
               </div>
 
-              <div className='inputBx'>
-                <input
+              <div className='inputBx mx-4
+              my-4 field is-grouped'>
+                <button
                   type='submit'
                   value='Sign in'
                   id='submit'
                   name='submit'
-                  className="user"
-                />
+                  className="user button"
+                >Sign in</button>
               </div>
 
-              <div className='inputBx user'>
+              <div className='inputBx user mx-4 my-4'>
                 <p>
                   Don't have an account? <a href='/'>Sign up</a>
                 </p>
               </div>
             </form>
 
-            <ul className='sci'>
-              <li className='sci-img'>
+            <ul className='sci level px-6 mx-6 my-6'>
+              <li className='sci-img level-item'>
                 <i className='fa-brands fa-instagram'></i>
               </li>
-              <li className='sci-img'>
+              <li className='sci-img level-item'>
                 <i className='fa-brands fa-facebook'></i>
               </li>
-              <li className='sci-img'>
+              <li className='sci-img level-item'>
                 <i className='fa-brands fa-snapchat'></i>
               </li>
             </ul>

@@ -13,7 +13,8 @@ body {
 
 /* FONT STYLES */
 .login-head {
-  font-family: 'Abril Fatface';
+  font-family: 'Sansita';
+  
 }
 
 .user {
@@ -34,7 +35,7 @@ body {
   width: 100%;
 }
 
-/* login columns */
+/* image column */
 .columns {
   height: 1000px;
 }
@@ -47,3 +48,5 @@ body {
   height: 1000px;
   display: flex;
 }
+
+/* signup column */
