@@ -115,7 +115,7 @@ function SignUp() {
 
               <div className='remember'>
                 <input type='checkbox' />
-                <label htmlFor=''>Remember Me</label>
+                <label htmlFor=''> Remember Me</label>
               </div>
 
               <div className='inputBx'>

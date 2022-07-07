@@ -1,13 +1,14 @@
 /* ROOT */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+:root {
+  --gray: #d9d9d9ff;
 }
 
-section {
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray);
 }
 
 /* flex rows*/
@@ -29,6 +30,8 @@ section {
   background-size: contain;
   background-position: left;
   display: block;
+  width: 100%;
+  z-index: 9999;
 }
 
 /* login columns */
@@ -39,7 +42,7 @@ section {
   right: 0;
   height: 1000px;
   display: flex;
-} 
+}
 
 /* this should be relative in order for us to have rhe absolute :before */
 section .imgBx {
@@ -188,68 +191,7 @@ section .formBx .sci li .fa-brands:hover {
   font-size: 40px;
 }
 
-/* the annimation */
-.div-col {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
 
-.div-col::before {
-  content: '';
-  position: absolute;
-  width: 500px; /* this is the width of the box */
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from (rgb(76, 0, 255), to (rgb(241, 159, 173)))
-  );
-  background-image: linear-gradient(
-    180deg,
-    rgb(0, 179, 255),
-    rgb(241, 159, 173)
-  );
-  height: 145%; /* this will make sure that the box it hitting the top of the borders */
-  -webkit-animation: rotBGimg 3s linear infinite;
-  animation: rotBGimg 3s linear infinite;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-
-.div-col:after {
-  content: '';
-  position: absolute;
-
-  inset: 7px; /* this is what is going to do the job by creating a little gap between the after and the befor */
-  border-radius: 15px;
-}
-
-@-webkit-keyframes rotBGimg {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotBGimg {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
 
 .login-content-context {
   position: absolute;
