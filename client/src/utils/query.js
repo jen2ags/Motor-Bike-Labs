@@ -35,3 +35,16 @@ export const USERS = gql`
   }
 `;
 
+export const SINGLE_MOTORCYCLE = gql`
+  query($id: ID!){
+    sigleMotorcycle(_id: $id) {
+      _id
+      name
+      motoType
+      image
+      price
+    }
+  }
+`;
+
+
