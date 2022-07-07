@@ -70,50 +70,50 @@ function SignUp() {
       {/*main column wrapper*/}
       <section className='rows columns is-mobile'>
         {/*left column*/}
-        <div className='image-col  login-background column is-7'></div>
+        <div className='image-col  login-background column is-9'></div>
 
         {/*right column*/}
-        <div className='div-col column is-5 login-half'>
+        <div className='div-col column is-3 login-half'>
           <div className='formBx'>
             <div className='formBx-heading'>
-              <h2>Sign Up</h2>
-              <h2 onClick={updateToggle}>Login</h2>
+              <h2 className="login-head">Sign Up</h2>
+              <h2 onClick={updateToggle} className="login-head">Login</h2>
             </div>
             <form onSubmit={handleFormSubmit}>
               <div className='inputBx'>
-                <span>Username</span>
+                <span className="user">Username</span>
                 <input
                   type='text'
                   name='username'
                   id='username'
-                  placeholder='Your username'
+                  
                   onChange={handleInputChange}
                 />
               </div>
 
               <div className='inputBx'>
-                <span>email</span>
+                <span className="user">Email</span>
                 <input
                   type='email'
                   name='email'
                   id='email'
-                  placeholder='email'
+            
                   onChange={handleInputChange}
                 ></input>
               </div>
 
               <div className='inputBx'>
-                <span>Password</span>
+                <span className="user">Password</span>
                 <input
                   type='password'
                   name='password'
                   id='password'
-                  placeholder='******'
+              
                   onChange={handleInputChange}
                 ></input>
               </div>
 
-              <div className='remember'>
+              <div className='remember user'>
                 <input type='checkbox' />
                 <label htmlFor=''> Remember Me</label>
               </div>
@@ -124,10 +124,11 @@ function SignUp() {
                   value='Sign in'
                   id='submit'
                   name='submit'
+                  className="user"
                 />
               </div>
 
-              <div className='inputBx'>
+              <div className='inputBx user'>
                 <p>
                   Don't have an account? <a href='/'>Sign up</a>
                 </p>
