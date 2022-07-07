@@ -11,11 +11,10 @@ type User {
 
 type Motorcycle {
   _id: ID
-  name: String
-  motoType: String
+  make: String
+  model: String
   price: String
   image: String
-  link: String
 }
 
 type Review {
