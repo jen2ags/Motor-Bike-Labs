@@ -7,6 +7,8 @@ import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../utils/mutations';
 // import auth to use the token
 import Auth from '../utils/auth';
+// bulma import
+import 'bulma/css/bulma.css';
 
 
 // Login component

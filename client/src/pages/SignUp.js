@@ -10,6 +10,9 @@ import { ADD_USER } from '../utils/mutations';
 // import auth to use the token
 import Auth from '../utils/auth';
 import Login from './Login'
+// bulma import
+import 'bulma/css/bulma.css';
+
 
 // Login component
 function SignUp() {
