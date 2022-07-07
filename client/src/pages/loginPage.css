@@ -1,3 +1,4 @@
+/* ROOT */
 *{
   margin: 0;
   padding: 0;
@@ -6,11 +7,10 @@
 }
 
 section{
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
+min-height: 100vh;
 }
 
+/* flex rows*/
 .rows{
   position: relative;
   display: grid;
@@ -18,18 +18,20 @@ section{
   gap: 1px;
 }
 
-.image-col{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
+
+/* login image background */
+.login-background {
+  position: sticky;
+  position: -webkit-sticky;
+  background-image: url('https://cdn.discordapp.com/attachments/949836958677475338/994621759837962250/unknown.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
 }
 
+/* login columns*/
 
-.image-col img{
-  width: 100%;
-  overflow: hidden;
-}
 
 
 /* this should be relative in order for us to have rhe absolute :before */
@@ -212,7 +214,7 @@ section  .formBx .sci li .fa-brands:hover{
 .div-col:after {
   content: "";
   position: absolute;
-  background-color:black;
+ 
   inset:7px; /* this is what is going to do the job by creating a little gap between the after and the befor */
   border-radius: 15px;
 }

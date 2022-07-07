@@ -73,7 +73,7 @@ function SignUp() {
         <div className='image-col  login-background column is-half'></div>
 
         {/*right column*/}
-        <div className='div-col column is-half login'>
+        <div className='div-col column is-half login-half'>
           <div className='formBx'>
             <div className='formBx-heading'>
               <h2>Sign Up</h2>

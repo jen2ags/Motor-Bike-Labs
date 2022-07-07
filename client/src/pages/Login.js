@@ -23,7 +23,7 @@ function SignUp() {
   };
 
   // submit form
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async event => {
     event.preventDefault();
 
     // use try/catch instead of promises to handle errors
