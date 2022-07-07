@@ -33,9 +33,10 @@ type Auth {
 }
 
 type Query {
-  me: User
+  sigleUser: User
   users: [User]
   motorcycle: [Motorcycle]
+  sigleMotorcycle(_id: ID!): Motorcycle
 }
 
 type Mutation {
