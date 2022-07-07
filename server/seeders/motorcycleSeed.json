@@ -9,7 +9,8 @@
             "image_1":"honda_crf_1.jpg", 
             "image_2":"honda_crf_2.jpg", 
             "image_3": "honda_crf_3.jpg"
-        } 
+        },
+        "reviews": [] 
          
     },
 
@@ -23,7 +24,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -37,7 +39,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        } 
+        },
+        "reviews": [] 
          
     },
 
@@ -51,7 +54,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -65,7 +69,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -79,7 +84,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        } 
+        },
+        "reviews": [] 
          
     },
 
@@ -93,7 +99,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -107,7 +114,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -121,7 +129,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        } 
+        },
+        "reviews": [] 
          
     },
 
@@ -135,7 +144,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -149,7 +159,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -163,7 +174,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        } 
+        },
+        "reviews": [] 
          
     },
 
@@ -177,7 +189,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -191,7 +204,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -205,7 +219,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -219,7 +234,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -233,7 +249,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -247,7 +264,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -261,7 +279,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        }
+        },
+        "reviews": []
          
     },
 
@@ -275,7 +294,8 @@
             "image_1":"", 
             "image_2":"", 
             "image_3": ""
-        } 
+        },
+        "reviews": [] 
          
     }
 ]
