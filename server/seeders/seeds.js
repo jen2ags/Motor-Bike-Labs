@@ -3,3 +3,4 @@ const motorcycleSeeds = require('./motorcycleSeed.json');
 const db = require('../config/connection');
 const { Motocycle, User } = require('../models');
 
+// need to add logic
