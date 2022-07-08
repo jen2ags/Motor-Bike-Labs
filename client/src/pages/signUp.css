@@ -12,8 +12,9 @@ body {
 }
 
 /* FONT STYLES */
-.login-head {
+.signUp-head {
   font-family: 'Sansita';
+  cursor: pointer;
 }
 
 .user {
@@ -56,5 +57,24 @@ body {
 
 .button:hover {
   background-color: var(--gray);
- 
 }
+
+.signup-span{
+  color: rgb(8, 8, 247);
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.head-context{
+  display: flex;
+  align-items: center;
+}
+
+.signup-span:hover{
+  border-bottom:1px solid blue;
+}
+
+.fa-backward{
+  font-size: 23px;
+}
+
