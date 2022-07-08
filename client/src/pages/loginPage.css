@@ -1,6 +1,6 @@
 /* ROOT */
 :root {
-  --gray: #d9d9d9ff;
+  --gray: rgb(223, 223, 223);
 }
 
 * {
@@ -14,7 +14,6 @@ body {
 /* FONT STYLES */
 .login-head {
   font-family: 'Sansita';
-  
 }
 
 .user {
@@ -49,4 +48,15 @@ body {
   display: flex;
 }
 
-/* signup column */
+/* button */
+.button {
+  background-color: white;
+  color: black;
+}
+
+.button:hover {
+  background-color: var(--gray);
+ 
+}
+
+/* media queries */

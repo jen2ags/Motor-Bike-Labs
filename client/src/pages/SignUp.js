@@ -76,39 +76,44 @@ function SignUp() {
         <div className='div-col column is-3 login-half'>
           <div className='formBx '>
             <div className='formBx-heading mx-4'>
-              <h2 className="login-head title">Sign Up</h2>
-              <h2 onClick={updateToggle} className="login-head title my-6 ">Login</h2>
+              <h2 className='login-head title'>Sign Up</h2>
+              <h2 onClick={updateToggle} className='login-head title my-6 '>
+                Login
+              </h2>
             </div>
-            <form onSubmit={handleFormSubmit} className="field">
+            <form onSubmit={handleFormSubmit} className='field'>
               <div className='inputBx my-3 mx-4'>
-                <label className="user label">Username</label>
-                <input className="input"
+                <label className='user label'>Username</label>
+                <input
+                  className='input'
                   type='text'
                   name='username'
                   id='username'
-                  
+                  placeholder='Username'
                   onChange={handleInputChange}
                 />
               </div>
 
               <div className='inputBx my-3 mx-4'>
-                <label className="user label">Email</label>
-                <input className="input"
+                <label className='user label'>Email</label>
+                <input
+                  className='input'
                   type='email'
                   name='email'
                   id='email'
-            
+                  placeholder='Email'
                   onChange={handleInputChange}
                 ></input>
               </div>
 
               <div className='inputBx my-3 mx-4'>
-                <label className="user label">Password</label>
-                <input className="input"
+                <label className='user label'>Password</label>
+                <input
+                  className='input'
                   type='password'
                   name='password'
                   id='password'
-              
+                  placeholder='Password'
                   onChange={handleInputChange}
                 ></input>
               </div>
@@ -118,15 +123,19 @@ function SignUp() {
                 <label htmlFor=''> Remember Me</label>
               </div>
 
-              <div className='inputBx mx-4
-              my-4 field is-grouped'>
+              <div
+                className='inputBx mx-4
+              my-4 field is-grouped'
+              >
                 <button
                   type='submit'
                   value='Sign in'
                   id='submit'
                   name='submit'
-                  className="user button"
-                >Sign in</button>
+                  className='user button sign'
+                >
+                  Sign up
+                </button>
               </div>
 
               <div className='inputBx user mx-4 my-4'>

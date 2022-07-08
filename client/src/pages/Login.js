@@ -23,7 +23,7 @@ function SignUp() {
   };
 
   // submit form
-  const handleFormSubmit = async event => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     // use try/catch instead of promises to handle errors
@@ -47,38 +47,43 @@ function SignUp() {
     <>
       <section className='rows'>
         <div className='div-col'>
-          <div className='formBx field'>
-            <h2>Login</h2>
-            <form onSubmit={handleFormSubmit}>
-              <div className='inputBx'>
-                <span>email</span>
+          <div className='formBx mx-3 my-3'>
+            <h2 className='login-head title my-6'>Login</h2>
+            <form onSubmit={handleFormSubmit} className='field'>
+              <div className='inputBx my-3 mx-4 '>
+                <label className='user label'>Email</label>
                 <input
+                  className='input'
                   type='email'
                   name='email'
                   id='email'
-                  placeholder='email'
+                  placeholder='Email'
                   onChange={handleInputChange}
                 ></input>
               </div>
 
-              <div className='inputBx'>
-                <span>Password</span>
+              <div className='inputBx my-3 mx-3'>
+                <label className='user label'>Password</label>
                 <input
+                  className='input'
                   type='password'
                   name='password'
                   id='password'
-                  placeholder='******'
+                  placeholder='Password'
                   onChange={handleInputChange}
                 ></input>
               </div>
 
-              <div className='inputBx'>
-                <input
+              <div className='inputBx mx-4 my-5 field is-grouped'>
+                <button
+                  className='user button'
                   type='submit'
                   value='Sign in'
                   id='submit'
                   name='submit'
-                />
+                >
+                  Sign in
+                </button>
               </div>
             </form>
           </div>
