@@ -68,7 +68,7 @@ function Login() {
           <div className='formBx'>
             <div className='formBx-heading mx-4'>
               <h2 onClick={updateToggle} className='signUp-head title my-6 mx-2 '>
-                Moto Bike Labs 
+                Login
               </h2>
             </div>
             <form onSubmit={handleFormSubmit} className='field'>

@@ -39,26 +39,41 @@ function Header() {
       {/* hero section, ****add carousel****/}
       <section className='hero is-medium my-6'>
         <div className='hero-body'>
-          <div className='title'>Exhaust your options</div>
+          <h1 className='title is-1'>Exhaust your options</h1>
         </div>
       </section>
 
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
-      <section className='tile is-ancestor'>
-        <div className='tile is-parent'>
-          <div className='tile is-child box'>
-            {/* image for motorcycle */}
-            <div className tile is-child container>
-              <figure className='image is-128x128'>
-                <img
-                  src='https://bulma.io/images/placeholders/128x128.png'
-                  alt='Motorcycle'
-                />
-              </figure>
-            <div className= 'container stats'>
-
-            </div>
-            </div>
+      <section className='tile is-ancestor box'>
+        <div className='tile is-parent is-vertical'>
+          <div className='tile is-child'>
+            <article className='tile is-child is-2'>
+              {/* image for motorcycle */}
+              <div className='card'>
+                <div className='card-image  has-text-centered' id='image'>
+                  <figure className='image is-128x128 is-inline-block'>
+                    <img
+                      src='https://bulma.io/images/placeholders/128x128.png'
+                      alt='Motorcycle'
+                    />
+                  </figure>
+                </div>
+                <div className='card-content stats has-text-centered'>
+                  <div className='' id='price'>
+                    {/*{price}*/}
+                  </div>
+                  <div className='' id='mileage'>
+                    miles
+                  </div>
+                  <div className='' id='make'>
+                    make
+                  </div>
+                  <div className='' id='model'>
+                    model
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
