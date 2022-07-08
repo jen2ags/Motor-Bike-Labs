@@ -20,13 +20,14 @@ export const ADD_USER = gql`
         _id
         username
         email
-        motoSchema {
+        motorSchema {
           _id
-          name
-          motoType
+          make
+          model
+          year
+          mileage
           price
           image
-          link
         }
       }
     }

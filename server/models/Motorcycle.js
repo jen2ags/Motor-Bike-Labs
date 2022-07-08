@@ -1,11 +1,18 @@
 const { Schema, model } = require('mongoose');
+const reviewSchema = require('./Review');
 
 const motorSchema = new Schema(
   {
     make: {
       type: String
     },
+    year: {
+      type: String
+    },
     model: {
+      type: String
+    },
+    mileage:{
       type: String
     },
     price:{
@@ -13,10 +20,8 @@ const motorSchema = new Schema(
     },
     image: {
       type: String
-    },
-    link: {
-      type: String
     }
+    // reviews: [reviewSchema]
   },
   {
     toJSON: {

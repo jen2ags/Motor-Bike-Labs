@@ -1,22 +1,44 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Motocycle } = require('../models/index')
+const { User, Motorcycle } = require('../models/index');
 const { signToken } = require('../utils/auth');
 
 // Resolvers do work in a similar fashion to how a controller file works 
 const resolvers = {
   // a query can only retrieve data from the database
   Query: {
-    // get all users
+    // Get a single user, using the context as a param, 
+    // Here we are addiing the token to check for a single user, with this we can see what user is logged in 
+    sigleUser: async (parent, args, context) => {
+      if (context.user) {
+        const userData = await User.findOne({ _id: context.user._id })
+          .select('-__v -password')
+        return userData;
+      }
+
+      throw new AuthenticationError('Not logged in');
+    },
+    
+    // get all users, this can be a good use for the admin to see how many users are in there 
     users: async () => {
       return User.find()
         .select('-__v -password')
     },
     
-    motorcycle: async () => {
-      return Motocycle.find()
-        .select('-__v -password')
-    }
+    motorcycle: async (parent, args, context) => {
+      if (context.user) {
+        return Motorcycle.find()
+          .select('-__v -password')
+        }
+        throw new AuthenticationError('Not logged in');
+    },
+
+    // get a single motorcycle by id 
+    sigleMotorcycle: async (parent, { _id }) => {
+      return Motorcycle.findOne({ _id });
+    },
   },
+
+  
 
   Mutation: {
     // addUser mutation, that will create a new user and return the user data and the token at the same time
@@ -25,8 +47,16 @@ const resolvers = {
       // take the whole user data object and the secret then encode it using the signToken function, then save it in a variable called token.
       const token = signToken(user);
 
+      console.log(token)
       // return the token and the user data. 
       return { token, user}
+    },
+
+
+    addMotorcycles: async (parent, args) => {
+      const  motorcycles = await Motorcycle.create({args});
+      
+      return { motorcycles }
     },
 
 
@@ -60,9 +90,21 @@ const resolvers = {
         { _id }
       );
       return updatedUser;
-    }
+    },
 
     // addReview: async (parent, { _})
+    addReview: async (parent, { motorcycleId, reviewBody }, context) => {
+      if (context.user) {
+        const updateMotorcycle = await Motorcycle.findOneAndUpdate(
+          { _id: motorcycleId },
+          { $push: {reviews: {reviewBody, username: context.user.username }}},
+          { new: true, runValidators: true }
+        );
+
+        return updateMotorcycle;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    }
   }
 };
 
