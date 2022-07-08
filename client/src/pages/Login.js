@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import homepage component
-import './loginPage.css';
+import './login.css';
 // import useMutation from the apollo client. (this will allow us to use the mutations that we has as a middleware on the server side)
 import { useMutation } from '@apollo/client';
 // get LOGIN_USER mutation

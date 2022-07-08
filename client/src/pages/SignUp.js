@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import homepage component
-import './loginPage.css';
+import './signUp.css';
 // import image from images folder
 
 // import useMutation from the apollo client. (this will allow us to use the mutations that we has as a middleware on the server side)
@@ -70,14 +70,14 @@ function SignUp() {
       {/*main column wrapper*/}
       <section className='rows columns is-mobile'>
         {/*left column*/}
-        <div className='image-col  login-background column is-9'></div>
+        <div className='image-col login-background column is-9'></div>
 
         {/*right column*/}
-        <div className='div-col column is-3 login-half'>
-          <div className='formBx '>
+        <div className='column is-3 login-half'>
+          <div className='formBx'>
             <div className='formBx-heading mx-4'>
-              <h2 className='login-head title mx-2'>Sign Up</h2>
-              <h2 onClick={updateToggle} className='login-head title my-6 mx-2 '>
+              <h2 className='signUp-head title mx-2'>Sign Up</h2>
+              <h2 onClick={updateToggle} className='signUp-head title my-6 mx-2 '>
                 Login
               </h2>
             </div>
