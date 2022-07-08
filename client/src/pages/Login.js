@@ -48,7 +48,7 @@ function SignUp() {
       <section className='rows'>
         <div className='div-col'>
           <div className='formBx mx-3 my-3'>
-            <h2 className='login-head title my-6'>Login</h2>
+            <h2 className='login-head title my-6 mx-2'>Login</h2>
             <form onSubmit={handleFormSubmit} className='field'>
               <div className='inputBx my-3 mx-4 '>
                 <label className='user label'>Email</label>
