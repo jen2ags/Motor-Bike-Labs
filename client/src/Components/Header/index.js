@@ -44,14 +44,14 @@ function Header() {
       </section>
 
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
-      <section className='tile is-ancestor box is-flex-wrap-wrap mx-1 my-2'>
+      <section className='tile is-ancestor is-flex-wrap-wrap mx-2 my-2'>
         <div className='tile is-parent is-vertical'>
           <div className='tile is-child'>
             <article className='tile is-child is-2'>
               {/* image for motorcycle */}
-              <div className='card'>
-                <div className='card-image  has-text-centered' id='image'>
-                  <figure className='image is-128x128 is-inline-block'>
+              <div className='card '>
+                <div className='card-image  has-text-centered ' id='image'>
+                  <figure className='image is-128x128 is-inline-block my-2'>
                     <img
                       src='https://bulma.io/images/placeholders/128x128.png'
                       alt='Motorcycle'
@@ -60,7 +60,7 @@ function Header() {
                 </div>
                 <div className='card-content stats has-text-centered'>
                   <div className='' id='price'>
-                    {/*{price}*/}
+                    
                   </div>
                   <div className='' id='mileage'>
                     miles

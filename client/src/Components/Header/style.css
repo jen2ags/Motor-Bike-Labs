@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, .footer {
     background-color: var(--gray);
   }
 
