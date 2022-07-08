@@ -1,6 +1,5 @@
 const User = require('./User');
-const Motocycle = require('./Motorcycle');
-//const Review = require('./Review');
+const Motorcycle = require('./Motorcycle');
 
 
-module.exports = { User, Motocycle };
+module.exports = { User, Motorcycle };

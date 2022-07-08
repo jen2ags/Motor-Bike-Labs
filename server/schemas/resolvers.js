@@ -1,6 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Motocycle } = require('../models/index');
-const Motorcycle = require('../models/Motorcycle');
+const { User, Motorcycle } = require('../models/index');
 const { signToken } = require('../utils/auth');
 
 // Resolvers do work in a similar fashion to how a controller file works 
@@ -27,7 +26,7 @@ const resolvers = {
     
     motorcycle: async (parent, args, context) => {
       if (context.user) {
-        return Motocycle.find()
+        return Motorcycle.find()
           .select('-__v -password')
         }
         throw new AuthenticationError('Not logged in');
@@ -51,6 +50,13 @@ const resolvers = {
       console.log(token)
       // return the token and the user data. 
       return { token, user}
+    },
+
+
+    addMotorcycles: async (parent, args) => {
+      const  motorcycles = await Motorcycle.create({args});
+      
+      return { motorcycles }
     },
 
 

@@ -1,0 +1,26 @@
+/* FONT STYLES */
+.login-head {
+  font-family: 'Sansita';
+}
+ 
+
+.formBx{
+  position: relative;
+}
+
+.div-col{
+  position: absolute;
+  background-color:  rgb(223, 223, 223);
+  top: 80px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.fa-brands{
+  cursor: pointer;
+
+}
+
+.fa-brands:hover{
+  color: black;
+}

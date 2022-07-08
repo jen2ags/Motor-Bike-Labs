@@ -8,11 +8,13 @@ export const SINGLE_USER  = gql`
     username
     email
     motorSchema {
-      _id
-      image
-      price
-      motoType
-      name
+      _id: ID
+      make: String
+      model: String
+      year: String
+      mileage: String
+      price: String
+      image: String
     }
   }
 }
@@ -25,11 +27,13 @@ export const USERS = gql`
       username
       email
       motorSchema {
-        _id
-        image
-        price
-        motoType
-        name
+        _id: ID
+        make: String
+        model: String
+        year: String
+        mileage: String
+        price: String
+        image: String
       }
     }
   }
@@ -38,11 +42,13 @@ export const USERS = gql`
 export const SINGLE_MOTORCYCLE = gql`
   query($id: ID!){
     sigleMotorcycle(_id: $id) {
-      _id
-      name
-      motoType
-      image
-      price
+      _id: ID
+      make: String
+      model: String
+      year: String
+      mileage: String
+      price: String
+      image: String
     }
   }
 `;
@@ -51,11 +57,13 @@ export const SINGLE_MOTORCYCLE = gql`
 export const MOTORCYCLE = gql`
   query{
     motorcycle {
-      _id
-      image
-      image
-      price
-      motoType
+      _id: ID
+      make: String
+      model: String
+      year: String
+      mileage: String
+      price: String
+      image: String
     } 
   }
 `;

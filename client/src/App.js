@@ -7,10 +7,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { setContext } from '@apollo/client/link/context';
 
 // components export
-import SignUp  from './pages/SignUp';
+import Login from './pages/Login';
 import Home from './Components/Home'
-// bulma import
-import 'bulma/css/bulma.css';
 
 
 function App() {
@@ -20,7 +18,7 @@ function App() {
       <Router>
           <div>
             <Routes>
-              <Route path="/" element={<SignUp  />} />
+              <Route path="/" element={<Login />} />
               <Route path="/home" element={<Home />} />
             </Routes>
           </div>

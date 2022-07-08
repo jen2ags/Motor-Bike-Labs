@@ -1,6 +1,20 @@
-const userSeeds = require('./userSeed.json');
+
 const motorcycleSeeds = require('./motorcycleSeed.json');
 const db = require('../config/connection');
-const { Motocycle, User } = require('../models');
+const { Motorcycle, User } = require('../models');
 
-// need to add logic
+db.once('open', async () => {
+  try {
+    await Motorcycle.deleteMany({});
+    await User.deleteMany({});
+
+    await Motorcycle.create(motorcycleSeeds);
+
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+
+  console.log('all done!');
+  process.exit(0);
+});

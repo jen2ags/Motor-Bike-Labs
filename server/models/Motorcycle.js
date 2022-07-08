@@ -6,13 +6,13 @@ const motorSchema = new Schema(
     make: {
       type: String
     },
-    model: {
-      type: String
-    },
     year: {
       type: String
     },
-    mileage: {
+    model: {
+      type: String
+    },
+    mileage:{
       type: String
     },
     price:{
@@ -20,8 +20,8 @@ const motorSchema = new Schema(
     },
     image: {
       type: String
-    },
-    reviews: [reviewSchema]
+    }
+    // reviews: [reviewSchema]
   },
   {
     toJSON: {
