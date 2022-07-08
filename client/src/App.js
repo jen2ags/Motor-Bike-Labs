@@ -9,6 +9,8 @@ import { setContext } from '@apollo/client/link/context';
 // components export
 import SignUp  from './pages/SignUp';
 import Home from './Components/Home'
+// bulma import
+import 'bulma/css/bulma.css';
 
 
 function App() {
