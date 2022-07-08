@@ -1,17 +1,42 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
+import './style.css';
 import Auth from '../../utils/auth';
-
+// import WrongPath from '../../Components/WrongPath'
 
 function Header() {
-    
   return (
-    <div>
-      <div className='logout'>
-        <button onClick={Auth.logout}>logout</button>
-      </div> 
-    </div>
-  )
+    <>
+      {/*header and navbar*/}
+      <header>
+        <nav class='navbar' role='navigation' aria-label='main navigation'>
+          <div class='navbar-brand'>
+            <a class='navbar-item logo' href='/'>
+              <h1 class='title'>Motor Bike Labs</h1>
+            </a>
+          </div>
+
+          <div class='navbar-end'>
+            <a class='navbar-item' href='#Home'>
+              Home
+            </a>
+            <a class='navbar-item' href='#Favorites'>
+              Favorites
+            </a>
+            <a class='navbar-item' href='#Contact'>
+              Contact
+            </a>
+            <a class='navbar-item' href='#Account'>
+              Account
+            </a>
+
+            <a class='navbar-item' href='#Logout' onClick={Auth.logout}>
+              Logout
+            </a>
+          </div>
+        </nav>
+      </header>
+    </>
+  );
 }
 
-export default Header
+export default Header;
