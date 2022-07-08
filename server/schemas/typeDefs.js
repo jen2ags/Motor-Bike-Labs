@@ -17,7 +17,6 @@ type Motorcycle {
   mileage: String
   price: String
   image: String
-  reviewSchema: [Review]
 }
 
 type Review {
@@ -43,7 +42,8 @@ type Mutation {
   addUser(username: String!, email: String!, password: String!): Auth
   removeUser(_id: ID!): User
   login(email: String!, password: String!): Auth
-  addReview(motorcycleId: ID!, reviewBody: String!): Motorcycle
+  addReview(_id: ID!, reviewBody: String!): Motorcycle
+  addMotorcycles(_id: ID, make: String, model: String, year: String, mileage: String, price: String, image: String ) : Motorcycle
 }`;
 
 
