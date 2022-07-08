@@ -21,9 +21,9 @@
         "mileage": "1,500", 
         "price": "$14,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"kawasaki_ninja_1.jpg", 
+            "image_2":"kawasaki_ninja_2.jpg", 
+            "image_3": "kawasaki_ninja_3.jpg"
         },
         "reviews": []
          
@@ -36,9 +36,9 @@
         "mileage": "4,500",
         "price": "$13,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"yamaha_mt_1.jpg", 
+            "image_2":"yamaha_mt_2.jpg", 
+            "image_3": "yamaha_mt_3.jpg"
         },
         "reviews": [] 
          
@@ -51,9 +51,9 @@
         "mileage": "6,000",
         "price": "$10,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"suzuki_vstrom_1.jpg", 
+            "image_2":"suzuki_vstrom_2.jpg", 
+            "image_3": "suzuki_vstrom_3.jpg"
         },
         "reviews": []
          
@@ -66,9 +66,9 @@
         "mileage": "8,130",
         "price": "$13,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"bmw_rninet_1.jpg", 
+            "image_2":"bmw_rninet_2.jpg", 
+            "image_3": "bmw_rninet_3.jpg"
         },
         "reviews": []
          
@@ -81,9 +81,9 @@
         "mileage": "1,436",
         "price": "$17,500",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"ducati_hypermotard_1.jpg", 
+            "image_2":"ducati_hypermotard_2.jpg", 
+            "image_3": "ducati_hypermotard_3.jpg"
         },
         "reviews": [] 
          
@@ -96,9 +96,9 @@
         "mileage": "45,378", 
         "price": "$22,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"harley_softail_1.jpg", 
+            "image_2":"harley_softail_2.jpg", 
+            "image_3": "harley_softail_3.jpg"
         },
         "reviews": []
          
@@ -111,9 +111,9 @@
         "mileage": "1,400",
         "price": "$12,500",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"aprilia_rs_1.jpg", 
+            "image_2":"aprilia_rs_2.jpg", 
+            "image_3": "aprilia_rs_3.jpg"
         },
         "reviews": []
          
@@ -126,9 +126,9 @@
         "mileage": "12,045",
         "price": "$11,500",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"triumph_street_triple_1.jpg", 
+            "image_2":"triumph_street_triple_2.jpg", 
+            "image_3": "triumph_street_triple_3.jpg"
         },
         "reviews": [] 
          
@@ -141,9 +141,9 @@
         "mileage": "7,800",
         "price": "$13,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"ktm_890_1.jpg", 
+            "image_2":"ktm_890_2.jpg", 
+            "image_3": "ktm_890_3.jpg"
         },
         "reviews": []
          
@@ -156,9 +156,9 @@
         "mileage": "2,387",
         "price": "$15,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"ducati_supersport_1.jpg", 
+            "image_2":"ducati_supersport_2.jpg", 
+            "image_3": "ducati_supersport_3.jpg"
         },
         "reviews": []
          
@@ -171,9 +171,9 @@
         "mileage": "9,279",
         "price": "$24,500",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"honda_gold_wing_1.jpg", 
+            "image_2":"honda_gold_wing_2.jpg", 
+            "image_3": "honda_gold_wing_3.jpg"
         },
         "reviews": [] 
          
@@ -186,9 +186,9 @@
         "mileage": "30,000", 
         "price": "$20,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"harley_cvo_1.jpg", 
+            "image_2":"harley_cvo_2.jpg", 
+            "image_3": "harley_cvo_3.jpg"
         },
         "reviews": []
          
@@ -201,9 +201,9 @@
         "mileage": "600", 
         "price": "$6,500",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"kawasaki_vulcan_1.jpg", 
+            "image_2":"kawasaki_vulcan_2.jpg", 
+            "image_3": "kawasaki_vulcan_3.jpg"
         },
         "reviews": []
          
@@ -216,9 +216,9 @@
         "mileage": "13,090", 
         "price": "$12,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"bmw_nmoto_1.jpg", 
+            "image_2":"bmw_nmoto_2.jpg", 
+            "image_3":"bmw_nmoto_3.jpg"
         },
         "reviews": []
          
@@ -231,9 +231,9 @@
         "mileage": "4,000", 
         "price": "$9,250",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"honda_valkyrie_1.jpg", 
+            "image_2":"honda_valkyrie_2.jpg", 
+            "image_3": "honda_valkyrie_3.jpg"
         },
         "reviews": []
          
@@ -246,9 +246,9 @@
         "mileage": "8,000", 
         "price": "$8,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"suzuki_gsx-r_1.jpg", 
+            "image_2":"suzuki_gsx-r_2.jpg", 
+            "image_3": "suzuki_gsx-r_3.jpg"
         },
         "reviews": []
          
@@ -261,9 +261,9 @@
         "mileage": "13,872", 
         "price": "$16,000",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"harley_roadking_1.jpg", 
+            "image_2":"harley_roadking_2.jpg", 
+            "image_3": "harley_roadking_3.jpg"
         },
         "reviews": []
          
@@ -276,9 +276,9 @@
         "mileage": "3,981", 
         "price": "$21,750",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"aprilia_rsv4_1.jpg", 
+            "image_2":"aprilia_rsv4_2.jpg", 
+            "image_3": "aprilia_rsv4_3.jpg"
         },
         "reviews": []    
     },
@@ -290,9 +290,9 @@
         "mileage": "4,500",
         "price": "$7,500",
         "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
+            "image_1":"yamaha_bolt_1.jpg", 
+            "image_2":"yamaha_bolt_2.jpg", 
+            "image_3": "yamaha_bolt_3.jpg"
         },
         "reviews": [] 
          
