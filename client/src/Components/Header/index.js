@@ -44,7 +44,7 @@ function Header() {
       </section>
 
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
-      <section className='tile is-ancestor box'>
+      <section className='tile is-ancestor box is-flex-wrap-wrap'>
         <div className='tile is-parent is-vertical'>
           <div className='tile is-child'>
             <article className='tile is-child is-2'>
