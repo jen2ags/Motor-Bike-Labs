@@ -11,11 +11,12 @@ type User {
 
 type Motorcycle {
   _id: ID
-  name: String
-  motoType: String
+  make: String
+  model: String
+  year: String
+  mileage: String
   price: String
   image: String
-  link: String
 }
 
 type Review {
@@ -42,6 +43,7 @@ type Mutation {
   removeUser(_id: ID!): User
   login(email: String!, password: String!): Auth
   addReview(_id: ID!, reviewBody: String!): Motorcycle
+  addMotorcycles(_id: ID, make: String, model: String, year: String, mileage: String, price: String, image: String ) : Motorcycle
 }`;
 
 

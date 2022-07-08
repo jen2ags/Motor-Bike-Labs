@@ -221,8 +221,8 @@ section  .formBx .sci li .fa-brands:hover{
   animation: rotBGimg 3s linear infinite;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s  linear;
-
 }
+
 
 .div-col:after {
   content: "";

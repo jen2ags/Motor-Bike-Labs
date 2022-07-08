@@ -5,16 +5,19 @@ const motorSchema = new Schema(
     make: {
       type: String
     },
+    year: {
+      type: String
+    },
     model: {
+      type: String
+    },
+    mileage:{
       type: String
     },
     price:{
       type:String
     },
     image: {
-      type: String
-    },
-    link: {
       type: String
     }
   },

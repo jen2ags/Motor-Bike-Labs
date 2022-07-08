@@ -1,5 +1,5 @@
 const User = require('./User');
-const Motocycle = require('./Motorcycle');
+const Motorcycle = require('./Motorcycle');
 
 
-module.exports = { User, Motocycle };
+module.exports = { User, Motorcycle };
