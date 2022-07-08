@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const reviewSchema = require('./Review');
 
 const motorSchema = new Schema(
   {
@@ -20,6 +21,7 @@ const motorSchema = new Schema(
     image: {
       type: String
     }
+    // reviews: [reviewSchema]
   },
   {
     toJSON: {

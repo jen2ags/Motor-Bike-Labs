@@ -90,9 +90,21 @@ const resolvers = {
         { _id }
       );
       return updatedUser;
-    }
+    },
 
     // addReview: async (parent, { _})
+    addReview: async (parent, { motorcycleId, reviewBody }, context) => {
+      if (context.user) {
+        const updateMotorcycle = await Motorcycle.findOneAndUpdate(
+          { _id: motorcycleId },
+          { $push: {reviews: {reviewBody, username: context.user.username }}},
+          { new: true, runValidators: true }
+        );
+
+        return updateMotorcycle;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    }
   }
 };
 

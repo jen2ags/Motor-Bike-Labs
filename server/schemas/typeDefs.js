@@ -22,8 +22,8 @@ type Motorcycle {
 type Review {
   _id: ID
   reviewBody: String
-  createdAt: String
   username: String
+  createdAt: String
 }
 
 type Auth {
