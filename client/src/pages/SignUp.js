@@ -57,7 +57,9 @@ function SignUp() {
       <section className='rows'>
         <div className='div-col'>
           <div className='formBx mx-3 my-3'>
-            <h2 className='login-head title my-6 mx-2'>SignUp</h2>
+            <div className='signUp-head title my-5 mx-2t'>
+              <a href='/'><i class="fa-solid fa-angles-left"></i></a>
+            </div> 
             <form onSubmit={handleFormSubmit} className='field'>
               <div className='inputBx my-3 mx-4'>
                 <label className='user label'>Username</label>

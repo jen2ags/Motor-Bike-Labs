@@ -68,7 +68,7 @@ function Login() {
           <div className='formBx'>
             <div className='formBx-heading mx-4'>
               <h2 onClick={updateToggle} className='signUp-head title my-6 mx-2 '>
-                Login
+                Moto Bike Labs 
               </h2>
             </div>
             <form onSubmit={handleFormSubmit} className='field'>
@@ -110,7 +110,7 @@ function Login() {
 
               <div className='inputBx user mx-5 my-4'>
                 <p>
-                  Don't have an account? <a href='/'>Sign up</a>
+                  Don't have an account? <span className='signup-span' onClick={updateToggle}>Sign up</span>
                 </p>
               </div>
 
