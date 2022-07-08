@@ -11,7 +11,7 @@ function Header() {
         <nav className='navbar' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
             <a className='navbar-item logo' href='/'>
-              <h1 className='title'>Motor Bike Labs</h1>
+              <h1 className='title navbar-item is-2'>Motor Bike Labs</h1>
             </a>
           </div>
 
@@ -37,14 +37,14 @@ function Header() {
       </header>
 
       {/* hero section, ****add carousel****/}
-      <section className='hero is-medium my-6'>
-        <div className='hero-body'>
-          <h1 className='title is-1'>Exhaust your options</h1>
+      <section className='hero is-large '>
+        <div className='hero-body my-6'>
+          <h1 className='title is-size-1  exhaust'>Exhaust your options</h1>
         </div>
       </section>
 
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
-      <section className='tile is-ancestor box is-flex-wrap-wrap'>
+      <section className='tile is-ancestor box is-flex-wrap-wrap mx-1 my-2'>
         <div className='tile is-parent is-vertical'>
           <div className='tile is-child'>
             <article className='tile is-child is-2'>

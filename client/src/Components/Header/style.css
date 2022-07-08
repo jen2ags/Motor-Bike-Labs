@@ -8,8 +8,8 @@
 }
 
 body {
-  background-color: var(--gray);
-}
+    background-color: var(--gray);
+  }
 
 /* FONT STYLES */
 .navbar {
@@ -23,3 +23,22 @@ body {
 .card-content {
     font-family: 'Gentium Book Basic', sans-serif;
 }
+/* HEADER / NAVBAR */
+.navbar {
+    background-color: black;
+}
+
+.navbar-item, .exhaust  {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    position: sticky;
+    position: -webkit-sticky;
+    background-image: url('https://cdn.discordapp.com/attachments/949836958677475338/995081046351691949/cycle_new.jpg');
+    background-attachment: local;
+    background-size: cover;
+    background-position: 25%;
+}
+

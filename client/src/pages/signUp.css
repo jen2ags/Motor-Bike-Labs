@@ -33,6 +33,7 @@ body {
   background-position: relative;
   display: block;
   width: 100%;
+  z-index: 9999;
 }
 
 /* image column */
