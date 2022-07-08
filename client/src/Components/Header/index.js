@@ -19,8 +19,8 @@ function Header() {
             <a class='navbar-item' href='#Home'>
               Home
             </a>
-            <a class='navbar-item' href='#Favorites'>
-              Favorites
+            <a class='navbar-item' href='#Reviews'>
+              Reviews
             </a>
             <a class='navbar-item' href='#Contact'>
               Contact
@@ -35,6 +35,15 @@ function Header() {
           </div>
         </nav>
       </header>
+
+      <footer class='footer'>
+        <div class='content has-text-centered is-small'>
+          <p>
+          &copy; 2022 | Built with &#128420; by Jugurta Maouchi, Jennifer
+          Jennings, and Cheryl Cruz
+          </p>
+        </div>
+      </footer>
     </>
   );
 }
