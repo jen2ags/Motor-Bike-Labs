@@ -76,13 +76,13 @@ function SignUp() {
         <div className='div-col column is-3 login-half'>
           <div className='formBx '>
             <div className='formBx-heading mx-4'>
-              <h2 className='login-head title'>Sign Up</h2>
-              <h2 onClick={updateToggle} className='login-head title my-6 '>
+              <h2 className='login-head title mx-2'>Sign Up</h2>
+              <h2 onClick={updateToggle} className='login-head title my-6 mx-2 '>
                 Login
               </h2>
             </div>
             <form onSubmit={handleFormSubmit} className='field'>
-              <div className='inputBx my-3 mx-4'>
+              <div className='inputBx my-3 mx-5'>
                 <label className='user label'>Username</label>
                 <input
                   className='input'
@@ -94,7 +94,7 @@ function SignUp() {
                 />
               </div>
 
-              <div className='inputBx my-3 mx-4'>
+              <div className='inputBx my-3 mx-5'>
                 <label className='user label'>Email</label>
                 <input
                   className='input'
@@ -106,7 +106,7 @@ function SignUp() {
                 ></input>
               </div>
 
-              <div className='inputBx my-3 mx-4'>
+              <div className='inputBx my-3 mx-5'>
                 <label className='user label'>Password</label>
                 <input
                   className='input'
@@ -118,13 +118,13 @@ function SignUp() {
                 ></input>
               </div>
 
-              <div className='remember user mx-4'>
+              <div className='remember user mx-5 my-3'>
                 <input type='checkbox' />
                 <label htmlFor=''> Remember Me</label>
               </div>
 
               <div
-                className='inputBx mx-4
+                className='inputBx mx-5
               my-4 field is-grouped'
               >
                 <button
@@ -138,7 +138,7 @@ function SignUp() {
                 </button>
               </div>
 
-              <div className='inputBx user mx-4 my-4'>
+              <div className='inputBx user mx-5 my-4'>
                 <p>
                   Don't have an account? <a href='/'>Sign up</a>
                 </p>
