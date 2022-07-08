@@ -39,20 +39,35 @@ function Header() {
       {/* hero section, ****add carousel****/}
       <section class='hero is-medium my-6'>
         <div class='hero-body'>
-          <div class='title'>
-            Exhaust your options
+          <div class='title'>Exhaust your options</div>
+        </div>
+      </section>
+
+      {/*Tiles for motorcycle selection - section for image and section for stats*/}
+      <section class='tile is-ancestor'>
+        <div class='tile is-parent'>
+          <div class='tile is-child box'>
+            {/* image for motorcycle */}
+            <div class tile is-child container>
+              <figure class='image is-128x128'>
+                <img
+                  src='https://bulma.io/images/placeholders/128x128.png'
+                  alt='Motorcycle'
+                />
+              </figure>
+            <div class= 'container'>
+              
+            </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/*Tiles for motorcycle selection*/}
-      <section></section>
-
       <footer class='footer'>
         <div class='content has-text-centered is-small'>
           <p>
-          &copy; 2022 | Built with &#128420; by Jugurta Maouchi, Jennifer
-          Jennings, and Cheryl Cruz
+            &copy; 2022 | Built with &#128420; by Jugurta Maouchi, Jennifer
+            Jennings, and Cheryl Cruz
           </p>
         </div>
       </footer>
