@@ -15,3 +15,12 @@
   width: 100%;
   border: 2px solid black;
 }
+
+.fa-brands{
+  cursor: pointer;
+
+}
+
+.fa-brands:hover{
+  color: black;
+}
