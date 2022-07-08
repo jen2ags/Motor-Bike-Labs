@@ -13,12 +13,12 @@ body {
 
 /* FONT STYLES */
 .signUp-head {
-  font-family: 'Sansita';
+  font-family: 'Sansita', sans-serif;
   cursor: pointer;
 }
 
 .user {
-  font-family: 'Sansita';
+  font-family: 'Sansita', sans-serif;
 }
 
 /* login left image background */
@@ -33,6 +33,7 @@ body {
   background-position: relative;
   display: block;
   width: 100%;
+  z-index: 9999;
 }
 
 /* image column */

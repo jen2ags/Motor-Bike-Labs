@@ -1,0 +1,44 @@
+/* ROOT */
+:root {
+  --gray: rgb(223, 223, 223);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, .footer {
+    background-color: var(--gray);
+  }
+
+/* FONT STYLES */
+.navbar {
+    font-family: 'Abril Fatface', sans-serif;
+}
+
+.hero {
+    font-family: 'Sansita Swashed', sans-serif;
+}
+
+.card-content {
+    font-family: 'Gentium Book Basic', sans-serif;
+}
+/* HEADER / NAVBAR */
+.navbar {
+    background-color: black;
+}
+
+.navbar-item, .exhaust  {
+    color: white;
+}
+
+/* HERO */
+.hero {
+    position: sticky;
+    position: -webkit-sticky;
+    background-image: url('https://cdn.discordapp.com/attachments/949836958677475338/995081046351691949/cycle_new.jpg');
+    background-attachment: local;
+    background-size: cover;
+    background-position: 25%;
+}
+
