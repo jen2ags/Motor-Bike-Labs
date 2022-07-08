@@ -36,6 +36,18 @@ function Header() {
         </nav>
       </header>
 
+      {/* hero section, ****add carousel****/}
+      <section class='hero is-medium my-6'>
+        <div class='hero-body'>
+          <div class='title'>
+            Exhaust your options
+          </div>
+        </div>
+      </section>
+
+      {/*Tiles for motorcycle selection*/}
+      <section></section>
+
       <footer class='footer'>
         <div class='content has-text-centered is-small'>
           <p>
