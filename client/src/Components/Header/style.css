@@ -7,39 +7,44 @@
   box-sizing: border-box;
 }
 
-body, .footer {
-    background-color: var(--gray);
-  }
+body,
+.footer {
+  background-color: var(--gray);
+}
 
 /* FONT STYLES */
 .navbar {
-    font-family: 'Abril Fatface', sans-serif;
+  font-family: 'Abril Fatface', sans-serif;
 }
 
 .hero {
-    font-family: 'Sansita Swashed', sans-serif;
+  font-family: 'Sansita Swashed', sans-serif;
 }
 
 .card-content {
-    font-family: 'Gentium Book Basic', sans-serif;
+  font-family: 'Gentium Book Basic', sans-serif;
 }
 /* HEADER / NAVBAR */
 .navbar {
-    background-color: black;
+  background-color: black;
 }
 
-.navbar-item, .exhaust  {
-    color: white;
+.navbar-item,
+.exhaust {
+  color: white;
 }
 
+.exhaust {
+  text-shadow: 0 0 2px white, 0 0 8px black, 0 0 10px white;
+}
 /* HERO */
 .hero {
-    position: sticky;
-    position: -webkit-sticky;
-    background-image: url('https://cdn.discordapp.com/attachments/949836958677475338/995081046351691949/cycle_new.jpg');
-    background-attachment: local;
-    background-size: cover;
-    background-position: 25%;
+  position: sticky;
+  position: -webkit-sticky;
+  background-image: url('https://cdn.discordapp.com/attachments/949836958677475338/995081046351691949/cycle_new.jpg');
+  background-attachment: local;
+  background-size: cover;
+  background-position: 25%;
 }
 
 .span{

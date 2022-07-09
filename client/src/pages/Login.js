@@ -10,6 +10,8 @@ import {  LOGIN_USER } from '../utils/mutations';
 // import auth to use the token
 import Auth from '../utils/auth';
 import SignUp from './SignUp';
+import Head from '../Components/Nav';
+import Footer from '../Components/Footer';
 // bulma import
 import 'bulma/css/bulma.min.css';
 
@@ -58,6 +60,7 @@ function Login() {
   };
   return (
     <>
+      <Head />
       {/*main column wrapper*/}
       <section className='rows columns is-mobile'>
         {/*left column*/}
@@ -114,7 +117,7 @@ function Login() {
                 </p>
               </div>
               <div className='formBx-heading mx-4'>
-                <div data-text="Login" onClick={updateToggle} className='signUp-head title my-6 mx-2 data-text-tag'>
+                <div onClick={updateToggle} className='signUp-head title my-6 mx-2'>
                   <ul className='sci level px-5 mx-5 my-6'>
                     <li className='sci-img level-item'>
                       <i className='fa-brands fa-instagram'></i>
@@ -136,6 +139,9 @@ function Login() {
           </div>
         </div>
       </section>
+
+      {/* footer */}
+      <Footer />
     </>
   );
 }
