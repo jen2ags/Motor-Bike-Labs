@@ -80,7 +80,7 @@ function SinglePage() {
                     id='email'
                   ></input>
                 </div>
-                <div class='level-right'>
+                <div className='level-right'>
                   <input
                     className='input level-item px-5 '
                     placeholder='Phone (optional)'
