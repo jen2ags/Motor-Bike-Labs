@@ -4,6 +4,7 @@ import Auth from '../../utils/auth';
 import '../../pages/SinglePage';
 import { useQuery } from '@apollo/client';
 import { MOTORCYCLE } from '../../utils/query';
+import { Link } from 'react-router-dom';
 
 // import WrongPath from '../../Components/WrongPath'
 function Header() {
@@ -50,9 +51,11 @@ function Header() {
         </div>
       </section>
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
+      
       <section className='tile is-ancestor is-flex-wrap-wrap mx-2 my-2'>
         {motorcycleData &&
           motorcycleData.map((motorcycle) => (
+            <Link to={`/single/${motorcycle._id}`}>
             <div key={motorcycle._id} className='tile is-parent is-vertical'>
               <div className='tile is-child'>
                 <article className='tile is-child'>
@@ -83,6 +86,7 @@ function Header() {
                 </article>
               </div>
             </div>
+            </Link>
           ))}
       </section>
       )

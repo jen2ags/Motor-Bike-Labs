@@ -1,9 +1,29 @@
 import React from 'react';
 import './singlePage.css';
+import { useParams } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
+import Auth from '../../src/utils/auth';
+
 // columns
 function SinglePage() {
+  // this useParams is to get the data by id
+  const { id: sigleMotorcycleId } = useParams();
+  const { loading, data } = useQuery(SINGLE_MOTORCYCLE, {
+    variables: { id: sigleMotorcycleId }
+  });
+  const singleM = data?.sigleMotorcycle || {};
+    console.log(singleM);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  const loggedIn = Auth.loggedIn();
+
   return (
     <>
+      {singleM &&
       <section className='tile is-ancestor is-flex-wrap-wrap'>
         <div className='tile is-parent is-vertical'>
           <div className='tile is-child'>
@@ -11,10 +31,7 @@ function SinglePage() {
             <div className='card mx-6'>
               <div className='card-image  has-text-centered ' id='image'>
                 <figure className='image is-inline-block px-3 py-3 my-3'>
-                  <img
-                    src='https://bulma.io/images/placeholders/480x600.png'
-                    alt='Motorcycle'
-                  />
+                <img src={singleM.image} alt='Motorcycle'/>
                 </figure>
               </div>
             </div>
@@ -30,17 +47,17 @@ function SinglePage() {
             <div className=' level px-6 py-6 mx-6 my-3'>
               <div className='level-item'>
                 <div className='subtitle is-4' id='year'>
-                  Year
+               
                 </div>
               </div>
               <div className='level-item'>
                 <div className='subtitle is-4' id='make'>
-                  Make
+               
                 </div>
               </div>
               <div className='level-item'>
                 <div className='subtitle is-4' id='model'>
-                  Model
+               
                 </div>
               </div>
             </div>
@@ -49,7 +66,7 @@ function SinglePage() {
           '
               id='price'
             >
-              price
+             
             </div>
 
             {/*Add contact form*/}
@@ -105,7 +122,10 @@ function SinglePage() {
           </div>
         </div>
       </section>
+      }
+      
       {/* Details */}
+      {singleM &&
       <section className='tile is-ancestor is-flex-wrap-wrap'>
         <div className='tile is-parent is-vertical'>
           <div className='tile is-child box'>
@@ -128,16 +148,16 @@ function SinglePage() {
                 Location:
               </div>
               <div className='level-item' id='year'>
-                Year:
+                
               </div>
               <div className='level-item' id='make'>
-                Make:
+                
               </div>
               <div className='level-item' id='model'>
-                Model:
+              
               </div>
               <div className='level-item' id='mileage'>
-                Mileage:
+                
               </div>
               <div className='level-item' id='stock'>
                 Stock Number:
@@ -146,7 +166,7 @@ function SinglePage() {
           </div>
         </div>
       </section>
-
+    }
       {/* Reviews */}
     </>
   );
