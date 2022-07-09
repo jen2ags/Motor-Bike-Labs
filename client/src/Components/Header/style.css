@@ -32,6 +32,11 @@ body, .footer {
     color: white;
 }
 
+.exhaust {
+     text-shadow: 0 0 2px white,
+     0 0 8px black,
+     0 0 10px white;
+}
 /* HERO */
 .hero {
     position: sticky;
