@@ -29,7 +29,19 @@
   font-size: 15px;
 }
 
-
+.data-text-tag::before{
+  content:attr(data-text);
+  position: absolute;
+  top: 50px;;
+  left:0;
+  width:0;
+  height: 10%;
+  color: var(--gray);
+  -webkit-text-stroke: 50vw rgb(73, 68, 68);
+  overflow:hidden;
+  animation: animate 4s linear infinite;
+  border-radius: 15px;
+} 
 
 @keyframes animate {
   0%{
