@@ -20,6 +20,17 @@
 }
 
 
+.data-text-tag{
+  position: relative;
+  font-size: 0px;
+}
+
+.sci-img{
+  font-size: 15px;
+}
+
+
+
 @keyframes animate {
   0%{
     width: 0%;
