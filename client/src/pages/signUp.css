@@ -1,0 +1,73 @@
+/* ROOT */
+:root {
+  --gray: rgb(223, 223, 223);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray);
+}
+
+/* FONT STYLES */
+.signUp-head {
+  font-family: 'Sansita', sans-serif;
+  cursor: pointer;
+}
+
+.user {
+  font-family: 'Sansita', sans-serif;
+}
+
+/* login left image background */
+.login-background {
+  position: sticky;
+  position: -webkit-sticky;
+  background-image: url('https://cdn.discordapp.com/attachments/949836958677475338/994725665603592272/unknown.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* image column */
+.columns {
+  height: 1000px;
+}
+
+.image-col {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1000px;
+  display: flex;
+}
+
+/* button */
+.button {
+  background-color: white;
+  color: black;
+}
+
+.button:hover {
+  background-color: var(--gray);
+}
+
+.signup-span{
+  color: rgb(8, 8, 247);
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.head-context{
+  display: flex;
+  align-items: center;
+}
+
+

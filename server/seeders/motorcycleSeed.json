@@ -5,11 +5,7 @@
         "year": "2018", 
         "mileage": "8,623",
         "price": "$8,000",
-        "image": {
-            "image_1":"honda_crf_1.jpg", 
-            "image_2":"honda_crf_2.jpg", 
-            "image_3":"honda_crf_3.jpg"
-        },
+        "image": "https://i.postimg.cc/VvmgMCgJ/honda-crf-1.jpg",
         "reviews": [] 
          
     },
@@ -20,11 +16,7 @@
         "year": "2021",
         "mileage": "1,500", 
         "price": "$14,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/vH8XZ5Dj/kawasaki-ninja-1.jpg",
         "reviews": []
          
     },
@@ -35,11 +27,7 @@
         "year": "2021",
         "mileage": "4,500",
         "price": "$13,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/1tZrhqLv/yamaha-bolt-1.jpg",
         "reviews": [] 
          
     },
@@ -50,11 +38,7 @@
         "year": "2018",
         "mileage": "6,000",
         "price": "$10,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/KvYr2FHh/suzuki-gsx-r-1.jpg",
         "reviews": []
          
     },
@@ -65,11 +49,7 @@
         "year": "2017",
         "mileage": "8,130",
         "price": "$13,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/vBQxttRw/bmw-rninet-1.jpg",
         "reviews": []
          
     },
@@ -80,11 +60,7 @@
         "year": "2019",
         "mileage": "1,436",
         "price": "$17,500",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image": "https://i.postimg.cc/25xVyL1c/ducati-hypermotard-1.jpg",
         "reviews": [] 
          
     },
@@ -95,11 +71,7 @@
         "year": "2009",
         "mileage": "45,378", 
         "price": "$22,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/brZJm63W/harley-roadking-2.jpg",
         "reviews": []
          
     },
@@ -110,11 +82,7 @@
         "year": "2022",
         "mileage": "1,400",
         "price": "$12,500",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image": "https://i.postimg.cc/Prks333D/aprilia-rs-1.jpg",
         "reviews": []
          
     },
@@ -125,11 +93,7 @@
         "year": "2019",
         "mileage": "12,045",
         "price": "$11,500",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/bwxvVS9y/triumph-street-triple-1.jpg",
         "reviews": [] 
          
     },
@@ -140,11 +104,7 @@
         "year": "2020",
         "mileage": "7,800",
         "price": "$13,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image": "https://i.postimg.cc/qq6JsN7d/ktm-890-2.jpg",
         "reviews": []
          
     },
@@ -155,11 +115,7 @@
         "year": "2020",
         "mileage": "2,387",
         "price": "$15,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image": "https://i.postimg.cc/RC2fjfKK/ducati-supersport-2.jpg",
         "reviews": []
          
     },
@@ -170,11 +126,7 @@
         "year": "2018",
         "mileage": "9,279",
         "price": "$24,500",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/pV55YT4T/honda-gold-wing-2.jpg",
         "reviews": [] 
          
     },
@@ -185,11 +137,7 @@
         "year": "2014",
         "mileage": "30,000", 
         "price": "$20,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/L8DJ6ZYy/harley-softail-1.jpg",
         "reviews": []
          
     },
@@ -200,11 +148,7 @@
         "year": "2017",
         "mileage": "600", 
         "price": "$6,500",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/MZBXfLff/kawasaki-vulcan-3.jpg",
         "reviews": []
          
     },
@@ -215,11 +159,7 @@
         "year": "2021",
         "mileage": "13,090", 
         "price": "$12,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/5tGN65xm/bmw-nmoto-1.jpg",
         "reviews": []
          
     },
@@ -230,11 +170,7 @@
         "year": "2014",
         "mileage": "4,000", 
         "price": "$9,250",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/NG8BcvrD/honda-valkyrie-1.jpg",
         "reviews": []
          
     },
@@ -245,11 +181,7 @@
         "year": "2005",
         "mileage": "8,000", 
         "price": "$8,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image": "https://i.postimg.cc/Qx0DFgmW/suzuki-gsx-r-3.jpg",
         "reviews": []
          
     },
@@ -260,11 +192,7 @@
         "year": "2001",
         "mileage": "13,872", 
         "price": "$16,000",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/PrrsnpHf/harley-cvo-3.jpg",
         "reviews": []
          
     },
@@ -275,11 +203,7 @@
         "year": "2019",
         "mileage": "3,981", 
         "price": "$21,750",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image":"https://i.postimg.cc/kgB0D0Dk/aprilia-rsv4-2.jpg",
         "reviews": []    
     },
 
@@ -289,11 +213,7 @@
         "year": "2014",
         "mileage": "4,500",
         "price": "$7,500",
-        "image": {
-            "image_1":"", 
-            "image_2":"", 
-            "image_3": ""
-        },
+        "image": "https://i.postimg.cc/6pgDZMvT/yamaha-mt-1.jpg",
         "reviews": [] 
          
     }

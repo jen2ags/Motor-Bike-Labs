@@ -1,0 +1,21 @@
+/* FONT STYLES */
+.login-head {
+  font-family: 'Sansita', sans-serif;
+}
+ 
+.formBx{
+  position: relative;
+}
+
+.div-col{
+  position: absolute;
+  background-color:  rgb(223, 223, 223);
+  top: 80px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.signup-span:hover{
+  border-bottom:1px solid blue;
+}
+

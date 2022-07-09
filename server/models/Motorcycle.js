@@ -20,9 +20,10 @@ const motorSchema = new Schema(
     },
     image: {
       type: String
-    }
-    // reviews: [reviewSchema]
+    },
+    reviews: [reviewSchema]
   },
+  
   {
     toJSON: {
       virtuals: true
