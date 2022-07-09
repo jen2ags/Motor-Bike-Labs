@@ -3,7 +3,6 @@
   font-family: 'Sansita', sans-serif;
 }
  
-
 .formBx{
   position: relative;
 }
@@ -13,14 +12,10 @@
   background-color:  rgb(223, 223, 223);
   top: 80px;
   width: 100%;
-  border: 2px solid black;
+  border-radius: 20px;
 }
 
-.fa-brands{
-  cursor: pointer;
-
+.signup-span:hover{
+  border-bottom:1px solid blue;
 }
 
-.fa-brands:hover{
-  color: black;
-}

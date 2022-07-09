@@ -58,7 +58,7 @@ function SignUp() {
         <div className='div-col'>
           <div className='formBx mx-3 my-3'>
             <div className='signUp-head title my-5 mx-2t'>
-              <a href='/'><i class="fa-solid fa-angles-left"></i></a>
+              <a href='/'><i className="fa-solid fa-angles-left"></i></a>
             </div> 
             <form onSubmit={handleFormSubmit} className='field'>
               <div className='inputBx my-3 mx-4'>
