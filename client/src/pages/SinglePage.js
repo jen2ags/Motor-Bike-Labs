@@ -29,7 +29,7 @@ function SinglePage() {
            */}
             <div className=' level px-6 py-6 mx-6 my-3'>
               <div className='level-item'>
-                <div class='subtitle is-4' id='year'>
+                <div className='subtitle is-4' id='year'>
                   Year
                 </div>
               </div>
@@ -63,7 +63,7 @@ function SinglePage() {
                     id='first'
                   ></input>
                 </div>
-                <div class='level-right'>
+                <div className='level-right'>
                   <input
                     className='input level-item px-5 '
                     placeholder='Last Name'
