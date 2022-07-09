@@ -47,17 +47,17 @@ function SinglePage() {
             <div className=' level px-6 py-6 mx-6 my-3'>
               <div className='level-item'>
                 <div className='subtitle is-4' id='year'>
-               
+                {singleM.year}
                 </div>
               </div>
               <div className='level-item'>
                 <div className='subtitle is-4' id='make'>
-               
+                  {singleM.make}
                 </div>
               </div>
               <div className='level-item'>
                 <div className='subtitle is-4' id='model'>
-               
+                {singleM.model}
                 </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ function SinglePage() {
           '
               id='price'
             >
-             
+              {singleM.price}
             </div>
 
             {/*Add contact form*/}
@@ -148,16 +148,16 @@ function SinglePage() {
                 Location:
               </div>
               <div className='level-item' id='year'>
-                
+                {singleM.year}
               </div>
               <div className='level-item' id='make'>
-                
+                {singleM.make}
               </div>
               <div className='level-item' id='model'>
-              
+                {singleM.model}
               </div>
               <div className='level-item' id='mileage'>
-                
+                {singleM.mileage}
               </div>
               <div className='level-item' id='stock'>
                 Stock Number:
