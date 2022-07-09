@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import Auth from '../../utils/auth';
+import '../../pages/SinglePage';
 // import WrongPath from '../../Components/WrongPath'
 
 function Header() {
@@ -10,7 +11,7 @@ function Header() {
       <header>
         <nav className='navbar' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
-            <a className='navbar-item logo' href='/'>
+            <a className='navbar-item logo' href='/single'>
               <h1 className='title navbar-item is-2'>Motor Bike Labs</h1>
             </a>
           </div>
