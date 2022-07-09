@@ -10,7 +10,7 @@ function SinglePage() {
             {/* main image */}
             <div className='card mx-6'>
               <div className='card-image  has-text-centered ' id='image'>
-                <figure className='image is-inline-block px-3 py-3 my-3'>
+                <figure className='image '>
                   <img
                     src='https://bulma.io/images/placeholders/480x600.png'
                     alt='Motorcycle'
@@ -21,7 +21,7 @@ function SinglePage() {
           </div>
         </div>
         {/* stats */}
-        <div className='tile is-parent is-vertical has-text-centered'>
+        <div className='tile is-parent is-vertical has-text-centered mx-3'>
           <div className='tile is-child box '>
             <h1 className='title is-3 my-4'>Quick Look</h1>
             {/* Don't put the word year make and model,
@@ -107,11 +107,22 @@ function SinglePage() {
       </section>
       {/* Details */}
       <section className='tile is-ancestor is-flex-wrap-wrap'>
-        <div className='tile is-parent is-vertical'>
+        {/* Reviews */}
+        <div className='tile is-parent is-vertical mx-3'>
+          <div className='tile is-child box'>
+            <h2 className='title is-3 has-text-centered'>Reviews</h2>
+            <p className='subtitle has-text-centered my-3'>See what others think!</p>
+            <div className='tile is-child box'>
+              <div className='' id='user'>{/* username here */} says: </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='tile is-parent is-vertical mx-3'>
           <div className='tile is-child box'>
             {/* leave the words and populate data next to them */}
             <h2 className='subtitle'>Details</h2>
-            <div className='level'>
+            <div className=''>
               <div className='level-item' id='condition'>
                 Condition:
               </div>
@@ -146,8 +157,6 @@ function SinglePage() {
           </div>
         </div>
       </section>
-
-      {/* Reviews */}
     </>
   );
 }
