@@ -138,7 +138,10 @@ function SinglePage() {
             <p className='subtitle has-text-centered my-3'>See what others think!</p>
             <div className='tile is-child box'>
               <div className='' id='user'>{/* username here */} says: </div>
+             
             </div>
+            <textarea className='textarea my-2' placeholder='Add your review'></textarea>
+            <button className='button my-2'>Add Review</button>
           </div>
         </div>
 
