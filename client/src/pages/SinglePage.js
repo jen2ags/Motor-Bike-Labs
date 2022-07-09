@@ -151,26 +151,29 @@ function SinglePage() {
             <div className='tile is-child box'>
               <div className='' id='user'>{/* username here */} says: </div>
             </div>
+            {reviewsModel ? 
             <div className='reviews-model'>
               {/* if looged in show the textarea */}
+              {loggedIn ? (
               <div>
                 <textarea className='textarea my-2' placeholder='Add your review'></textarea>
               </div>
-    
+              ): 
+              // if not logged it give them this error
               <p className='alert-review-login'>Please login to be able to add a review </p>
-              
+              }
               <div className='reviews-button-container'>
                 {/* if looged in show the add button*/}
-
+                {loggedIn ? (
                 <button className='button my-2 reviews-button'>Add</button>
-       
+                ): null}
                 <button className='button my-2 reviews-button' onClick={toggleReview}>Close</button>
               </div>
               
             </div>
-   
+            : 
             <button className='button my-2' onClick={toggleReview}>Add Review</button>
-   
+            }
           </div>
         </div>
 
