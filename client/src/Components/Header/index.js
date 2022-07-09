@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.css';
-import Auth from '../../utils/auth';
 import '../../pages/SinglePage';
 import { useQuery } from '@apollo/client';
 import { MOTORCYCLE } from '../../utils/query';
+import { Link } from 'react-router-dom';
+import Head from '../Nav'
+import Footer from '../Footer'
 
 // import WrongPath from '../../Components/WrongPath'
 function Header() {
@@ -14,35 +16,7 @@ function Header() {
 
   return (
     <>
-      {/*header and navbar*/}
-      <header>
-        <nav className='navbar' role='navigation' aria-label='main navigation'>
-          <div className='navbar-brand'>
-            <a className='navbar-item logo' href='/single'>
-              <h1 className='title navbar-item is-2'>Motor Bike Labs</h1>
-            </a>
-          </div>
-
-          <div className='navbar-end'>
-            <a className='navbar-item' href='#Home'>
-              Home
-            </a>
-            <a className='navbar-item' href='#Reviews'>
-              Reviews
-            </a>
-            <a className='navbar-item' href='#Contact'>
-              Contact
-            </a>
-            <a className='navbar-item' href='#Account'>
-              Account
-            </a>
-
-            <a className='navbar-item' href='#Logout' onClick={Auth.logout}>
-              Logout
-            </a>
-          </div>
-        </nav>
-      </header>
+      <Head />
       {/* hero section, ****add carousel****/}
       <section className='hero is-large'>
         <div className='hero-body my-6'>
@@ -50,9 +24,11 @@ function Header() {
         </div>
       </section>
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
+      
       <section className='tile is-ancestor is-flex-wrap-wrap mx-2 my-2'>
         {motorcycleData &&
           motorcycleData.map((motorcycle) => (
+            <Link to={`/single/${motorcycle._id}`}>
             <div key={motorcycle._id} className='tile is-parent is-vertical'>
               <div className='tile is-child'>
                 <article className='tile is-child'>
@@ -83,17 +59,11 @@ function Header() {
                 </article>
               </div>
             </div>
+            </Link>
           ))}
       </section>
       )
-      <footer className='footer'>
-        <div className='content has-text-centered is-small'>
-          <p>
-            &copy; 2022 | Built with &#128420; by Jugurta Maouchi, Jennifer
-            Jennings, and Cheryl Cruz
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
