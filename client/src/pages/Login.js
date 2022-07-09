@@ -67,7 +67,7 @@ function Login() {
         <div className='column is-3 login-half'>
           <div className='formBx'>
             <div className='formBx-heading mx-4'>
-              <h2 onClick={updateToggle} className='signUp-head title my-6 mx-2 '>
+              <h2 onClick={updateToggle} className='signUp-head title my-6 mx-2'>
                 Login
               </h2>
             </div>
@@ -113,18 +113,21 @@ function Login() {
                   Don't have an account? <span className='signup-span' onClick={updateToggle}>Sign up</span>
                 </p>
               </div>
-
-              <ul className='sci level px-6 mx-6 my-6'>
-                <li className='sci-img level-item'>
-                  <i className='fa-brands fa-instagram'></i>
-                </li>
-                <li className='sci-img level-item'>
-                  <i className='fa-brands fa-facebook'></i>
-                </li>
-                <li className='sci-img level-item'>
-                  <i className='fa-brands fa-snapchat'></i>
-                </li>
-              </ul>
+              <div className='formBx-heading mx-4'>
+                <div data-text="Login" onClick={updateToggle} className='signUp-head title my-6 mx-2 data-text-tag'>
+                  <ul className='sci level px-5 mx-5 my-6'>
+                    <li className='sci-img level-item'>
+                      <i className='fa-brands fa-instagram'></i>
+                    </li>
+                    <li className='sci-img level-item'>
+                      <i className='fa-brands fa-facebook'></i>
+                    </li>
+                    <li className='sci-img level-item'>
+                      <i className='fa-brands fa-snapchat'></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
             <div className='login-content-context'>
               {/* if user click on the loggin button, then it will change the state to true and render the login component */}
