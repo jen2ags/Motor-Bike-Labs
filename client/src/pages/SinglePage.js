@@ -21,21 +21,29 @@ function SinglePage() {
       </div>
       {/* stats */}
       <div className='tile is-parent is-vertical has-text-centered'>
-        <div class=' tile is-child level px-6 mx-6 my-6'>
-          <div className='subtitle level-item' id='year'>
-            year
-          </div>
-          <div className='subtitle level-item' id='make'>
-            make
-          </div>
-          <div className='subtitle level-item' id='model'>
-            model
+        <div className='tile is-child '>
+            <h1 className='title is-3 my-4'>Quick Look</h1>
+          <div className=' level px-6 py-6 mx-6 my-3'>
+            <div className='level-item'>
+              <div class='subtitle is-4' id='year'>
+                year
+              </div>
+            </div>
+            <div className='level-item'>
+              <div className='subtitle is-4' id='make'>
+                make
+              </div>
+            </div>
+            <div className='level-item'>
+              <div className='subtitle is-4' id='model'>
+                model
+              </div>
+            </div>
           </div>
         </div>
-        <div className='tile is-child box'>
-          <div className='' id='price'>
-            price
-          </div>
+        <div className='tile is-child '>
+          <h1 className='subtitle is-3'>Details</h1>
+          <p className='' id='mileage'>mileage</p>
         </div>
       </div>
     </section>
