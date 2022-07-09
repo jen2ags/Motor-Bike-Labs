@@ -1,16 +1,23 @@
 import React from 'react';
 import './style.css';
 import Auth from '../../utils/auth';
+import { useQuery } from '@apollo/client';
+import { MOTORCYCLE } from "../../utils/query"
 // import WrongPath from '../../Components/WrongPath'
-
 function Header() {
+
+  const {  data } = useQuery(MOTORCYCLE);
+
+  const motorcycleData = data?.motorcycle || []
+    console.log(motorcycleData);
+  
   return (
     <>
       {/*header and navbar*/}
       <header>
         <nav className='navbar' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
-            <a className='navbar-item logo' href='/'>
+            <a className='navbar-item logo' href='/home'>
               <h1 className='title navbar-item is-2'>Motor Bike Labs</h1>
             </a>
           </div>
@@ -45,38 +52,46 @@ function Header() {
 
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
       <section className='tile is-ancestor is-flex-wrap-wrap mx-2 my-2'>
-        <div className='tile is-parent is-vertical'>
-          <div className='tile is-child'>
-            <article className='tile is-child is-2'>
-              {/* image for motorcycle */}
-              <div className='card '>
-                <div className='card-image  has-text-centered ' id='image'>
-                  <figure className='image is-128x128 is-inline-block my-2'>
-                    <img
-                      src='https://bulma.io/images/placeholders/128x128.png'
-                      alt='Motorcycle'
-                    />
-                  </figure>
+        {motorcycleData && 
+          motorcycleData.map(motorcycle => (
+          <div key={motorcycle._id} className='tile is-parent is-vertical'>
+            <div className='tile is-child'>
+              <article className='tile is-child'>
+                {/* image for motorcycle */}
+                <div className='card '>
+                  <div className='card-image  has-text-centered' id='image'>
+                    <figure className='image is-128x128 is-inline-block my-2'>
+                      <img
+                        src={`../../images/${motorcycle.image}`}
+                        alt='Motorcycle'
+                      />
+                    </figure>
+                  </div>
+                  <div className='card-content stats has-text-centered'>
+                    <div  id='price'>
+                      Price {motorcycle.price}
+                    </div>
+                    <div  id='mileage'>
+                      Mileage: <span className="span">{motorcycle.mileage}</span> 
+                    </div>
+                    <div  id='make'>
+                      Make: <span className="span">{motorcycle.make}</span>
+                    </div>
+                    <div  id='model'>
+                      Model: <span className="span">{motorcycle.model}</span>
+                    </div>
+                    <div  id='year'>
+                    Year: <span className="span">{motorcycle.year}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className='card-content stats has-text-centered'>
-                  <div className='' id='price'>
-                    
-                  </div>
-                  <div className='' id='mileage'>
-                    miles
-                  </div>
-                  <div className='' id='make'>
-                    make
-                  </div>
-                  <div className='' id='model'>
-                    model
-                  </div>
-                </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
+        ))}
+        </section>
+      )
+
 
       <footer className='footer'>
         <div className='content has-text-centered is-small'>
