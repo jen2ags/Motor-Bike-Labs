@@ -10,6 +10,8 @@ import {  LOGIN_USER } from '../utils/mutations';
 // import auth to use the token
 import Auth from '../utils/auth';
 import SignUp from './SignUp';
+import Head from '../Components/Nav';
+import Footer from '../Components/Footer';
 // bulma import
 import 'bulma/css/bulma.min.css';
 
@@ -58,6 +60,7 @@ function Login() {
   };
   return (
     <>
+      <Head />
       {/*main column wrapper*/}
       <section className='rows columns is-mobile'>
         {/*left column*/}
@@ -136,6 +139,9 @@ function Login() {
           </div>
         </div>
       </section>
+
+      {/* footer */}
+      <Footer />
     </>
   );
 }

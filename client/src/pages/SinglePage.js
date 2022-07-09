@@ -3,6 +3,8 @@ import './singlePage.css';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
+import Head from '../Components/Nav'
+import Footer from '../../src/Components/Footer'
 import Auth from '../../src/utils/auth';
 
 // columns
@@ -19,10 +21,12 @@ function SinglePage() {
     return <div>Loading...</div>;
   }
 
+  // this will be used once a user want to add a review 
   const loggedIn = Auth.loggedIn();
 
   return (
     <>
+      <Head />
       {singleM &&
       <section className='tile is-ancestor is-flex-wrap-wrap'>
         <div className='tile is-parent is-vertical'>
@@ -168,6 +172,9 @@ function SinglePage() {
       </section>
     }
       {/* Reviews */}
+
+      {/* footer */}
+      <Footer />
     </>
   );
 }
