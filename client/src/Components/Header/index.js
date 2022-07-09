@@ -6,7 +6,7 @@ import { MOTORCYCLE } from "../../utils/query"
 // import WrongPath from '../../Components/WrongPath'
 function Header() {
 
-  const {  data } = useQuery(MOTORCYCLE);
+  const { data } = useQuery(MOTORCYCLE);
 
   const motorcycleData = data?.motorcycle || []
     console.log(motorcycleData);
@@ -62,7 +62,7 @@ function Header() {
                   <div className='card-image  has-text-centered' id='image'>
                     <figure className='image is-128x128 is-inline-block my-2'>
                       <img
-                        src={`../../images/${motorcycle.image}`}
+                        src={motorcycle.image}
                         alt='Motorcycle'
                       />
                     </figure>
@@ -72,7 +72,7 @@ function Header() {
                       Price {motorcycle.price}
                     </div>
                     <div  id='mileage'>
-                      Mileage: <span className="span">{motorcycle.mileage}</span> 
+                      Mileage: <span className="span">{motorcycle.mileage}</span>
                     </div>
                     <div  id='make'>
                       Make: <span className="span">{motorcycle.make}</span>
