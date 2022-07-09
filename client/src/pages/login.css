@@ -18,3 +18,13 @@
 .signup-span:hover{
   border-bottom:1px solid blue;
 }
+
+
+@keyframes animate {
+  0%{
+    width: 0%;
+  }
+  70%{
+    width: 100%;
+  }
+}
