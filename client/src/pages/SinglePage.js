@@ -40,26 +40,35 @@ function SinglePage() {
     <>
       <Head />
       {singleM && (
-        <section className='tile is-ancestor is-flex-wrap-wrap'>
-          <div className='tile is-parent is-vertical'>
-            <div className='tile is-child'>
+        <section className='tile is-ancestor is-flex-wrap-wrap  '>
+          <div className='tile is-parent is-vertical '>
+            <div className='tile is-child '>
               {/* main image */}
-              <div className='card mx-6'>
+              <div className='card mx-6 my-6 px-6 py-6'>
                 <div className='card-image  has-text-centered ' id='image'>
-                  <figure className='image is-inline-block px-3 py-3 my-3'>
+                  <figure className='image is-inline-block my-6 py-6 '>
                     <img src={singleM.image} alt='Motorcycle' />
+                  </figure>
+                  <figure className='image is-inline-block mx-3  px-3'>
+                    <img
+                      src='https://bulma.io/images/placeholders/128x128.png'
+                      alt='Motorcycle'
+                    />
+                  </figure>
+                  <figure className='image is-inline-block mx-3  px-2'>
+                    <img
+                      src='https://bulma.io/images/placeholders/128x128.png'
+                      alt='Motorcycle'
+                    />
                   </figure>
                 </div>
               </div>
             </div>
           </div>
           {/* stats */}
-          <div className='tile is-parent is-vertical has-text-centered mx-3'>
+          <div className='tile is-parent has-text-centered mx-4 my-4 p-4'>
             <div className='tile is-child box '>
               <h1 className='title is-3 my-4'>Quick Look</h1>
-              {/* Don't put the word year make and model,
-           this is acting as a placeholder, only have the data populate only for this section
-           */}
               <div className=' level px-6 py-6 mx-6 my-3'>
                 <div className='level-item'>
                   <div className='subtitle is-4' id='year'>
@@ -142,9 +151,9 @@ function SinglePage() {
 
       {/* Details */}
       {singleM && (
-        <section className='tile is-ancestor is-flex-wrap-wrap'>
+        <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
-          <div className='tile is-parent is-vertical mx-3'>
+          <div className='tile is-parent is-vertical mx-4 px-2'>
             <div className='tile is-child box'>
               <h2 className='title is-3 has-text-centered'>Reviews</h2>
               <p className='subtitle has-text-centered my-3'>
@@ -187,9 +196,11 @@ function SinglePage() {
                   </div>
                 </div>
               ) : (
-                <button className='button my-2' onClick={toggleReview}>
+                <div className='has-text-centered'>
+                <button className='button my-3' onClick={toggleReview}>
                   Add Review
                 </button>
+                </div>
               )}
             </div>
           </div>
@@ -236,7 +247,7 @@ function SinglePage() {
           </div>
         </section>
       )}
-      {/* Reviews */}
+      
 
       {/* footer */}
       <Footer />
