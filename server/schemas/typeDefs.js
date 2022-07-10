@@ -32,6 +32,15 @@ type Review {
   createdAt: String
 }
 
+type Contact {
+  _id : ID,
+  firstName: String,
+  lastName: String,
+  email: String,
+  phoneNumber: Int,
+  text: String
+}
+
 type Auth {
   token: ID!
   user: User
@@ -42,6 +51,7 @@ type Query {
   users: [User]
   motorcycle: [Motorcycle]
   sigleMotorcycle(_id: ID!): Motorcycle
+  getContact: [Contact]
 }
 
 type Mutation {
@@ -50,6 +60,7 @@ type Mutation {
   login(email: String!, password: String!): Auth
   addReview(_id: ID!, reviewBody: String!): Motorcycle
   addMotorcycles(_id: ID, make: String, model: String, year: String, mileage: String, price: String, condition: String, primaryColor: String, category: String, type: String, location: String, stockNum: String, image: String ) : Motorcycle
+  addContact(_id:ID, firstName: String, lastName: String, email: String, phoneNumber: Int, text: String) : [Contact]
 }`;
 
 

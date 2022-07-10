@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Motorcycle } = require('../models/index');
+const { User, Motorcycle,Contact } = require('../models/index');
 const { signToken } = require('../utils/auth');
 
 // Resolvers do work in a similar fashion to how a controller file works 
@@ -35,6 +35,11 @@ const resolvers = {
     // get a single motorcycle by id 
     sigleMotorcycle: async (parent, { _id }) => {
       return Motorcycle.findOne({ _id });
+    },
+
+    getContact: async () => {
+      return Contact.find()
+        .select('-__v -password')
     },
   },
 
@@ -104,7 +109,14 @@ const resolvers = {
         return updateMotorcycle;
       }
       throw new AuthenticationError('You need to be logged in!');
-    }
+    },
+
+
+    addContact: async (parent, args) => {
+      const  contact = await Contact.create(args);
+      // return the token and the user data. 
+      return {contact}
+    },
   }
 };
 

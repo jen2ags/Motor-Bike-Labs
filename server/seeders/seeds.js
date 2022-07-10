@@ -1,7 +1,8 @@
 
 const motorcycleSeeds = require('./motorcycleSeed.json');
+const contactSeeds = require('./contactSeeds.json')
 const db = require('../config/connection');
-const { Motorcycle, User } = require('../models');
+const { Motorcycle, User, Contact } = require('../models');
 
 db.once('open', async () => {
   try {
@@ -9,6 +10,7 @@ db.once('open', async () => {
     await User.deleteMany({});
 
     await Motorcycle.create(motorcycleSeeds);
+    await Contact.create(contactSeeds);
 
   } catch (err) {
     console.error(err);

@@ -87,8 +87,7 @@ function SinglePage() {
                 </div>
               </div>
               <div
-                className='subtitle is-2 py-2 mx-4 
-          '
+                className='subtitle is-2 py-2 mx-4'
                 id='price'
               >
                 {singleM.price}
@@ -149,8 +148,8 @@ function SinglePage() {
         </section>
       )}
 
-      {/* Details */}
-      {singleM && (
+        {/* Details */}
+        {singleM && (
         <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
           <div className='tile is-parent is-vertical mx-4 px-2'>
