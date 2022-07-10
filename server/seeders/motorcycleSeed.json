@@ -114,7 +114,12 @@
         "location": "Helotes, TX",
         "stockNum": "56140M",
         "image":"https://i.postimg.cc/brZJm63W/harley-roadking-2.jpg",
-        "reviews": []
+        "reviews": [
+            {
+                "reviewBody": "Ipsum dolor sit amet consectetur adipisicing elit.",
+                "username": "fastnfurious"
+            }
+        ]
          
     },
 
@@ -182,7 +187,12 @@
         "location": "Dallas, TX",
         "stockNum": "78205J",
         "image": "https://i.postimg.cc/RC2fjfKK/ducati-supersport-2.jpg",
-        "reviews": []
+        "reviews": [
+            {
+                "reviewBody": "Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque.",
+                "username": "roadmaster"
+            }
+        ]
          
     },
 
@@ -334,7 +344,12 @@
         "location": "Albuquerque, NM",
         "stockNum": "23017T",
         "image": "https://i.postimg.cc/6pgDZMvT/yamaha-mt-1.jpg",
-        "reviews": [] 
+        "reviews": [
+            {
+                "reviewBody": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut.",
+                "username": "roadrash"
+            }
+        ] 
          
     }
 ]
