@@ -60,6 +60,12 @@ export const SINGLE_MOTORCYCLE = gql`
       year
       mileage
       price
+      condition
+      primaryColor
+      category
+      type
+      location
+      stockNum
       image
     }
   }
