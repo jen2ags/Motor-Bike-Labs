@@ -66,7 +66,7 @@ function SinglePage() {
             </div>
           </div>
           {/* stats */}
-          <div className='tile is-parent has-text-centered mx-4 my-4 p-4'>
+          <div className='tile is-parent has-text-centered mx-4 my-6 px-4'>
             <div className='tile is-child box '>
               <h1 className='title is-3 my-4'>Quick Look</h1>
               <div className=' level px-6 py-6 mx-6 my-3'>
