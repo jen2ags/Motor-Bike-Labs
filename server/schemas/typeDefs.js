@@ -16,6 +16,12 @@ type Motorcycle {
   year: String
   mileage: String
   price: String
+  condition: String
+  primaryColor: String
+  category: String
+  type: String
+  location: String
+  stockNum: String
   image: String
 }
 

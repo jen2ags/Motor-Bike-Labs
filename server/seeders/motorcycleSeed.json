@@ -5,6 +5,12 @@
         "year": "2018", 
         "mileage": "8,623",
         "price": "$8,000",
+        "condition": "Good",
+        "primaryColor": "Silver",
+        "category": "Cruiser",
+        "type": "Motorcycle",
+        "location": "Panama City, FL",
+        "stockNum": "73067Y",
         "image": "https://i.postimg.cc/VvmgMCgJ/honda-crf-1.jpg",
         "reviews": [] 
          
@@ -16,6 +22,12 @@
         "year": "2021",
         "mileage": "1,500", 
         "price": "$14,000",
+        "condition": "Very Good",
+        "primaryColor": "Lime Green",
+        "category": "Sportbike",
+        "type": "Motorcycle",
+        "location": "Boerne, TX",
+        "stockNum": "51502K",
         "image":"https://i.postimg.cc/vH8XZ5Dj/kawasaki-ninja-1.jpg",
         "reviews": []
          
@@ -27,6 +39,12 @@
         "year": "2021",
         "mileage": "4,500",
         "price": "$13,000",
+        "condition": "Good",
+        "primaryColor": "Black",
+        "category": "Standard",
+        "type": "Motorcycle",
+        "location": "Sedona, AZ",
+        "stockNum": "78412U",
         "image":"https://i.postimg.cc/1tZrhqLv/yamaha-bolt-1.jpg",
         "reviews": [] 
          
@@ -38,6 +56,12 @@
         "year": "2018",
         "mileage": "6,000",
         "price": "$10,000",
+        "condition": "Good",
+        "primaryColor": "Black",
+        "category": "Dual Sport",
+        "type": "Motorcycle",
+        "location": "Salt Lake City, UT",
+        "stockNum": "98765T",
         "image":"https://i.postimg.cc/KvYr2FHh/suzuki-gsx-r-1.jpg",
         "reviews": []
          
@@ -49,6 +73,12 @@
         "year": "2017",
         "mileage": "8,130",
         "price": "$13,000",
+        "condition": "Fair",
+        "primaryColor": "Grey",
+        "category": "Standard",
+        "type": "Motorcycle",
+        "location": "Denver, CO",
+        "stockNum": "51035B",
         "image":"https://i.postimg.cc/vBQxttRw/bmw-rninet-1.jpg",
         "reviews": []
          
@@ -60,6 +90,12 @@
         "year": "2019",
         "mileage": "1,436",
         "price": "$17,500",
+        "condition": "Very Good",
+        "primaryColor": "Red",
+        "category": "Super Moto",
+        "type": "Motorcycle",
+        "location": "Omaha, NE",
+        "stockNum": "01321L",
         "image": "https://i.postimg.cc/25xVyL1c/ducati-hypermotard-1.jpg",
         "reviews": [] 
          
@@ -71,6 +107,12 @@
         "year": "2009",
         "mileage": "45,378", 
         "price": "$22,000",
+        "condition": "Good",
+        "primaryColor": "Black & Blue",
+        "category": "Custom",
+        "type": "Motorcycle",
+        "location": "Helotes, TX",
+        "stockNum": "56140M",
         "image":"https://i.postimg.cc/brZJm63W/harley-roadking-2.jpg",
         "reviews": []
          
@@ -82,6 +124,12 @@
         "year": "2022",
         "mileage": "1,400",
         "price": "$12,500",
+        "condition": "Very Good",
+        "primaryColor": "White",
+        "category": "Sportbike",
+        "type": "Motorcycle",
+        "location": "Baltimore, MD",
+        "stockNum": "78142V",
         "image": "https://i.postimg.cc/Prks333D/aprilia-rs-1.jpg",
         "reviews": []
          
@@ -93,6 +141,12 @@
         "year": "2019",
         "mileage": "12,045",
         "price": "$11,500",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/bwxvVS9y/triumph-street-triple-1.jpg",
         "reviews": [] 
          
@@ -104,6 +158,12 @@
         "year": "2020",
         "mileage": "7,800",
         "price": "$13,000",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image": "https://i.postimg.cc/qq6JsN7d/ktm-890-2.jpg",
         "reviews": []
          
@@ -115,6 +175,12 @@
         "year": "2020",
         "mileage": "2,387",
         "price": "$15,000",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image": "https://i.postimg.cc/RC2fjfKK/ducati-supersport-2.jpg",
         "reviews": []
          
@@ -126,6 +192,12 @@
         "year": "2018",
         "mileage": "9,279",
         "price": "$24,500",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/pV55YT4T/honda-gold-wing-2.jpg",
         "reviews": [] 
          
@@ -137,6 +209,12 @@
         "year": "2014",
         "mileage": "30,000", 
         "price": "$20,000",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/L8DJ6ZYy/harley-softail-1.jpg",
         "reviews": []
          
@@ -148,6 +226,12 @@
         "year": "2017",
         "mileage": "600", 
         "price": "$6,500",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/MZBXfLff/kawasaki-vulcan-3.jpg",
         "reviews": []
          
@@ -159,6 +243,12 @@
         "year": "2021",
         "mileage": "13,090", 
         "price": "$12,000",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/5tGN65xm/bmw-nmoto-1.jpg",
         "reviews": []
          
@@ -170,6 +260,12 @@
         "year": "2014",
         "mileage": "4,000", 
         "price": "$9,250",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/NG8BcvrD/honda-valkyrie-1.jpg",
         "reviews": []
          
@@ -181,6 +277,12 @@
         "year": "2005",
         "mileage": "8,000", 
         "price": "$8,000",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image": "https://i.postimg.cc/Qx0DFgmW/suzuki-gsx-r-3.jpg",
         "reviews": []
          
@@ -192,6 +294,12 @@
         "year": "2001",
         "mileage": "13,872", 
         "price": "$16,000",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/PrrsnpHf/harley-cvo-3.jpg",
         "reviews": []
          
@@ -203,6 +311,12 @@
         "year": "2019",
         "mileage": "3,981", 
         "price": "$21,750",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image":"https://i.postimg.cc/kgB0D0Dk/aprilia-rsv4-2.jpg",
         "reviews": []    
     },
@@ -213,6 +327,12 @@
         "year": "2014",
         "mileage": "4,500",
         "price": "$7,500",
+        "condition": "",
+        "primaryColor": "",
+        "category": "",
+        "type": "",
+        "location": "",
+        "stockNum": "",
         "image": "https://i.postimg.cc/6pgDZMvT/yamaha-mt-1.jpg",
         "reviews": [] 
          

@@ -18,6 +18,24 @@ const motorSchema = new Schema(
     price:{
       type:String
     },
+    condition: {
+      type: String
+    },
+    primaryColor: {
+      type: String
+    },
+    category: {
+      type: String
+    },
+    type: {
+      type: String
+    },
+    location: {
+      type: String
+    },
+    stockNum: {
+      type: String
+    },
     image: {
       type: String
     },
