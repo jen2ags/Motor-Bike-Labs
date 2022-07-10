@@ -11,7 +11,9 @@
         "type": "Motorcycle",
         "location": "Panama City, FL",
         "stockNum": "73067Y",
-        "image": "https://i.postimg.cc/VvmgMCgJ/honda-crf-1.jpg",
+        "image_1": "https://i.postimg.cc/VvmgMCgJ/honda-crf-1.jpg",
+        "image_2": "https://i.postimg.cc/H8gSXGxD/honda-crf-2.jpg",
+        "image_3": "https://i.postimg.cc/bdxV8vCz/honda-crf-3.jpg",
         "reviews": [] 
          
     },
@@ -28,7 +30,9 @@
         "type": "Motorcycle",
         "location": "Boerne, TX",
         "stockNum": "51502K",
-        "image":"https://i.postimg.cc/vH8XZ5Dj/kawasaki-ninja-1.jpg",
+        "image_1":"https://i.postimg.cc/vH8XZ5Dj/kawasaki-ninja-1.jpg",
+        "image_2": "https://i.postimg.cc/LJbNvgXV/kawasaki-ninja-2.jpg",
+        "image_3": "https://i.postimg.cc/Ty5Qs25v/kawasaki-ninja-3.jpg",
         "reviews": []
          
     },
@@ -45,7 +49,9 @@
         "type": "Motorcycle",
         "location": "Sedona, AZ",
         "stockNum": "78412U",
-        "image":"https://i.postimg.cc/1tZrhqLv/yamaha-bolt-1.jpg",
+        "image_1":"https://i.postimg.cc/DSPby9V4/yamaha-mt-1.jpg",
+        "image_2": "https://i.postimg.cc/23rM1vBq/yamaha-mt-2.jpg",
+        "image_3": "https://i.postimg.cc/Sjd5CsWg/yamaha-mt-3.jpg",
         "reviews": [] 
          
     },
@@ -62,7 +68,9 @@
         "type": "Motorcycle",
         "location": "Salt Lake City, UT",
         "stockNum": "98765T",
-        "image":"https://i.postimg.cc/KvYr2FHh/suzuki-gsx-r-1.jpg",
+        "image_1":"https://i.postimg.cc/DmRGCQd0/suzuki-vstrom-1.jpg",
+        "image_2": "https://i.postimg.cc/XXgMLx0c/suzuki-vstrom-2.jpg",
+        "image_3": "https://i.postimg.cc/bZsKzhS3/suzuki-vstrom-3.jpg",
         "reviews": []
          
     },
@@ -79,7 +87,9 @@
         "type": "Motorcycle",
         "location": "Denver, CO",
         "stockNum": "51035B",
-        "image":"https://i.postimg.cc/vBQxttRw/bmw-rninet-1.jpg",
+        "image_1":"https://i.postimg.cc/vBQxttRw/bmw-rninet-1.jpg",
+        "image_2": "https://i.postimg.cc/9z25yKsQ/bmw-rninet-2.jpg",
+        "image_3": "https://i.postimg.cc/DSHR0MqF/bmw-rninet-3.jpg",
         "reviews": []
          
     },
@@ -96,7 +106,9 @@
         "type": "Motorcycle",
         "location": "Omaha, NE",
         "stockNum": "01321L",
-        "image": "https://i.postimg.cc/25xVyL1c/ducati-hypermotard-1.jpg",
+        "image_1": "https://i.postimg.cc/25xVyL1c/ducati-hypermotard-1.jpg",
+        "image_2": "https://i.postimg.cc/NLmSMDMv/ducati-hypermotard-2.jpg",
+        "image_3": "https://i.postimg.cc/cv4bFNcd/ducati-hypermotard-3.jpg",
         "reviews": [] 
          
     },
@@ -113,8 +125,15 @@
         "type": "Motorcycle",
         "location": "Helotes, TX",
         "stockNum": "56140M",
-        "image":"https://i.postimg.cc/brZJm63W/harley-roadking-2.jpg",
-        "reviews": []
+        "image_1":"https://i.postimg.cc/xXvLNkmC/harley-softail-1.jpg",
+        "image_2": "https://i.postimg.cc/2qg9jLN5/harley-softail-2.jpg",
+        "image_3": "https://i.postimg.cc/wyJf1x9Q/harley-softail-3.jpg",
+        "reviews": [
+            {
+                "reviewBody": "Ipsum dolor sit amet consectetur adipisicing elit.",
+                "username": "fastnfurious"
+            }
+        ]
          
     },
 
@@ -130,7 +149,9 @@
         "type": "Motorcycle",
         "location": "Baltimore, MD",
         "stockNum": "78142V",
-        "image": "https://i.postimg.cc/Prks333D/aprilia-rs-1.jpg",
+        "image_1": "https://i.postimg.cc/Prks333D/aprilia-rs-1.jpg",
+        "image_2": "https://i.postimg.cc/GBfVBSGd/aprilia-rs-2.jpg",
+        "image_3": "https://i.postimg.cc/mzFq7NyM/aprilia-rs-3.jpg",
         "reviews": []
          
     },
@@ -147,7 +168,9 @@
         "type": "Motorcycle",
         "location": "San Diego, CA",
         "stockNum": "84340W",
-        "image":"https://i.postimg.cc/bwxvVS9y/triumph-street-triple-1.jpg",
+        "image_1":"https://i.postimg.cc/bwxvVS9y/triumph-street-triple-1.jpg",
+        "image_2": "https://i.postimg.cc/bGnWt9Tn/triumph-street-triple-2.jpg",
+        "image_3": "https://i.postimg.cc/2bfJFLcK/triumph-street-triple-3.jpg",
         "reviews": [] 
          
     },
@@ -158,13 +181,15 @@
         "year": "2020",
         "mileage": "7,800",
         "price": "$13,000",
-        "condition": "",
+        "condition": "Fair",
         "primaryColor": "White & Orange",
         "category": "Sportbike",
         "type": "Motorcycle",
         "location": "Charlotte, NC",
         "stockNum": "09382P",
-        "image": "https://i.postimg.cc/qq6JsN7d/ktm-890-2.jpg",
+        "image_1": "https://i.postimg.cc/p55FWyxP/ktm-890-1.jpg",
+        "image_2": "https://i.postimg.cc/2V5twDGr/ktm-890-2.jpg",
+        "image_3": "https://i.postimg.cc/q6J5WVdc/ktm-890-3.jpg",
         "reviews": []
          
     },
@@ -181,8 +206,15 @@
         "type": "Motorcycle",
         "location": "Dallas, TX",
         "stockNum": "78205J",
-        "image": "https://i.postimg.cc/RC2fjfKK/ducati-supersport-2.jpg",
-        "reviews": []
+        "image_1": "https://i.postimg.cc/Dm0Qpy9j/ducati-supersport-1.jpg",
+        "image_2": "https://i.postimg.cc/BX3y1FLL/ducati-supersport-2.jpg",
+        "image_3": "https://i.postimg.cc/jLh16jP8/ducati-supersport-3.jpg",
+        "reviews": [
+            {
+                "reviewBody": "Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque.",
+                "username": "roadmaster"
+            }
+        ]
          
     },
 
@@ -198,7 +230,9 @@
         "type": "Motorcycle",
         "location": "Austin, TX",
         "stockNum": "83922G",
-        "image":"https://i.postimg.cc/pV55YT4T/honda-gold-wing-2.jpg",
+        "image_1":"https://i.postimg.cc/2qChQzdx/honda-gold-wing-1.jpg",
+        "image_2": "https://i.postimg.cc/H896tScJ/honda-gold-wing-2.jpg",
+        "image_3": "https://i.postimg.cc/56pPYRWT/honda-gold-wing-3.jpg",
         "reviews": [] 
          
     },
@@ -215,7 +249,9 @@
         "type": "Motorcycle",
         "location": "Nashville, TN",
         "stockNum": "71785D",
-        "image":"https://i.postimg.cc/L8DJ6ZYy/harley-softail-1.jpg",
+        "image_1":"https://i.postimg.cc/cgb3GwpD/harley-cvo-1.jpg",
+        "image_2": "https://i.postimg.cc/ZBrHTfLf/harley-cvo-2.jpg",
+        "image_3": "https://i.postimg.cc/KkXQhXtk/harley-cvo-3.jpg",
         "reviews": []
          
     },
@@ -232,7 +268,9 @@
         "type": "Motorcycle",
         "location": "Memphis, TN",
         "stockNum": "51138Z",
-        "image":"https://i.postimg.cc/MZBXfLff/kawasaki-vulcan-3.jpg",
+        "image_1":"https://i.postimg.cc/065K6VxW/kawasaki-vulcan-1.jpg",
+        "image_2": "https://i.postimg.cc/VdHVZVZM/kawasaki-vulcan-2.jpg",
+        "image_3": "https://i.postimg.cc/mPz6vyKn/kawasaki-vulcan-3.jpg",
         "reviews": []
          
     },
@@ -249,7 +287,9 @@
         "type": "Motorcycle",
         "location": "Miami, FL",
         "stockNum": "09221S",
-        "image":"https://i.postimg.cc/5tGN65xm/bmw-nmoto-1.jpg",
+        "image_1":"https://i.postimg.cc/5tGN65xm/bmw-nmoto-1.jpg",
+        "image_2": "https://i.postimg.cc/JHN22rgz/bmw-nmoto-2.jpg",
+        "image_3": "https://i.postimg.cc/gLF7sXg7/bmw-nmoto-3.jpg",
         "reviews": []
          
     },
@@ -266,7 +306,9 @@
         "type": "Motorcycle",
         "location": "Canton, GA",
         "stockNum": "55104H",
-        "image":"https://i.postimg.cc/NG8BcvrD/honda-valkyrie-1.jpg",
+        "image_1":"https://i.postimg.cc/NG8BcvrD/honda-valkyrie-1.jpg",
+        "image_2": "https://i.postimg.cc/30YBWgS3/honda-valkyrie-2.jpg",
+        "image_3": "https://i.postimg.cc/2LGxWVMh/honda-valkyrie-3.jpg",
         "reviews": []
          
     },
@@ -283,7 +325,9 @@
         "type": "Motorcycle",
         "location": "Mongomery, AL",
         "stockNum": "00318Q",
-        "image": "https://i.postimg.cc/Qx0DFgmW/suzuki-gsx-r-3.jpg",
+        "image_1": "https://i.postimg.cc/0rzmdXSh/suzuki-gsx-r-1.jpg",
+        "image_2": "https://i.postimg.cc/Vd7xQ6vJ/suzuki-gsx-r-2.jpg",
+        "image_3": "https://i.postimg.cc/34CqLrzJ/suzuki-gsx-r-3.jpg",
         "reviews": []
          
     },
@@ -300,7 +344,9 @@
         "type": "Motorcycle",
         "location": "Houston, TX",
         "stockNum": "77206C",
-        "image":"https://i.postimg.cc/PrrsnpHf/harley-cvo-3.jpg",
+        "image_1":"https://i.postimg.cc/t7c3KGyX/harley-roadking-1.jpg",
+        "image_2": "https://i.postimg.cc/cKv5NMjj/harley-roadking-2.jpg",
+        "image_3": "https://i.postimg.cc/w1fbPbWL/harley-roadking-3.jpg",
         "reviews": []
          
     },
@@ -317,7 +363,9 @@
         "type": "Motorcycle",
         "location": "Las Vegas, NV",
         "stockNum": "61830R",
-        "image":"https://i.postimg.cc/kgB0D0Dk/aprilia-rsv4-2.jpg",
+        "image_1":"https://i.postimg.cc/7GY1kxfL/aprilia-rsv4-1.jpg",
+        "image_2": "https://i.postimg.cc/Bj6mxBq6/aprilia-rsv4-2.jpg",
+        "image_3": "https://i.postimg.cc/8jTKCV9L/aprilia-rsv4-3.jpg",
         "reviews": []    
     },
 
@@ -333,8 +381,15 @@
         "type": "Motorcycle",
         "location": "Albuquerque, NM",
         "stockNum": "23017T",
-        "image": "https://i.postimg.cc/6pgDZMvT/yamaha-mt-1.jpg",
-        "reviews": [] 
-   
+        "image_1": "https://i.postimg.cc/B8hL22nq/yamaha-bolt-1.jpg",
+        "image_2": "https://i.postimg.cc/qNPZ4CTv/yamaha-bolt-2.jpg",
+        "image_3": "https://i.postimg.cc/NyRCMfs7/yamaha-bolt-3.jpg",
+        "reviews": [
+            {
+                "reviewBody": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut.",
+                "username": "roadrash"
+            }
+        ] 
+         
     }
 ]

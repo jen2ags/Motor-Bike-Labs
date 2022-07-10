@@ -22,7 +22,9 @@ type Motorcycle {
   type: String
   location: String
   stockNum: String
-  image: String
+  image_1: String
+  image_2: String
+  image_3: String
 }
 
 type Review {

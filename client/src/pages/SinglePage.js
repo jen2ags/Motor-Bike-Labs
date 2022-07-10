@@ -47,17 +47,17 @@ function SinglePage() {
               <div className='card mx-6 my-6 px-6 py-6'>
                 <div className='card-image  has-text-centered ' id='image'>
                   <figure className='image is-inline-block my-6 py-6 '>
-                    <img src={singleM.image} alt='Motorcycle' />
+                    <img src={singleM.image_1} alt='Motorcycle' />
                   </figure>
                   <figure className='image is-inline-block mx-3  px-3'>
                     <img
-                      src='https://bulma.io/images/placeholders/128x128.png'
+                      src={singleM.image_2}
                       alt='Motorcycle'
                     />
                   </figure>
                   <figure className='image is-inline-block mx-3  px-2'>
                     <img
-                      src='https://bulma.io/images/placeholders/128x128.png'
+                      src={singleM.image_3}
                       alt='Motorcycle'
                     />
                   </figure>

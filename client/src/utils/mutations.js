@@ -33,7 +33,9 @@ export const ADD_USER = gql`
           type
           location
           stockNum
-          image
+          image_1
+          image_2
+          image_3
         }
       }
     }
