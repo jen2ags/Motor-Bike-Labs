@@ -200,19 +200,24 @@ function SinglePage() {
               <h2 className='subtitle'>Details</h2>
               <div className=''>
                 <div className='level-item' id='condition'>
-                  Condition:
+                  Condition: 
+                  {singleM.condition}
                 </div>
                 <div className='level-item' id='primary'>
-                  Primary Color:
+                  Primary Color: 
+                  {singleM.primaryColor}
                 </div>
                 <div className='level-item' id='category'>
-                  Category:
+                  Category: 
+                  {singleM.category}
                 </div>
                 <div className='level-item' id='type'>
-                  Type:
+                  Type: 
+                  {singleM.type}
                 </div>
                 <div className='level-item' id='location'>
-                  Location:
+                  Location: 
+                  {singleM.location}
                 </div>
                 <div className='level-item' id='year'>
                   Year:
@@ -232,6 +237,7 @@ function SinglePage() {
                 </div>
                 <div className='level-item' id='stock'>
                   Stock Number:
+                  {singleM.stockNum}
                 </div>
               </div>
             </div>
