@@ -201,43 +201,43 @@ function SinglePage() {
               <div className=''>
                 <div className='level-item' id='condition'>
                   Condition: 
-                  {singleM.condition}
+                  {' '}{singleM.condition}
                 </div>
                 <div className='level-item' id='primary'>
                   Primary Color: 
-                  {singleM.primaryColor}
+                  {' '}{singleM.primaryColor}
                 </div>
                 <div className='level-item' id='category'>
                   Category: 
-                  {singleM.category}
+                  {' '}{singleM.category}
                 </div>
                 <div className='level-item' id='type'>
                   Type: 
-                  {singleM.type}
+                  {' '}{singleM.type}
                 </div>
                 <div className='level-item' id='location'>
                   Location: 
-                  {singleM.location}
+                  {' '}{singleM.location}
                 </div>
                 <div className='level-item' id='year'>
                   Year:
-                  {singleM.year}
+                  {' '}{singleM.year}
                 </div>
                 <div className='level-item' id='make'>
                   Make:
-                  {singleM.make}
+                  {' '}{singleM.make}
                 </div>
                 <div className='level-item' id='model'>
                   Model:
-                  {singleM.model}
+                  {' '}{singleM.model}
                 </div>
                 <div className='level-item' id='mileage'>
                   Mileage:
-                  {singleM.mileage}
+                  {' '}{singleM.mileage}
                 </div>
                 <div className='level-item' id='stock'>
                   Stock Number:
-                  {singleM.stockNum}
+                  {' '}{singleM.stockNum}
                 </div>
               </div>
             </div>

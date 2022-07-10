@@ -14,6 +14,12 @@ export const SINGLE_USER  = gql`
       year
       mileage
       price
+      condition
+      primaryColor
+      category
+      type
+      location
+      stockNum
       image
     }
   }
@@ -33,6 +39,12 @@ export const USERS = gql`
         year
         mileage
         price
+        condition
+        primaryColor
+        category
+        type
+        location
+        stockNum
         image
       }
     }

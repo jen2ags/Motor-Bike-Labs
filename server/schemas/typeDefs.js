@@ -49,7 +49,7 @@ type Mutation {
   removeUser(_id: ID!): User
   login(email: String!, password: String!): Auth
   addReview(_id: ID!, reviewBody: String!): Motorcycle
-  addMotorcycles(_id: ID, make: String, model: String, year: String, mileage: String, price: String, image: String ) : Motorcycle
+  addMotorcycles(_id: ID, make: String, model: String, year: String, mileage: String, price: String, condition: String, primaryColor: String, category: String, type: String, location: String, stockNum: String, image: String ) : Motorcycle
 }`;
 
 

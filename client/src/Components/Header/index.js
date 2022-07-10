@@ -40,7 +40,7 @@ function Header() {
                       </figure>
                     </div>
                     <div className='card-content stats has-text-centered'>
-                      <div id='price'>Price {motorcycle.price}</div>
+                      <div id='price'>Price: {motorcycle.price}</div>
                       <div id='mileage'>
                         Mileage:{' '}{motorcycle.mileage}
                       </div>
