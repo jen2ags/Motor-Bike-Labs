@@ -36,7 +36,13 @@ const motorSchema = new Schema(
     stockNum: {
       type: String
     },
-    image: {
+    image_1: {
+      type: String
+    },
+    image_2: {
+      type: String
+    },
+    image_3: {
       type: String
     },
     reviews: [reviewSchema]

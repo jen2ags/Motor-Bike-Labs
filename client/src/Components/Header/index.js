@@ -36,7 +36,7 @@ function Header() {
                   <div className='card px-6 py-6'>
                     <div className='card-image  has-text-centered' id='image'>
                       <figure className='image is-128x128 is-inline-block my-2'>
-                        <img src={motorcycle.image} alt='Motorcycle' />
+                        <img src={motorcycle.image_1} alt='Motorcycle' />
                       </figure>
                     </div>
                     <div className='card-content stats has-text-centered'>

@@ -20,7 +20,9 @@ export const SINGLE_USER  = gql`
       type
       location
       stockNum
-      image
+      image_1
+      image_2
+      image_3
     }
   }
 }
@@ -45,7 +47,9 @@ export const USERS = gql`
         type
         location
         stockNum
-        image
+        image_1
+        image_2
+        image_3
       }
     }
   }
@@ -66,7 +70,9 @@ export const SINGLE_MOTORCYCLE = gql`
       type
       location
       stockNum
-      image
+      image_1
+      image_2
+      image_3
     }
   }
 `;
@@ -81,7 +87,9 @@ export const MOTORCYCLE = gql`
       year
       mileage
       price
-      image
+      image_1
+      image_2
+      image_3
     } 
   }
 `;
