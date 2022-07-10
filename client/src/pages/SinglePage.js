@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './singlePage.css';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
@@ -6,9 +6,21 @@ import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
 import Head from '../Components/Nav'
 import Footer from '../../src/Components/Footer'
 import Auth from '../../src/utils/auth';
+import { KnownFragmentNamesRule } from 'graphql';
 
 // columns
 function SinglePage() {
+  // set a state that will handle, displaying the reviews model or hide it 
+  const [reviewsModel, addReviewModel] = useState(false)
+  // update the state 
+  function toggleReview() {
+    if (reviewsModel === true) {
+      addReviewModel(false);
+    } else {
+      addReviewModel(true);
+    }
+  }
+
   // this useParams is to get the data by id
   const { id: sigleMotorcycleId } = useParams();
   const { loading, data } = useQuery(SINGLE_MOTORCYCLE, {
@@ -139,6 +151,29 @@ function SinglePage() {
             <div className='tile is-child box'>
               <div className='' id='user'>{/* username here */} says: </div>
             </div>
+            {reviewsModel ? 
+            <div className='reviews-model'>
+              {/* if looged in show the textarea */}
+              {loggedIn ? (
+              <div>
+                <textarea className='textarea my-2' placeholder='Add your review'></textarea>
+              </div>
+              ): 
+              // if not logged it give them this error
+              <p className='alert-review-login'>Please login to be able to add a review </p>
+              }
+              <div className='reviews-button-container'>
+                {/* if looged in show the add button*/}
+                {loggedIn ? (
+                <button className='button my-2 reviews-button'>Add</button>
+                ): null}
+                <button className='button my-2 reviews-button' onClick={toggleReview}>Close</button>
+              </div>
+              
+            </div>
+            : 
+            <button className='button my-2' onClick={toggleReview}>Add Review</button>
+            }
           </div>
         </div>
 

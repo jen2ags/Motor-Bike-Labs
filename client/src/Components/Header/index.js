@@ -42,17 +42,16 @@ function Header() {
                     <div className='card-content stats has-text-centered'>
                       <div id='price'>Price {motorcycle.price}</div>
                       <div id='mileage'>
-                        Mileage:{' '}
-                        <span className='span'>{motorcycle.mileage}</span>
+                        Mileage:{' '}{motorcycle.mileage}
                       </div>
                       <div id='make'>
-                        Make: <span className='span'>{motorcycle.make}</span>
+                        Make:{' '} {motorcycle.make}
                       </div>
                       <div id='model'>
-                        Model: <span className='span'>{motorcycle.model}</span>
+                        Model:{' '} {motorcycle.model}
                       </div>
                       <div id='year'>
-                        Year: <span className='span'>{motorcycle.year}</span>
+                        Year:{' '} {motorcycle.year}
                       </div>
                     </div>
                   </div>
