@@ -197,9 +197,9 @@ function SinglePage() {
                 </div>
               ) : (
                 <div className='has-text-centered'>
-                <button className='button my-3' onClick={toggleReview}>
-                  Add Review
-                </button>
+                  <button className='button my-3' onClick={toggleReview}>
+                    Add Review
+                  </button>
                 </div>
               )}
             </div>
@@ -211,21 +211,25 @@ function SinglePage() {
               <h2 className='subtitle'>Details</h2>
               <div className=''>
                 <div className='level-item' id='condition'>
-                  Condition: 
-                  {' '}{singleM.condition}
+                  <p className='detail-name px-1'>Condition:</p>
+                  {singleM.condition}
                 </div>
                 <div className='level-item' id='primary'>
                   <p className='detail-name px-1'>Primary Color:</p>
+                  {singleM.primaryColor}
                 </div>
                 <div className='level-item' id='category'>
                   <p className='detail-name px-1'>Category:</p>
+                  {singleM.category}
                 </div>
 
                 <div className='level-item' id='type'>
                   <p className='detail-name px-1'>Type:</p>
+                  {singleM.type}
                 </div>
                 <div className='level-item' id='location'>
                   <p className='detail-name px-1'>Location:</p>
+                  {singleM.location}
                 </div>
 
                 <div className='level-item' id='year'>
@@ -242,13 +246,13 @@ function SinglePage() {
                 </div>
                 <div className='level-item' id='stock'>
                   <p className='detail-name px-1'>Stock:</p>
+                  {singleM.stockNum}
                 </div>
               </div>
             </div>
           </div>
         </section>
       )}
-      
 
       {/* footer */}
       <Footer />
