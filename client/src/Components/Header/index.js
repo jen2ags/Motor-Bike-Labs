@@ -30,10 +30,10 @@ function Header() {
           motorcycleData.map((motorcycle) => (
             <Link to={`/single/${motorcycle._id}`}>
             <div key={motorcycle._id} className='tile is-parent is-vertical'>
-              <div className='tile is-child'>
-                <article className='tile is-child'>
+              <div className='tile is-child '>
+                <article className='tile is-child '>
                   {/* image for motorcycle */}
-                  <div className='card '>
+                  <div className='card px-6 py-6'>
                     <div className='card-image  has-text-centered' id='image'>
                       <figure className='image is-128x128 is-inline-block my-2'>
                         <img src={motorcycle.image} alt='Motorcycle' />
