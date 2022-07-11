@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import '../../pages/SinglePage';
-import '../../pages/ContactPage';
+import '../../pages/contactPage';
 import { useQuery } from '@apollo/client';
 import { MOTORCYCLE } from '../../utils/query';
 import { Link } from 'react-router-dom';

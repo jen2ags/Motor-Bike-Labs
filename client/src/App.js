@@ -10,7 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 import Login from './pages/Login';
 import Home from './Components/Home';
 import SinglePage from './pages/SinglePage';
-import ContactPage from './pages/ContactPage';
+import ContactPage from './pages/contactPage';
 
 
 function App() {
