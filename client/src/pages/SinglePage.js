@@ -48,7 +48,7 @@ function SinglePage() {
               {/* main image */}
               <div className='card mx-6 my-6 px-6 py-6'>
                 <div className='card-image  has-text-centered ' id='image'>
-                  <figure className='image is-inline-block my-6 py-6 '>
+                  <figure className='image is-is-inline-block my-6 py-6'>
                     <img src={singleM.image_1} alt='Motorcycle' />
                   </figure>
                   <figure className='image is-inline-block mx-3  px-3'>
