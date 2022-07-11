@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import '../../pages/SinglePage';
+import '../../pages/ContactPage';
 import { useQuery } from '@apollo/client';
 import { MOTORCYCLE } from '../../utils/query';
 import { Link } from 'react-router-dom';
@@ -61,7 +62,7 @@ function Header() {
             </Link>
           ))}
       </section>
-      )
+      
       <Footer />
     </>
   );
