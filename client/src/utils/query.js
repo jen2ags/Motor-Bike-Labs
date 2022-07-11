@@ -23,6 +23,11 @@ export const SINGLE_USER  = gql`
       image_1
       image_2
       image_3
+      reviews {
+        _id
+        username
+        reviewBody
+      }
     }
   }
 }
@@ -50,6 +55,10 @@ export const USERS = gql`
         image_1
         image_2
         image_3
+        reviews {
+          _id
+          reviewBody
+        }
       }
     }
   }
@@ -75,7 +84,6 @@ export const SINGLE_MOTORCYCLE = gql`
       image_3
       reviews {
         _id
-        username
         reviewBody
       }
     }
@@ -103,7 +111,6 @@ export const MOTORCYCLE = gql`
       image_3
       reviews {
         _id
-        username
         reviewBody
       }
     } 

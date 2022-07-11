@@ -31,7 +31,6 @@ type Motorcycle {
 type Review {
   _id: ID
   reviewBody: String
-  username: String
   createdAt: String
 }
 

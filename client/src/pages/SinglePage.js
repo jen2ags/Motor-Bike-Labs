@@ -162,7 +162,7 @@ function SinglePage() {
               </p>
               <div className='tile is-child box'>
                 <div className='' id='user'>
-                  {singleM.reviews.username} says:{' '} {singleM.reviews.reviewBody}
+                  {' '} says:{' '} 
                 </div>
               </div>
               {reviewsModel ? (
