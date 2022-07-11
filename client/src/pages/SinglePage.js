@@ -69,7 +69,7 @@ function SinglePage() {
           <div className='tile is-parent has-text-centered mx-4 my-6 px-4'>
             <div className='tile is-child box '>
               <h1 className='title is-3 my-4'>Quick Look</h1>
-              <div className=' level px-6 py-6 mx-6 my-3'>
+              <div className=' level px-6 py-6 mx-6 '>
                 <div className='level-item'>
                   <div className='subtitle is-4' id='year'>
                     {singleM.year}
@@ -87,11 +87,12 @@ function SinglePage() {
                 </div>
               </div>
               <div
-                className='subtitle is-2 py-2 mx-4'
+                className='subtitle is-2 py-2 mx-4 my-5'
                 id='price'
               >
                 {singleM.price}
               </div>
+              <div className='is-divider mx-6 '></div>
 
               {/*Add contact form*/}
               <form className='field my-6'>
@@ -207,44 +208,44 @@ function SinglePage() {
           <div className='tile is-parent is-vertical mx-3'>
             <div className='tile is-child box'>
               {/* leave the words and populate data next to them */}
-              <h2 className='subtitle'>Details</h2>
+              <h2 className='subtitle is-3'>Details:</h2>
               <div className=''>
                 <div className='level-item' id='condition'>
-                  <p className='detail-name px-1'>Condition:</p>
+                  <p className='detail-name px-2'>Condition:</p>
                   {singleM.condition}
                 </div>
                 <div className='level-item' id='primary'>
-                  <p className='detail-name px-1'>Primary Color:</p>
+                  <p className='detail-name px-2'>Primary Color:</p>
                   {singleM.primaryColor}
                 </div>
                 <div className='level-item' id='category'>
-                  <p className='detail-name px-1'>Category:</p>
+                  <p className='detail-name px-2'>Category:</p>
                   {singleM.category}
                 </div>
 
                 <div className='level-item' id='type'>
-                  <p className='detail-name px-1'>Type:</p>
+                  <p className='detail-name px-2'>Type:</p>
                   {singleM.type}
                 </div>
                 <div className='level-item' id='location'>
-                  <p className='detail-name px-1'>Location:</p>
+                  <p className='detail-name px-2'>Location:</p>
                   {singleM.location}
                 </div>
 
                 <div className='level-item' id='year'>
-                  <p className='detail-name px-1'>Year:</p> {singleM.year}
+                  <p className='detail-name px-2'>Year:</p> {singleM.year}
                 </div>
                 <div className='level-item' id='make'>
-                  <p className='detail-name px-1'>Make:</p> {singleM.make}
+                  <p className='detail-name px-2'>Make:</p> {singleM.make}
                 </div>
                 <div className='level-item' id='model'>
-                  <p className='detail-name px-1'>Model:</p> {singleM.model}
+                  <p className='detail-name px-2'>Model:</p> {singleM.model}
                 </div>
                 <div className='level-item' id='mileage'>
-                  <p className='detail-name px-1'>Mileage:</p> {singleM.mileage}
+                  <p className='detail-name px-2'>Mileage:</p> {singleM.mileage}
                 </div>
                 <div className='level-item' id='stock'>
-                  <p className='detail-name px-1'>Stock:</p>
+                  <p className='detail-name px-2'>Stock:</p>
                   {singleM.stockNum}
                 </div>
               </div>

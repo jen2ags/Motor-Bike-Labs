@@ -50,3 +50,20 @@ body,
 .span{
     margin-left: 2px;
 }
+
+/* TILES */
+.detail-name {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.is-divider {
+  border-top: 1px solid black;
+}
+
+.divide {
+  border-top: 1px solid black;
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+}

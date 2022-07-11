@@ -5,7 +5,8 @@ import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@ap
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // retrieve token from local storage 
 import { setContext } from '@apollo/client/link/context';
-
+import 'bulma-extensions';
+import 'bulma/css/bulma.min.css';
 // components export
 import Login from './pages/Login';
 import Home from './Components/Home';

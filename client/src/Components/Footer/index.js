@@ -3,6 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
+      <div className='divide'></div>
       <footer className='footer'>
         <div className='content has-text-centered is-small'>
           <p>
