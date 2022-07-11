@@ -16,7 +16,15 @@ type Motorcycle {
   year: String
   mileage: String
   price: String
-  image: String
+  condition: String
+  primaryColor: String
+  category: String
+  type: String
+  location: String
+  stockNum: String
+  image_1: String
+  image_2: String
+  image_3: String
 }
 
 type Review {
@@ -24,6 +32,15 @@ type Review {
   reviewBody: String
   username: String
   createdAt: String
+}
+
+type Contact {
+  _id : ID,
+  firstName: String,
+  lastName: String,
+  email: String,
+  phoneNumber: Int,
+  text: String
 }
 
 type Auth {
@@ -36,6 +53,7 @@ type Query {
   users: [User]
   motorcycle: [Motorcycle]
   sigleMotorcycle(_id: ID!): Motorcycle
+  getContact: [Contact]
 }
 
 type Mutation {
@@ -43,7 +61,8 @@ type Mutation {
   removeUser(_id: ID!): User
   login(email: String!, password: String!): Auth
   addReview(_id: ID!, reviewBody: String!): Motorcycle
-  addMotorcycles(_id: ID, make: String, model: String, year: String, mileage: String, price: String, image: String ) : Motorcycle
+  addMotorcycles(_id: ID, make: String, model: String, year: String, mileage: String, price: String, condition: String, primaryColor: String, category: String, type: String, location: String, stockNum: String, image: String ) : Motorcycle
+  addContact(_id:ID, firstName: String, lastName: String, email: String, phoneNumber: Int, text: String) : [Contact]
 }`;
 
 

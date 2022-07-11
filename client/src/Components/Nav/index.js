@@ -20,7 +20,7 @@ function Head() {
             <a className='navbar-item' href='#Reviews'>
               Reviews
             </a>
-            <a className='navbar-item' href='#Contact'>
+            <a className='navbar-item' href='/Contact'>
               Contact
             </a>
             <a className='navbar-item' href='#Account'>

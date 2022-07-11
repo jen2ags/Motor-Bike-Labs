@@ -8,8 +8,9 @@ import { setContext } from '@apollo/client/link/context';
 
 // components export
 import Login from './pages/Login';
-import Home from './Components/Home'
-import SinglePage from './pages/SinglePage'
+import Home from './Components/Home';
+import SinglePage from './pages/SinglePage';
+import ContactPage from './pages/contactPage';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" element={<Login />} />
               <Route path="/home" element={<Home />} />
               <Route path="/single/:id" element={<SinglePage />}/>
+              <Route path="/Contact" element= {<ContactPage />}/>
             </Routes>
           </div>
       </Router>

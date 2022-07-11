@@ -27,7 +27,15 @@ export const ADD_USER = gql`
           year
           mileage
           price
-          image
+          condition
+          primaryColor
+          category
+          type
+          location
+          stockNum
+          image_1
+          image_2
+          image_3
         }
       }
     }

@@ -14,7 +14,15 @@ export const SINGLE_USER  = gql`
       year
       mileage
       price
-      image
+      condition
+      primaryColor
+      category
+      type
+      location
+      stockNum
+      image_1
+      image_2
+      image_3
     }
   }
 }
@@ -33,7 +41,15 @@ export const USERS = gql`
         year
         mileage
         price
-        image
+        condition
+        primaryColor
+        category
+        type
+        location
+        stockNum
+        image_1
+        image_2
+        image_3
       }
     }
   }
@@ -48,7 +64,15 @@ export const SINGLE_MOTORCYCLE = gql`
       year
       mileage
       price
-      image
+      condition
+      primaryColor
+      category
+      type
+      location
+      stockNum
+      image_1
+      image_2
+      image_3
     }
   }
 `;
@@ -63,7 +87,9 @@ export const MOTORCYCLE = gql`
       year
       mileage
       price
-      image
+      image_1
+      image_2
+      image_3
     } 
   }
 `;

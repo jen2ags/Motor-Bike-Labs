@@ -117,7 +117,7 @@ function Login() {
                 </p>
               </div>
               <div className='formBx-heading mx-4'>
-                <div onClick={updateToggle} className='signUp-head title my-6 mx-2'>
+                <div className='signUp-head title my-6 mx-2'>
                   <ul className='sci level px-5 mx-5 my-6'>
                     <li className='sci-img level-item'>
                       <i className='fa-brands fa-instagram'></i>

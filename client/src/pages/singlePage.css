@@ -1,0 +1,32 @@
+/* ROOT */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray: rgb(223, 223, 223);
+}
+
+body {
+  background-color: var(--gray);
+}
+
+.reviews-button-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-button{
+  margin-left: 10px;
+}
+
+.alert-review-login{
+  background-color: whitesmoke;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

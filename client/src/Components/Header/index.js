@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import '../../pages/SinglePage';
+import '../../pages/contactPage';
 import { useQuery } from '@apollo/client';
 import { MOTORCYCLE } from '../../utils/query';
 import { Link } from 'react-router-dom';
@@ -30,29 +31,28 @@ function Header() {
           motorcycleData.map((motorcycle) => (
             <Link to={`/single/${motorcycle._id}`}>
             <div key={motorcycle._id} className='tile is-parent is-vertical'>
-              <div className='tile is-child'>
-                <article className='tile is-child'>
+              <div className='tile is-child '>
+                <article className='tile is-child '>
                   {/* image for motorcycle */}
-                  <div className='card '>
+                  <div className='card px-6 py-6'>
                     <div className='card-image  has-text-centered' id='image'>
                       <figure className='image is-128x128 is-inline-block my-2'>
-                        <img src={motorcycle.image} alt='Motorcycle' />
+                        <img src={motorcycle.image_1} alt='Motorcycle' />
                       </figure>
                     </div>
                     <div className='card-content stats has-text-centered'>
-                      <div id='price'>Price {motorcycle.price}</div>
+                      <div id='price'>Price: {motorcycle.price}</div>
                       <div id='mileage'>
-                        Mileage:{' '}
-                        <span className='span'>{motorcycle.mileage}</span>
+                        Mileage:{' '}{motorcycle.mileage}
                       </div>
                       <div id='make'>
-                        Make: <span className='span'>{motorcycle.make}</span>
+                        Make:{' '} {motorcycle.make}
                       </div>
                       <div id='model'>
-                        Model: <span className='span'>{motorcycle.model}</span>
+                        Model:{' '} {motorcycle.model}
                       </div>
                       <div id='year'>
-                        Year: <span className='span'>{motorcycle.year}</span>
+                        Year:{' '} {motorcycle.year}
                       </div>
                     </div>
                   </div>
@@ -62,7 +62,7 @@ function Header() {
             </Link>
           ))}
       </section>
-      )
+      
       <Footer />
     </>
   );
