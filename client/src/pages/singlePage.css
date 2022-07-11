@@ -11,6 +11,19 @@ body {
   background-color: var(--gray);
 }
 
+/* FONT STYLES */
+
+.single-title {
+  font-family: 'Abril Fatface', sans-serif;
+}
+
+.think-sub, .detail-size {
+  font-family: 'Gentium Book Basic', sans-serif;
+}
+
+.detail-size {
+  font-size: 18px;
+}
 .reviews-button-container{
   display: flex;
   align-items: center;

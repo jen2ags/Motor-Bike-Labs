@@ -49,6 +49,7 @@ function SinglePage() {
                   <figure className='image is-is-inline-block my-6 py-6'>
                     <img src={singleM.image_1} alt='Motorcycle' />
                   </figure>
+                  <div className='is-divider my-6'></div>
                   <figure className='image is-inline-block mx-3  px-3'>
                     <img
                       src={singleM.image_2}
@@ -68,26 +69,26 @@ function SinglePage() {
           {/* stats */}
           <div className='tile is-parent has-text-centered mx-4 my-6 px-4'>
             <div className='tile is-child box '>
-              <h1 className='title is-3 my-4'>Quick Look</h1>
+              <h1 className='subtitle is-3 my-4 single-title'>Quick Look</h1>
               <div className=' level px-6 py-6 mx-6 '>
                 <div className='level-item'>
-                  <div className='subtitle is-4' id='year'>
+                  <div className='subtitle is-3 think-sub' id='year'>
                     {singleM.year}
                   </div>
                 </div>
                 <div className='level-item'>
-                  <div className='subtitle is-4' id='make'>
+                  <div className='subtitle is-3 think-sub' id='make'>
                     {singleM.make}
                   </div>
                 </div>
                 <div className='level-item'>
-                  <div className='subtitle is-4' id='model'>
+                  <div className='subtitle is-3 think-sub' id='model'>
                     {singleM.model}
                   </div>
                 </div>
               </div>
               <div
-                className='subtitle is-2 py-2 mx-4 my-5'
+                className='subtitle is-1 py-2 mx-4 my-5 think-sub'
                 id='price'
               >
                 {singleM.price}
@@ -96,18 +97,18 @@ function SinglePage() {
 
               {/*Add contact form*/}
               <form className='field my-6'>
-                <h2 className='subtitle is-4'>Interested? Contact Us</h2>
+                <h2 className='subtitle is-4 single-title'>Interested? Contact Us</h2>
                 <div className='level mx-6 px-6 py-4 '>
                   <div className='level-left'>
                     <input
-                      className='input level-item px-5'
+                      className='input level-item px-5 think-sub'
                       placeholder='First Name'
                       id='first'
                     ></input>
                   </div>
                   <div className='level-right'>
                     <input
-                      className='input level-item px-5 '
+                      className='input level-item px-5 think-sub '
                       placeholder='Last Name'
                       id='last'
                     ></input>
@@ -117,23 +118,23 @@ function SinglePage() {
                 <div className='level   mx-6 px-6 '>
                   <div className='level-left'>
                     <input
-                      className='input level-item px-5'
+                      className='input level-item px-5 think-sub'
                       placeholder='Email'
                       id='email'
                     ></input>
                   </div>
                   <div className='level-right'>
                     <input
-                      className='input level-item px-5 '
+                      className='input level-item px-5 think-sub '
                       placeholder='Phone (optional)'
                       id='phone'
                     ></input>
                   </div>
                 </div>
-                <div className='field my-4 mx-6 px-6'>
+                <div className='field my-4 mx-6 px-6 think-sub'>
                   <div className='control'>
                     <textarea
-                      className='textarea is-small'
+                      className='textarea is-small '
                       id='text'
                       placeholder="I'm interested in the ..."
                     ></textarea>
@@ -155,12 +156,12 @@ function SinglePage() {
           {/* Reviews */}
           <div className='tile is-parent is-vertical mx-4 px-2'>
             <div className='tile is-child box'>
-              <h2 className='title is-3 has-text-centered'>Reviews</h2>
-              <p className='subtitle has-text-centered my-3'>
+              <h2 className='subtitle is-3 has-text-centered single-title'>Reviews</h2>
+              <p className='subtitle think-sub has-text-centered my-3'>
                 See what others think!
               </p>
-              <div className='tile is-child box'>
-                <div className='' id='user'>
+              <div className='tile  is-child box'>
+                <div className='py-3 my-3 think-sub' id='user'>
                   {/* username here */} says:{' '}
                 </div>
               </div>
@@ -170,13 +171,13 @@ function SinglePage() {
                   {loggedIn ? (
                     <div>
                       <textarea
-                        className='textarea my-2'
+                        className='textarea my-2 think-sub'
                         placeholder='Add your review'
                       ></textarea>
                     </div>
                   ) : (
                     // if not logged it give them this error
-                    <p className='alert-review-login'>
+                    <p className='alert-review-login think-sub'>
                       Please login to be able to add a review{' '}
                     </p>
                   )}
@@ -205,46 +206,46 @@ function SinglePage() {
             </div>
           </div>
 
-          <div className='tile is-parent is-vertical mx-3'>
+          <div className='tile is-parent is-vertical mx-3 think-sub '>
             <div className='tile is-child box'>
               {/* leave the words and populate data next to them */}
-              <h2 className='subtitle is-3'>Details:</h2>
+              <h2 className='subtitle is-3 single-title'>Details:</h2>
               <div className=''>
-                <div className='level-item' id='condition'>
+                <div className='level-item detail-size' id='condition'>
                   <p className='detail-name px-2'>Condition:</p>
                   {singleM.condition}
                 </div>
-                <div className='level-item' id='primary'>
+                <div className='level-item detail-size' id='primary'>
                   <p className='detail-name px-2'>Primary Color:</p>
                   {singleM.primaryColor}
                 </div>
-                <div className='level-item' id='category'>
+                <div className='level-item detail-size' id='category'>
                   <p className='detail-name px-2'>Category:</p>
                   {singleM.category}
                 </div>
 
-                <div className='level-item' id='type'>
+                <div className='level-item detail-size' id='type'>
                   <p className='detail-name px-2'>Type:</p>
                   {singleM.type}
                 </div>
-                <div className='level-item' id='location'>
+                <div className='level-item detail-size' id='location'>
                   <p className='detail-name px-2'>Location:</p>
                   {singleM.location}
                 </div>
 
-                <div className='level-item' id='year'>
+                <div className='level-item detail-size' id='year'>
                   <p className='detail-name px-2'>Year:</p> {singleM.year}
                 </div>
-                <div className='level-item' id='make'>
+                <div className='level-item detail-size' id='make'>
                   <p className='detail-name px-2'>Make:</p> {singleM.make}
                 </div>
-                <div className='level-item' id='model'>
+                <div className='level-item detail-size' id='model'>
                   <p className='detail-name px-2'>Model:</p> {singleM.model}
                 </div>
-                <div className='level-item' id='mileage'>
+                <div className='level-item detail-size' id='mileage'>
                   <p className='detail-name px-2'>Mileage:</p> {singleM.mileage}
                 </div>
-                <div className='level-item' id='stock'>
+                <div className='level-item detail-size' id='stock'>
                   <p className='detail-name px-2'>Stock:</p>
                   {singleM.stockNum}
                 </div>
