@@ -73,6 +73,11 @@ export const SINGLE_MOTORCYCLE = gql`
       image_1
       image_2
       image_3
+      reviews {
+        _id
+        username
+        reviewBody
+      }
     }
   }
 `;
@@ -87,9 +92,20 @@ export const MOTORCYCLE = gql`
       year
       mileage
       price
+      condition
+      primaryColor
+      category
+      type
+      location
+      stockNum
       image_1
       image_2
       image_3
+      reviews {
+        _id
+        username
+        reviewBody
+      }
     } 
   }
 `;

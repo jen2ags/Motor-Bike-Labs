@@ -25,6 +25,7 @@ type Motorcycle {
   image_1: String
   image_2: String
   image_3: String
+  reviews: [Review]
 }
 
 type Review {

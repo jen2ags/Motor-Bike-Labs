@@ -36,6 +36,8 @@ function SinglePage() {
   // this will be used once a user want to add a review
   const loggedIn = Auth.loggedIn();
 
+  
+
   return (
     <>
       <Head />
@@ -160,7 +162,7 @@ function SinglePage() {
               </p>
               <div className='tile is-child box'>
                 <div className='' id='user'>
-                  {/* username here */} says:{' '}
+                  {singleM.reviews.username} says:{' '} {singleM.reviews.reviewBody}
                 </div>
               </div>
               {reviewsModel ? (
