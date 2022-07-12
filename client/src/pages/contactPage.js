@@ -2,7 +2,7 @@ import React from 'react';
 import Head from '../Components/Nav';
 import Footer from '../../src/Components/Footer';
 //import Auth from '../../src/utils/auth';
-
+import './contactPage.css';
 function ContactPage() {
   return (
     <>
@@ -15,34 +15,34 @@ function ContactPage() {
               {/*Add contact form*/}
               <form className='field my-6'>
                 <h2 className='subtitle is-4'>Selling your motorcycle?</h2>
-                <div className='level mx-6 px-6 py-4 '>
-                  <div className='level-left'>
+                <div className='level  '>
+                  <div className='level-item'>
                     <input
-                      className='input level-item px-5'
+                      className='input level-item '
                       placeholder='First Name'
                       id='first'
                     ></input>
                   </div>
-                  <div className='level-right'>
+                  <div className='level-item'>
                     <input
-                      className='input level-item px-5 '
+                      className='input level-item  '
                       placeholder='Last Name'
                       id='last'
                     ></input>
                   </div>
                 </div>
 
-                <div className='level   mx-6 px-6 '>
-                  <div className='level-left'>
+                <div className='level'>
+                  <div className='level-item'>
                     <input
-                      className='input level-item px-5'
+                      className='input level-item '
                       placeholder='Email'
                       id='email'
                     ></input>
                   </div>
-                  <div className='level-right'>
+                  <div className='level-item'>
                     <input
-                      className='input level-item px-5 '
+                      className='input level-item  '
                       placeholder='Phone (optional)'
                       id='phone'
                     ></input>
@@ -53,7 +53,7 @@ function ContactPage() {
                     <textarea
                       className='textarea is-small'
                       id='text'
-                      placeholder="I'm interested in the ..."
+                      placeholder="I'm interested in selling ..."
                     ></textarea>
                   </div>
                 </div>

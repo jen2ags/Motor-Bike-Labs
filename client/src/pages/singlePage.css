@@ -17,29 +17,28 @@ body {
   font-family: 'Abril Fatface', sans-serif;
 }
 
-.think-sub, .detail-size {
+.think-sub,
+.detail-size {
   font-family: 'Gentium Book Basic', sans-serif;
 }
 
 .detail-size {
   font-size: 18px;
 }
-.reviews-button-container{
+.reviews-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.reviews-button{
+.reviews-button {
   margin-left: 10px;
 }
 
-.alert-review-login{
+.alert-review-login {
   background-color: whitesmoke;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-

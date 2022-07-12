@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import Auth from '../../utils/auth';
 
 function Head() {
   return (
     <div>
-        {/*header and navbar*/}
-        <header>
+      {/*header and navbar*/}
+      <header>
         <nav className='navbar' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
             <a className='navbar-item logo' href='/home'>
@@ -17,9 +17,7 @@ function Head() {
             <a className='navbar-item' href='/home'>
               Home
             </a>
-            <a className='navbar-item' href='#Reviews'>
-              Reviews
-            </a>
+
             <a className='navbar-item' href='/Contact'>
               Contact
             </a>
@@ -34,7 +32,7 @@ function Head() {
         </nav>
       </header>
     </div>
-  )
+  );
 }
 
-export default Head
+export default Head;

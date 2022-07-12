@@ -51,16 +51,10 @@ function SinglePage() {
                   </figure>
                   <div className='is-divider my-6'></div>
                   <figure className='image is-inline-block mx-3  px-3'>
-                    <img
-                      src={singleM.image_2}
-                      alt='Motorcycle'
-                    />
+                    <img src={singleM.image_2} alt='Motorcycle' />
                   </figure>
                   <figure className='image is-inline-block mx-3  px-2'>
-                    <img
-                      src={singleM.image_3}
-                      alt='Motorcycle'
-                    />
+                    <img src={singleM.image_3} alt='Motorcycle' />
                   </figure>
                 </div>
               </div>
@@ -97,7 +91,9 @@ function SinglePage() {
 
               {/*Add contact form*/}
               <form className='field my-6'>
-                <h2 className='subtitle is-4 single-title'>Interested? Contact Us</h2>
+                <h2 className='subtitle is-4 single-title'>
+                  Interested? Contact Us
+                </h2>
                 <div className='level mx-6 px-6 py-4 '>
                   <div className='level-left'>
                     <input
@@ -150,13 +146,15 @@ function SinglePage() {
         </section>
       )}
 
-        {/* Details */}
-        {singleM && (
+      {/* Details */}
+      {singleM && (
         <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
           <div className='tile is-parent is-vertical mx-4 px-2'>
             <div className='tile is-child box'>
-              <h2 className='subtitle is-3 has-text-centered single-title'>Reviews</h2>
+              <h2 className='subtitle is-3 has-text-centered single-title'>
+                Reviews
+              </h2>
               <p className='subtitle think-sub has-text-centered my-3'>
                 See what others think!
               </p>

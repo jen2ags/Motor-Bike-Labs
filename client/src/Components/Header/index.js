@@ -31,9 +31,11 @@ function Header() {
         {motorcycleData &&
           motorcycleData.map((motorcycle) => (
             <Link to={`/single/${motorcycle._id}`}>
-              <div key={motorcycle._id} className='tile is-parent is-vertical'>
+              <div key={motorcycle._id} className='tile is-parent is-vertical has-text-centered
+            '>
                 <div className='tile is-child '>
-                  <article className='tile is-child '>
+                  <article className='tile is-child has-text-centered
+                '>
                     {/* image for motorcycle */}
                     <div className='card px-6 py-6'>
                       <div className='card-image  has-text-centered' id='image'>
