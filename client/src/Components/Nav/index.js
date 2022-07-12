@@ -14,7 +14,7 @@ function Head() {
           </div>
 
           <div className='navbar-end'>
-            <a className='navbar-item' href='/home'>
+            <a className='navbar-item' href='/'>
               Home
             </a>
             <a className='navbar-item' href='#Reviews'>

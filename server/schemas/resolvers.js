@@ -24,13 +24,10 @@ const resolvers = {
         .select('-__v -password')
     },
     
-    motorcycle: async (parent, args) => { //, context this would be the third param if you want to get the data only if the user is logged in
-      // if (context.user) {
-        return Motorcycle.find()
-          .select('-__v -password')
-        }
-    //     throw new AuthenticationError('Not logged in');
-    // },
+    motorcycle: async (parent, args) => {
+    return Motorcycle.find()
+      .select('-__v -password')
+    },
 
     // get a single motorcycle by id 
     sigleMotorcycle: async (parent, { _id }) => {
