@@ -6,7 +6,6 @@ import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
 import Head from '../Components/Nav';
 import Footer from '../../src/Components/Footer';
 import Auth from '../../src/utils/auth';
-// import { KnownFragmentNamesRule } from 'graphql';
 
 // columns
 function SinglePage() {
