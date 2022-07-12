@@ -68,7 +68,7 @@ body,
   margin-right: 8%;
 }
 
-.tile {
+.tile-wrap {
   justify-content: center;
   align-items: center;
 }

@@ -27,15 +27,20 @@ function Header() {
       </section>
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
 
-      <section className='tile is-ancestor is-flex-wrap-wrap mx-2 my-2'>
+      <section className='tile tile-wrap is-ancestor is-flex-wrap-wrap mx-2 my-2'>
         {motorcycleData &&
           motorcycleData.map((motorcycle) => (
             <Link to={`/single/${motorcycle._id}`}>
-              <div key={motorcycle._id} className='tile is-parent is-vertical has-text-centered
-            '>
+              <div
+                key={motorcycle._id}
+                className='tile is-parent is-vertical has-text-centered
+            '
+              >
                 <div className='tile is-child '>
-                  <article className='tile is-child has-text-centered
-                '>
+                  <article
+                    className='tile is-child has-text-centered
+                '
+                  >
                     {/* image for motorcycle */}
                     <div className='card px-6 py-6'>
                       <div className='card-image  has-text-centered' id='image'>
@@ -44,7 +49,7 @@ function Header() {
                         </figure>
                         <div className='is-divider px-2'></div>
                       </div>
-                      
+
                       <div className='card-content stats has-text-centered'>
                         <div id='price' className='level-item'>
                           <p className='detail-name px-1'>Price: </p>

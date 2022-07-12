@@ -8,13 +8,13 @@ function ContactPage() {
     <>
       <Head />
       {
-        <section className='tile is-ancestor is-flex-wrap-wrap contact-tile '>
-          <div className='tile is-parent has-text-centered mx-4 my-6 px-4'>
-            <div className='tile is-child box is-6'>
-              <h1 className='title is-3 my-6'>Contact Us</h1>
+        <section className='tile is-ancestor mx-6  has-text-centered is-flex-wrap-wrap contact-tile '>
+          <div className='tile is-parent has-text-centered mx-6 my-6 px-4 is-6 '>
+            <div className='tile is-child box '>
+              <h1 className='title is-3 my-6 contact-title'>Contact Us</h1>
               {/*Add contact form*/}
-              <form className='field  my-6 '>
-                <h2 className='subtitle is-4 my-6'>Selling your motorcycle?</h2>
+              <form className='field  my-6'>
+                <h2 className='subtitle is-4 my-6 contact-sub'>Selling your motorcycle?</h2>
                 <div className='level   px-6'>
                   <div className='level-item is-flex-wrap-wrap'>
                     <div className='level-item mx-4 '>
