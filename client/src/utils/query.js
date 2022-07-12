@@ -50,6 +50,9 @@ export const USERS = gql`
         image_1
         image_2
         image_3
+        reviewSchema {
+          _id  
+        }
       }
     }
   }
@@ -73,6 +76,9 @@ export const SINGLE_MOTORCYCLE = gql`
       image_1
       image_2
       image_3
+      reviewSchema {
+        _id  
+      }
     }
   }
 `;

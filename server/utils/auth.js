@@ -7,7 +7,7 @@ const expiration = '1h';
 
 module.exports = {
   signToken: function({ username, email, _id }) {
-    const payload = { username, email, _id };
+    const payload = { username, email, _id, admin };
 
     // the data is the payloud (username,email,id) and the secret is the mysec.... and the experation is 2h 
     return jwt.sign({ data: payload }, secret, { expiresIn: expiration });
