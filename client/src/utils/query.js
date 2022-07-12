@@ -25,7 +25,6 @@ export const SINGLE_USER  = gql`
       image_3
       reviews {
         _id
-        username
         reviewBody
       }
     }
