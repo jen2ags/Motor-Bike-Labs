@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css';
-import Header from '../../components/Header'
+import Header from '../../pages/Home';
 
 function Home() {
 
@@ -12,4 +12,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;
