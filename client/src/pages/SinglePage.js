@@ -35,6 +35,8 @@ function SinglePage() {
   // check if user is logged in
   const loggedIn = Auth.loggedIn();
 
+  
+
   return (
     <>
       <Head />
@@ -159,7 +161,7 @@ function SinglePage() {
               </p>
               <div className='tile is-child box'>
                 <div className='' id='user'>
-                  {/* username here */} says:{' '}
+                  {' '} says:{' '} 
                 </div>
               </div>
               {reviewsModel ? (
