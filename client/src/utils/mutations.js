@@ -39,7 +39,6 @@ export const ADD_USER = gql`
           reviews {
             _id
             reviewBody
-            username
           }
         }
       }
