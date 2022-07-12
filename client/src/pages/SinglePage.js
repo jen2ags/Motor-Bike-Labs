@@ -32,7 +32,7 @@ function SinglePage() {
     return <div>Loading...</div>;
   }
 
-  // this will be used once a user want to add a review
+  // check if user is logged in
   const loggedIn = Auth.loggedIn();
 
   return (

@@ -2,6 +2,9 @@ import React from 'react'
 import Auth from '../../utils/auth';
 
 function Head() {
+    // check if user is logged in
+    const loggedIn = Auth.loggedIn();
+
   return (
     <div>
         {/*header and navbar*/}
@@ -27,9 +30,15 @@ function Head() {
               Account
             </a>
 
-            <a className='navbar-item' href='#Logout' onClick={Auth.logout}>
+            {loggedIn ? (
+            <a className='navbar-item' href='/login' onClick={Auth.logout}>
               Logout
             </a>
+            ):
+            <a className='navbar-item' href='/login' onClick={Auth.logout}>
+              Login
+            </a>
+            }
           </div>
         </nav>
       </header>
