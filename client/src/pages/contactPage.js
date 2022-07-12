@@ -8,50 +8,54 @@ function ContactPage() {
     <>
       <Head />
       {
-        <section className='tile is-ancestor is-flex-wrap-wrap  '>
+        <section className='tile is-ancestor is-flex-wrap-wrap contact-tile '>
           <div className='tile is-parent has-text-centered mx-4 my-6 px-4'>
-            <div className='tile is-child box '>
-              <h1 className='title is-3 my-4'>Contact Us</h1>
+            <div className='tile is-child box is-6'>
+              <h1 className='title is-3 my-6'>Contact Us</h1>
               {/*Add contact form*/}
-              <form className='field my-6'>
-                <h2 className='subtitle is-4'>Selling your motorcycle?</h2>
-                <div className='level  '>
-                  <div className='level-item'>
-                    <input
-                      className='input level-item '
-                      placeholder='First Name'
-                      id='first'
-                    ></input>
-                  </div>
-                  <div className='level-item'>
-                    <input
-                      className='input level-item  '
-                      placeholder='Last Name'
-                      id='last'
-                    ></input>
+              <form className='field  my-6 '>
+                <h2 className='subtitle is-4 my-6'>Selling your motorcycle?</h2>
+                <div className='level   px-6'>
+                  <div className='level-item is-flex-wrap-wrap'>
+                    <div className='level-item mx-4 '>
+                      <input
+                        className='input level-item '
+                        placeholder='First Name'
+                        id='first'
+                      ></input>
+                    </div>
+                    <div className='level-item is-flex-wrap-wrap '>
+                      <input
+                        className='input level-item  '
+                        placeholder='Last Name'
+                        id='last'
+                      ></input>
+                    </div>
                   </div>
                 </div>
 
-                <div className='level'>
-                  <div className='level-item'>
-                    <input
-                      className='input level-item '
-                      placeholder='Email'
-                      id='email'
-                    ></input>
-                  </div>
-                  <div className='level-item'>
-                    <input
-                      className='input level-item  '
-                      placeholder='Phone (optional)'
-                      id='phone'
-                    ></input>
+                <div className='level  px-6'>
+                  <div className='level-item is-flex-wrap-wrap'>
+                    <div className='level-item  mx-4'>
+                      <input
+                        className='input level-item '
+                        placeholder='Email'
+                        id='email'
+                      ></input>
+                    </div>
+                    <div className='level-item is-flex-wrap-wrap'>
+                      <input
+                        className='input level-item  '
+                        placeholder='Phone (optional)'
+                        id='phone'
+                      ></input>
+                    </div>
                   </div>
                 </div>
-                <div className='field my-4 mx-6 px-6'>
+                <div className='field my-4  px-6'>
                   <div className='control'>
                     <textarea
-                      className='textarea is-small'
+                      className='textarea is-small  '
                       id='text'
                       placeholder="I'm interested in selling ..."
                     ></textarea>

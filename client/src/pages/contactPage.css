@@ -1,0 +1,12 @@
+/* ROOT */
+* {
+    box-sizing: border-box;
+  }
+  
+:root {
+    --gray: rgb(223, 223, 223);
+}
+
+body {
+    background-color: var(--gray);
+  }

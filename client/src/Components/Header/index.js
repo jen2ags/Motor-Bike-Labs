@@ -22,7 +22,7 @@ function Header() {
       {/* hero section, ****add carousel****/}
       <section className='hero is-large'>
         <div className='hero-body my-6'>
-          <h1 className='title is-size-1  exhaust'>Exhaust your options</h1>
+          <h1 className='title is-size-1 exhaust'>Exhaust your options</h1>
         </div>
       </section>
       {/*Tiles for motorcycle selection - section for image and section for stats*/}
