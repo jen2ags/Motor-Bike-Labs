@@ -184,13 +184,24 @@ function SinglePage() {
                       <button className='button my-2 reviews-button'>
                         Add
                       </button>
-                    ) : null}
-                    <button
-                      className='button my-2 reviews-button'
-                      onClick={toggleReview}
-                    >
-                      Close
-                    </button>
+                    ) : 
+                    <> {/* if user is not logged in, then show this*/}
+                      <button
+                        className='button my-2 reviews-button'
+                        onClick={toggleReview}
+                      >
+                        Close
+                      </button>
+                      <a href='/login'>
+                        <button
+                        className='button my-2 reviews-button'
+                        onClick={toggleReview}
+                        >
+                        Login
+                        </button>
+                      </a>
+                    </>
+                    } 
                   </div>
                 </div>
               ) : (
