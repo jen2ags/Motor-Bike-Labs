@@ -25,7 +25,11 @@ type Motorcycle {
   image_1: String
   image_2: String
   image_3: String
+<<<<<<< HEAD
   reviews: [Review]
+=======
+  reviewSchema: [Review]
+>>>>>>> 46e166bcefc41a9e2f6e3cddf0f9fe7b93d0d215
 }
 
 type Review {

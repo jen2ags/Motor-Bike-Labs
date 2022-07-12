@@ -24,12 +24,9 @@ const resolvers = {
         .select('-__v -password')
     },
     
-    motorcycle: async (parent, args, context) => {
-      if (context.user) {
-        return Motorcycle.find()
-          .select('-__v -password')
-        }
-        throw new AuthenticationError('Not logged in');
+    motorcycle: async (parent, args) => {
+    return Motorcycle.find()
+      .select('-__v -password')
     },
 
     // get a single motorcycle by id 
