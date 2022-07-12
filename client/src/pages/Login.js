@@ -54,7 +54,7 @@ function Login() {
       // save the token we got back from the data to localStorage
       Auth.login(data.login.token);
       // path the user to the homepage
-      window.location.assign('/home');
+      window.location.assign('/');
     } catch (e) {
       console.error(e);
     }

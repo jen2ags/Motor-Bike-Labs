@@ -51,7 +51,7 @@ userSchema.methods.isCorrectPassword = async function(password) {
 };
 
 
-userSchema.virtual('MotoCount').get(function() {
+userSchema.virtual('MotorCount').get(function() {
   return this.motocycle.length;
 });
 

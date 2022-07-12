@@ -6,7 +6,6 @@ import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
 import Head from '../Components/Nav';
 import Footer from '../../src/Components/Footer';
 import Auth from '../../src/utils/auth';
-// import { KnownFragmentNamesRule } from 'graphql';
 
 // columns
 function SinglePage() {
@@ -33,8 +32,10 @@ function SinglePage() {
     return <div>Loading...</div>;
   }
 
-  // this will be used once a user want to add a review
+  // check if user is logged in
   const loggedIn = Auth.loggedIn();
+
+  
 
   return (
     <>
@@ -185,13 +186,24 @@ function SinglePage() {
                       <button className='button my-2 reviews-button'>
                         Add
                       </button>
-                    ) : null}
-                    <button
-                      className='button my-2 reviews-button'
-                      onClick={toggleReview}
-                    >
-                      Close
-                    </button>
+                    ) : 
+                    <> {/* if user is not logged in, then show this*/}
+                      <button
+                        className='button my-2 reviews-button'
+                        onClick={toggleReview}
+                      >
+                        Close
+                      </button>
+                      <a href='/login'>
+                        <button
+                        className='button my-2 reviews-button'
+                        onClick={toggleReview}
+                        >
+                        Login
+                        </button>
+                      </a>
+                    </>
+                    } 
                   </div>
                 </div>
               ) : (

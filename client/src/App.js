@@ -21,8 +21,8 @@ function App() {
       <Router>
           <div>
             <Routes>
-              <Route path="/" element={<Login />} />
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/single/:id" element={<SinglePage />}/>
               <Route path="/Contact" element= {<ContactPage />}/>
             </Routes>

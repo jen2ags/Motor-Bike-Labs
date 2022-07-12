@@ -1,10 +1,15 @@
 import React from 'react'
+import './style.css'
 
 function wrongPath() {
   return (
     <div>
-      <div>Please Login to be able to see the content</div>
-      <a href='/'><button>Login</button></a>
+      <div className='wrongPath'>
+        <div className='wrongPath-content'>
+            <p className='wrongPath-content-paragraph'>Please Login to be able to see the content</p>
+            <a href='/login' className='wrongPath-content-tag'><button>Login</button></a>
+        </div>  
+      </div>
     </div>
   )
 }
