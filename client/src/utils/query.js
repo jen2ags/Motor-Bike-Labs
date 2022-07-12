@@ -55,14 +55,8 @@ export const USERS = gql`
         image_1
         image_2
         image_3
-<<<<<<< HEAD
-        reviews {
-          _id
-          reviewBody
-=======
         reviewSchema {
           _id  
->>>>>>> 46e166bcefc41a9e2f6e3cddf0f9fe7b93d0d215
         }
       }
     }
