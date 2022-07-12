@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/jen2ags/Motor-Bike-Labs#readme",
   "dependencies": {
+    "bulma-extensions": "^6.2.7",
     "dotenv": "^16.0.1",
     "graphql": "^16.5.0",
     "react-scripts": "^5.0.1"
