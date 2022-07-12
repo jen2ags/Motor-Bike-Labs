@@ -1,0 +1,30 @@
+.wrongPath{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrongPath .wrongPath-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrongPath-content-paragraph{
+  font-size: 25px;
+}
+
+.wrongPath-content-tag button{
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.wrongPath-content-tag button:hover{
+  background-color: black;
+  color: white;
+}
