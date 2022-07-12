@@ -10,8 +10,8 @@ import {  LOGIN_USER } from '../utils/mutations';
 // import auth to use the token
 import Auth from '../utils/auth';
 import SignUp from './SignUp';
-import Head from '../Components/Nav';
-import Footer from '../Components/Footer';
+import Head from '../components/Nav';
+import Footer from '../components/Footer';
 // bulma import
 import 'bulma/css/bulma.min.css';
 
