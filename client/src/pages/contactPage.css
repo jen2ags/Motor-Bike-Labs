@@ -1,0 +1,28 @@
+/* ROOT */
+* {
+    box-sizing: border-box;
+  }
+  
+:root {
+    --gray: rgb(223, 223, 223);
+}
+
+body {
+    background-color: var(--gray);
+  }
+
+  /* FONT STYLES */
+ .contact-title {
+    font-family: 'Abril Fatface', sans-serif;
+ }
+
+.contact-sub {
+    font-family: 'Gentiium Book Basic', sans-serif;
+}
+  /* TILE */
+
+.contact-tile {
+    justify-content:center;
+    display: flex;
+}
+

@@ -2,58 +2,62 @@ import React from 'react';
 import Head from '../Components/Nav';
 import Footer from '../Components/Footer';
 //import Auth from '../../src/utils/auth';
-
+import './contactPage.css';
 function ContactPage() {
   return (
     <>
       <Head />
       {
-        <section className='tile is-ancestor is-flex-wrap-wrap  '>
-          <div className='tile is-parent has-text-centered mx-4 my-6 px-4'>
+        <section className='tile is-ancestor mx-6  has-text-centered is-flex-wrap-wrap contact-tile '>
+          <div className='tile is-parent has-text-centered mx-6 my-6 px-4 is-6 '>
             <div className='tile is-child box '>
-              <h1 className='title is-3 my-4'>Contact Us</h1>
+              <h1 className='title is-3 my-6 contact-title'>Contact Us</h1>
               {/*Add contact form*/}
-              <form className='field my-6'>
-                <h2 className='subtitle is-4'>Selling your motorcycle?</h2>
-                <div className='level mx-6 px-6 py-4 '>
-                  <div className='level-left'>
-                    <input
-                      className='input level-item px-5'
-                      placeholder='First Name'
-                      id='first'
-                    ></input>
-                  </div>
-                  <div className='level-right'>
-                    <input
-                      className='input level-item px-5 '
-                      placeholder='Last Name'
-                      id='last'
-                    ></input>
+              <form className='field  my-6'>
+                <h2 className='subtitle is-4 my-6 contact-sub'>Selling your motorcycle?</h2>
+                <div className='level   px-6'>
+                  <div className='level-item is-flex-wrap-wrap'>
+                    <div className='level-item mx-4 '>
+                      <input
+                        className='input level-item '
+                        placeholder='First Name'
+                        id='first'
+                      ></input>
+                    </div>
+                    <div className='level-item is-flex-wrap-wrap '>
+                      <input
+                        className='input level-item  '
+                        placeholder='Last Name'
+                        id='last'
+                      ></input>
+                    </div>
                   </div>
                 </div>
 
-                <div className='level   mx-6 px-6 '>
-                  <div className='level-left'>
-                    <input
-                      className='input level-item px-5'
-                      placeholder='Email'
-                      id='email'
-                    ></input>
-                  </div>
-                  <div className='level-right'>
-                    <input
-                      className='input level-item px-5 '
-                      placeholder='Phone (optional)'
-                      id='phone'
-                    ></input>
+                <div className='level  px-6'>
+                  <div className='level-item is-flex-wrap-wrap'>
+                    <div className='level-item  mx-4'>
+                      <input
+                        className='input level-item '
+                        placeholder='Email'
+                        id='email'
+                      ></input>
+                    </div>
+                    <div className='level-item is-flex-wrap-wrap'>
+                      <input
+                        className='input level-item  '
+                        placeholder='Phone (optional)'
+                        id='phone'
+                      ></input>
+                    </div>
                   </div>
                 </div>
-                <div className='field my-4 mx-6 px-6'>
+                <div className='field my-4  px-6'>
                   <div className='control'>
                     <textarea
-                      className='textarea is-small'
+                      className='textarea is-small  '
                       id='text'
-                      placeholder="I'm interested in the ..."
+                      placeholder="I'm interested in selling ..."
                     ></textarea>
                   </div>
                 </div>
