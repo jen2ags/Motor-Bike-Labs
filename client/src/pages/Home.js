@@ -1,12 +1,12 @@
 import React from 'react';
 import './home.css';
 import './SinglePage';
-import './ContactPage';
+import './contactPage';
 import { useQuery } from '@apollo/client';
 import { MOTORCYCLE } from '../utils/query';
 import { Link } from 'react-router-dom';
-import Head from '../components/Nav';
-import Footer from '../components/Footer';
+import Head from '../Components/Nav';
+import Footer from '../Components/Footer';
 
 // import WrongPath from '../../components/WrongPath'
 function Header() {

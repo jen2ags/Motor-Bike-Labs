@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './singlePage.css';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
-import Head from '../components/Nav';
-import Footer from '../../src/components/Footer';
+import { SINGLE_MOTORCYCLE } from '../utils/query';
+import Head from '../Components/Nav';
+import Footer from '../../src/Components/Footer';
 import Auth from '../../src/utils/auth';
 
 // columns

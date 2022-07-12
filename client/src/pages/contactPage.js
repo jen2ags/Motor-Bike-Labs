@@ -1,6 +1,6 @@
 import React from 'react';
-import Head from '../components/Nav';
-import Footer from '../components/Footer';
+import Head from '../Components/Nav';
+import Footer from '../Components/Footer';
 //import Auth from '../../src/utils/auth';
 
 function ContactPage() {
