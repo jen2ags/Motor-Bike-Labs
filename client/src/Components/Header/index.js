@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import Head from '../Nav'
 import Footer from '../Footer'
 
-// import WrongPath from '../../Components/WrongPath'
+// import WrongPath from '../../components/WrongPath'
 function Header() {
   const { data } = useQuery(MOTORCYCLE);
 
