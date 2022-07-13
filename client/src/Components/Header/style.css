@@ -78,17 +78,14 @@ body,
 @media screen and (min-width: 1200px) {
   .hero-name {
     padding-bottom: 60px;
-  
   }
 
   .tile-wrap {
     justify-content: space-evenly;
-   
   }
 }
 
-
-@media screen and (min-width: 980px) {
+@media screen and (max-width: 980px) {
   /* HEADER, NAVBAR, HERO */
   header,
   .main-title,
@@ -121,26 +118,16 @@ body,
   }
 
   .hero-name {
-    width: 40%;
+    padding-bottom: 35%;
   }
 
   .tile-wrap {
-   display: flex;
-   
+    display: flex;
   }
 }
-
 @media screen and (max-width: 600px) {
-  .navbar-item, .navbar-brand, .navbar-end {
-    justify-content: center;
-    align-items: center;
-   
-  }
-
-  .nav-center {
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  .hero {
+    background-position: cover;
   }
 
   .tile-wrap {
@@ -150,7 +137,8 @@ body,
 }
 
 @media screen and (min-width: 600px) {
-  .hero {
+  .hero-body {
     display: flex;
+    background-size: cover;
   }
 }

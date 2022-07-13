@@ -1,28 +1,46 @@
 /* ROOT */
 * {
-    box-sizing: border-box;
-  }
-  
+  box-sizing: border-box;
+}
+
 :root {
-    --gray: rgb(223, 223, 223);
+  --gray: rgb(223, 223, 223);
 }
 
 body {
-    background-color: var(--gray);
-  }
+  background-color: var(--gray);
+}
 
-  /* FONT STYLES */
- .contact-title {
-    font-family: 'Abril Fatface', sans-serif;
- }
+/* FONT STYLES */
+.contact-title {
+  font-family: 'Abril Fatface', sans-serif;
+}
 
 .contact-sub {
-    font-family: 'Gentiium Book Basic', sans-serif;
+  font-family: 'Gentiium Book Basic', sans-serif;
 }
-  /* TILE */
+/* TILE */
 
 .contact-tile {
-    justify-content:center;
-    display: flex;
+  justify-content: center;
+  display: flex;
 }
 
+/* MEDIA SCREENS */
+
+@media screen and (max-width: 980px) {
+  .level-field {
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .level-field {
+   display: inline-block;
+   
+  }
+
+  
+ 
+}

@@ -11,13 +11,13 @@ function Head() {
       <header>
         <nav className='navbar ' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
-            <a className='navbar-item logo' href='/home'>
+            <a className='navbar-item logo' href='/'>
               <h1 className='title main-title navbar-item is-2'>Motor Bike Labs</h1>
             </a>
           </div>
 
           <div className='navbar-end'>
-            <a className='navbar-item nav-center' href='/home'>
+            <a className='navbar-item nav-center' href='/'>
               Home
             </a>
 
