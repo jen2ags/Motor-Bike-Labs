@@ -30,7 +30,7 @@ function SinglePage() {
           <div className='tile is-parent is-vertical '>
             <div className='tile is-child '>
               {/* main image */}
-              <div className='card mx-6 my-6 px-6 py-6'>
+              <div className='card mx-6 my-6 px-6 py-6 border-tile'>
                 <div className='card-image  has-text-centered ' id='image'>
                   <figure className='image is-is-inline-block my-6 py-6'>
                     <img src={singleM.image_1} alt='Motorcycle' />
@@ -47,8 +47,8 @@ function SinglePage() {
             </div>
           </div>
           {/* stats */}
-          <div className='tile is-parent has-text-centered mx-4 my-6 px-4 is-flex-wrap-wrap'>
-            <div className='tile is-child box is-flex-wrap-wrap'>
+          <div className='tile is-parent has-text-centered mx-4 my-6 px-4 is-flex-wrap-wrap '>
+            <div className='tile is-child box is-flex-wrap-wrap border-tile'>
               <h1 className='subtitle is-3 my-4 single-title'>Quick Look</h1>
               <div className=' level px-6 py-6 mx-6 is-flex-wrap-wrap'>
                 <div className='level-item'>
@@ -81,16 +81,16 @@ function SinglePage() {
                   Interested? Contact Us
                 </h2>
                 <div className='level mx-6 px-6 py-4 '>
-                  <div className='level-left'>
+                  <div className='level-left '>
                     <input
-                      className='input level-item px-5 think-sub'
+                      className='input level-item px-5 think-sub input-border '
                       placeholder='First Name'
                       id='first'
                     ></input>
                   </div>
-                  <div className='level-right'>
+                  <div className='level-right '>
                     <input
-                      className='input level-item px-5 think-sub '
+                      className='input level-item px-5 think-sub input-border '
                       placeholder='Last Name'
                       id='last'
                     ></input>
@@ -98,16 +98,16 @@ function SinglePage() {
                 </div>
 
                 <div className='level   mx-6 px-6 '>
-                  <div className='level-left'>
+                  <div className='level-left '>
                     <input
-                      className='input level-item px-5 think-sub'
+                      className='input level-item px-5 think-sub input-border'
                       placeholder='Email'
                       id='email'
                     ></input>
                   </div>
-                  <div className='level-right'>
+                  <div className='level-right '>
                     <input
-                      className='input level-item px-5 think-sub '
+                      className='input level-item px-5 think-sub input-border'
                       placeholder='Phone (optional)'
                       id='phone'
                     ></input>
@@ -116,13 +116,13 @@ function SinglePage() {
                 <div className='field my-4 mx-6 px-6 think-sub'>
                   <div className='control'>
                     <textarea
-                      className='textarea is-small '
+                      className='textarea is-small input-border'
                       id='text'
                       placeholder="I'm interested in the ..."
                     ></textarea>
                   </div>
                 </div>
-                <button className='button' id=''>
+                <button className='button input-border' id=''>
                   Contact
                 </button>
               </form>
@@ -136,12 +136,13 @@ function SinglePage() {
       {singleM && (
         <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
-          <div className='tile is-parent is-vertical mx-4 my-6 px-2'>
+          <div className='tile is-parent is-vertical mx-4 my-6 px-2 '>
+            
             <Review motorId={singleM._id}/>
           </div>
 
           <div className='tile is-parent is-vertical mx-3 think-sub '>
-            <div className='tile is-child box'>
+            <div className='tile is-child box border-tile'>
               {/* leave the words and populate data next to them */}
               <h2 className='subtitle is-3 single-title'>Details:</h2>
               <div className=''>

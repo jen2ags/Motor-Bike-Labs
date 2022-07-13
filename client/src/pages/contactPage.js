@@ -10,7 +10,7 @@ function ContactPage() {
       {
         <section className='tile is-ancestor mx-6  has-text-centered is-flex-wrap-wrap contact-tile '>
           <div className='tile is-parent has-text-centered mx-6 my-6 px-4 is-6 parent-contact '>
-            <div className='tile is-child box column contact-box'>
+            <div className='tile is-child box column contact-box border-tile'>
               <h1 className='title is-3 my-6 contact-title'>Contact Us</h1>
               {/*Add contact form*/}
               <form className='field contact-field my-6'>
@@ -19,14 +19,14 @@ function ContactPage() {
                   <div className='level-item is-flex-wrap-wrap'>
                     <div className='level-item mx-1'>
                       <input
-                        className='input level-item level-input '
+                        className='input level-item level-input input-border '
                         placeholder='First Name'
                         id='first'
                       ></input>
                     </div>
                     <div className='level-item  is-flex-wrap-wrap'>
                       <input
-                        className='input level-item level-input '
+                        className='input level-item level-input input-border'
                         placeholder='Last Name'
                         id='last'
                       ></input>
@@ -38,14 +38,14 @@ function ContactPage() {
                   <div className='level-item is-flex-wrap-wrap'>
                     <div className='level-item mx-1 '>
                       <input
-                        className='input level-item level-input'
+                        className='input level-item level-input input-border'
                         placeholder='Email'
                         id='email'
                       ></input>
                     </div>
                     <div className='level-item is-flex-wrap-wrap'>
                       <input
-                        className='input level-item  level-input'
+                        className='input level-item  level-input input-border'
                         placeholder='Phone (optional)'
                         id='phone'
                       ></input>
@@ -55,13 +55,13 @@ function ContactPage() {
                 <div className='field my-4  px-6'>
                   <div className='control'>
                     <textarea
-                      className='textarea is-small level-field '
+                      className='textarea is-small level-field input-border'
                       id='text'
                       placeholder="I'm interested in selling ..."
                     ></textarea>
                   </div>
                 </div>
-                <button className='button' id=''>
+                <button className='button input-border' id=''>
                   Contact
                 </button>
               </form>

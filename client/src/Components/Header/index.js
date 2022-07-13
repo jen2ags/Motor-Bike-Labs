@@ -38,7 +38,7 @@ function Header() {
               >
                 <div className='tile is-child '>
                   <article
-                    className='tile is-child has-text-centered
+                    className='tile is-child has-text-centered border-tile
                 '
                   >
                     {/* image for motorcycle */}
