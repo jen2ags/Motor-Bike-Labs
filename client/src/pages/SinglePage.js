@@ -1,25 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './singlePage.css';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
 import Head from '../Components/Nav';
 import Footer from '../../src/Components/Footer';
-import Auth from '../../src/utils/auth';
+import Review from '../../src/pages/Review';
 
 // columns
 function SinglePage() {
-  // set a state that will handle, displaying the reviews model or hide it
-  const [reviewsModel, addReviewModel] = useState(false);
-  // update the state
-  function toggleReview() {
-    if (reviewsModel === true) {
-      addReviewModel(false);
-    } else {
-      addReviewModel(true);
-    }
-  }
-
   // this useParams is to get the data by id
   const { id: sigleMotorcycleId } = useParams();
   const { loading, data } = useQuery(SINGLE_MOTORCYCLE, {
@@ -31,10 +20,6 @@ function SinglePage() {
   if (loading) {
     return <div>Loading...</div>;
   }
-
-  // check if user is logged in
-  const loggedIn = Auth.loggedIn();
-
   
 
   return (
@@ -154,66 +139,7 @@ function SinglePage() {
         <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
           <div className='tile is-parent is-vertical mx-4 px-2'>
-            <div className='tile is-child box'>
-              <h2 className='title is-3 has-text-centered'>Reviews</h2>
-              <p className='subtitle has-text-centered my-3'>
-                See what others think!
-              </p>
-              <div className='tile is-child box'>
-                <div className='' id='user'>
-                  {' '} says:{' '} 
-                </div>
-              </div>
-              {reviewsModel ? (
-                <div className='reviews-model'>
-                  {/* if looged in show the textarea */}
-                  {loggedIn ? (
-                    <div>
-                      <textarea
-                        className='textarea my-2'
-                        placeholder='Add your review'
-                      ></textarea>
-                    </div>
-                  ) : (
-                    // if not logged it give them this error
-                    <p className='alert-review-login'>
-                      Please login to be able to add a review{' '}
-                    </p>
-                  )}
-                  <div className='reviews-button-container'>
-                    {/* if looged in show the add button*/}
-                    {loggedIn ? (
-                      <button className='button my-2 reviews-button'>
-                        Add
-                      </button>
-                    ) : 
-                    <> {/* if user is not logged in, then show this*/}
-                      <button
-                        className='button my-2 reviews-button'
-                        onClick={toggleReview}
-                      >
-                        Close
-                      </button>
-                      <a href='/login'>
-                        <button
-                        className='button my-2 reviews-button'
-                        onClick={toggleReview}
-                        >
-                        Login
-                        </button>
-                      </a>
-                    </>
-                    } 
-                  </div>
-                </div>
-              ) : (
-                <div className='has-text-centered'>
-                  <button className='button my-3' onClick={toggleReview}>
-                    Add Review
-                  </button>
-                </div>
-              )}
-            </div>
+            <Review />
           </div>
 
           <div className='tile is-parent is-vertical mx-3'>
