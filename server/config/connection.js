@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const connect = mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/', {
+const connect = mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/drive-now', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
