@@ -16,7 +16,6 @@ import 'bulma-extensions';
 
 // Login component 
 function Login() {
-  alert('login test')
   // set a state that will let me see the signup component or the login component
   const [showLogin, setShowLogin] = useState(false);
   // update state to show the Login component instead of the signup
