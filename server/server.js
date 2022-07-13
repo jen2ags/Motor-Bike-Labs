@@ -11,6 +11,7 @@ const db = require('./config/connection');
 const { typeDefs, resolvers } = require('./schemas');
 
  
+
 const PORT = process.env.PORT || 3001;
 // create a new Apollo server and pass in our schema data
 const server = new ApolloServer({
@@ -42,7 +43,7 @@ db.once('open', () => {
     }
 
     app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, '../client/public/index.html'));
+      res.sendFile(path.join(__dirname, '../client/build/index.html'));
     });
   })
 };
