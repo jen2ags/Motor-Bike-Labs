@@ -1,80 +1,33 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './singlePage.css';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
 import Head from '../Components/Nav';
 import Footer from '../Components/Footer';
-import { ADD_REVIEW } from '../../src/utils/mutations';
-import { useMutation } from '@apollo/client';
-import Auth from '../../src/utils/auth';
+import Review from '../../src/pages/Review'
 
 // columns
 function SinglePage() {
-  console.log()
-  // set a state that will handle, displaying the reviews model or hide it
-  const [reviewsModel, addReviewModel] = useState(false);
-  // update the state
-  function toggleReview() {
-    if (reviewsModel === true) {
-      addReviewModel(false);
-    } else {
-      addReviewModel(true);
-    }
-  }
-
-  // add review mutation call
-  const [reviewBody, setBody] = useState('');
-  const [characterCount, setCharacterCount] = useState(0);
-  const [addReview, {error}] = useMutation(ADD_REVIEW);
-
-  const handleChange = (event) => {
-    // when we change the inputs, get the name and value to change the state to whatever it is set to
-    if (event.target.value.length <= 280) {
-      setBody(event.target.value);
-      setCharacterCount(event.target.value.length);
-    }
-  };
-
-  // submit form
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-
-    try {
-      await addReview({
-        variables: { reviewBody, },
-      });
-
-      // clear form value
-      setBody('');
-      setCharacterCount(0);
-    } catch (e) {
-      console.error(e);
-    }
-  };
-
-  
-  // check if user is logged in
-  const loggedIn = Auth.loggedIn();
   // this useParams is to get the data by id
   const { id: sigleMotorcycleId } = useParams();
   const { loading, data } = useQuery(SINGLE_MOTORCYCLE, {
-      variables: { id: sigleMotorcycleId },
-    });
+    variables: { id: sigleMotorcycleId },
+  });
   const singleM = data?.sigleMotorcycle || {};
-    console.log(singleM);
+  console.log(singleM);
 
   if (loading) {
     return <div>Loading...</div>;
   }
-    
+  
 
   return (
     <>
       <Head />
       {singleM && (
-        <section className='tile is-ancestor is-flex-wrap-wrap  mx-2 py-3 m-4'>
-          <div className='tile is-parent is-vertical mx'>
+        <section className='tile is-ancestor is-flex-wrap-wrap  '>
+          <div className='tile is-parent is-vertical '>
             <div className='tile is-child '>
               {/* main image */}
               <div className='card mx-6 my-6 px-6 py-6'>
@@ -184,77 +137,7 @@ function SinglePage() {
         <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
           <div className='tile is-parent is-vertical mx-4 px-2'>
-            <div className='tile is-child box'>
-              <h2 className='title is-3 has-text-centered'>Reviews</h2>
-              <p className='subtitle has-text-centered my-3'>
-                See what others think!
-              </p>
-            <div className='tile is-child box'>
-            <div className='' id='user'>
-              {' '} says:{' '} 
-            </div>
-          </div>
-        {reviewsModel ? (
-          <>
-            <form className='reviews-model' onSubmit={handleFormSubmit}>
-              {/* if looged in show the textarea */}
-              {loggedIn ? (
-                <div>
-                  <textarea
-                    value={reviewBody}
-                    className='textarea my-2'
-                    placeholder='Add your review'
-                    onChange={handleChange}
-                  ></textarea>
-                </div>
-              ) : (
-                // if not logged it give them this error
-                <p className='alert-review-login'>
-                  Please login to be able to add a review{' '}
-                </p>
-              )}
-
-              {loggedIn ? (
-                  <button className='button my-2 reviews-button' type='submit'>
-                    Add
-                  </button>
-                ) : null}
-            </form>
-
-            <div className='reviews-button-container'>
-              {/* if looged in*/}
-              {loggedIn ? (
-                <></>
-              ) : 
-              <>
-                {/* if user is not logged in */}
-                <button
-                  className='button my-2 reviews-button'
-                  onClick={toggleReview}
-                >
-                  Close
-                </button>
-
-                <a href='/login' className='button-review-login'>
-                  <button
-                  className='button my-2 reviews-button'
-                  type='click'
-                  >
-                  Login
-                  </button>
-                </a>
-              </>
-              } 
-            </div>
-          </>
-        ) : (
-          <div className='has-text-centered'>
-            <button className='button my-3' onClick={toggleReview}>
-              Add Review 
-            </button>
-          </div>
-        )}
-      </div>
+            <Review motorId={singleM._id}/>
           </div>
 
           <div className='tile is-parent is-vertical mx-3 think-sub '>
