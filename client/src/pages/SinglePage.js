@@ -47,10 +47,10 @@ function SinglePage() {
             </div>
           </div>
           {/* stats */}
-          <div className='tile is-parent has-text-centered mx-4 my-6 px-4'>
-            <div className='tile is-child box '>
+          <div className='tile is-parent has-text-centered mx-4 my-6 px-4 is-flex-wrap-wrap'>
+            <div className='tile is-child box is-flex-wrap-wrap'>
               <h1 className='subtitle is-3 my-4 single-title'>Quick Look</h1>
-              <div className=' level px-6 py-6 mx-6 '>
+              <div className=' level px-6 py-6 mx-6 is-flex-wrap-wrap'>
                 <div className='level-item'>
                   <div className='subtitle is-3 think-sub' id='year'>
                     {singleM.year}
@@ -136,7 +136,7 @@ function SinglePage() {
       {singleM && (
         <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
-          <div className='tile is-parent is-vertical mx-4 px-2'>
+          <div className='tile is-parent is-vertical mx-4 my-6 px-2'>
             <Review motorId={singleM._id}/>
           </div>
 
