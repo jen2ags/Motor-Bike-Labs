@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const reviewSchema = require('./Review');
+const Review = require('./Review');
 
 const motorSchema = new Schema(
   {
@@ -45,7 +45,12 @@ const motorSchema = new Schema(
     image_3: {
       type: String
     },
-    reviews: [reviewSchema]
+    reviewSchema: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Review'
+      }
+    ]
   },
   
   {

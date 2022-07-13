@@ -36,7 +36,23 @@ export const ADD_USER = gql`
           image_1
           image_2
           image_3
+          reviews {
+            _id
+            reviewBody
+          }
         }
+      }
+    }
+  }
+`;
+
+export const ADD_REVIEW = gql`
+  mutation addReview($motorId: ID! , $reviewBody: String!) {
+    addReview(motorId: $motorId, reviewBody: $reviewBody) {
+      reviewSchema{
+        reviewBody
+        reviewBody
+        createdAt
       }
     }
   }

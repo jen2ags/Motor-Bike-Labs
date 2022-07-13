@@ -14,6 +14,7 @@ import Head from '../Components/Nav';
 import Footer from '../Components/Footer';
 // bulma import
 import 'bulma/css/bulma.min.css';
+import 'bulma-extensions';
 
 // Login component
 function Login() {
@@ -53,7 +54,7 @@ function Login() {
       // save the token we got back from the data to localStorage
       Auth.login(data.login.token);
       // path the user to the homepage
-      window.location.assign('/home');
+      window.location.assign('/');
     } catch (e) {
       console.error(e);
     }
