@@ -5,7 +5,6 @@ import { useQuery } from '@apollo/client';
 import { SINGLE_MOTORCYCLE } from '../../src/utils/query';
 import Head from '../Components/Nav';
 import Footer from '../Components/Footer';
-import Auth from '../../src/utils/auth';
 import Review from '../../src/pages/Review'
 
 // columns
@@ -138,7 +137,7 @@ function SinglePage() {
         <section className='tile is-ancestor is-flex-wrap-wrap mx-2 py-3 m-4 '>
           {/* Reviews */}
           <div className='tile is-parent is-vertical mx-4 px-2'>
-            <Review />
+            <Review motorId={singleM._id}/>
           </div>
 
           <div className='tile is-parent is-vertical mx-3 think-sub '>
