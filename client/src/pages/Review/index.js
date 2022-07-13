@@ -123,7 +123,7 @@ function ReviewsComponent(motorId) {
               } 
             </div>
           </>
-        ) : (
+        ):(
           <div className='has-text-centered'>
             <button className='button my-3' onClick={toggleReview}>
               Add Review 
