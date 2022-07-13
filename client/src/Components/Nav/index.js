@@ -21,9 +21,9 @@ function Head() {
               Home
             </a>
 
-            <a className='navbar-item nav-center' href='/Contact'>
+            <Link to={'/Contact'} className='navbar-item nav-center'>
               Contact
-            </a>
+            </Link>
             <a className='navbar-item nav-center' href='#Account'>
               Account
             </a>
