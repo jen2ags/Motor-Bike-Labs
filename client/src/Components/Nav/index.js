@@ -27,15 +27,15 @@ function Head() {
             <a className='navbar-item nav-center' href='#Account'>
               Account
             </a>
-
+            {loggedIn ? (
             <a className='navbar-item nav-center' href='#Logout' onClick={Auth.logout}>
               Logout
             </a>
-            
+            ):
             <a className='navbar-item' href='/login' onClick={Auth.logout}>
               Login
             </a>
-            
+            }
           </div>
         </nav>
       </header>
