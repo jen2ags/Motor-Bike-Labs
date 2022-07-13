@@ -14,6 +14,7 @@ import Head from '../Components/Nav';
 import Footer from '../Components/Footer';
 // bulma import
 import 'bulma/css/bulma.min.css';
+import 'bulma-extensions';
 
 // Login component
 function Login() {

@@ -57,7 +57,7 @@ function ReviewsComponent(motorId) {
   return (
     <div>
       <p className={`m-0 ${characterCount === 280 || error ? 'text-error' : ''}`}>
-        You have a limit of 280 characters and you at: {characterCount}/280
+        {characterCount}/280
         {error && <span className="ml-2">Something went wrong...</span>}
       </p>
       <div className='tile is-child box'>
