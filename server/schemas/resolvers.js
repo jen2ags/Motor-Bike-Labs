@@ -65,7 +65,6 @@ const resolvers = {
     login: async (parent, { email , password }) => {
       // check on the User table for any matching email 
       const user = await User.findOne({ email });
-      console.log(email);
       // if didn't find a matching email, then throw an erro incorrect email
       if(!user){
         throw new AuthenticationError('No user found whith this email');
