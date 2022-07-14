@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 // import homepage component
 import './signUp.css';
-// import image from images folder
-
 // import useMutation from the apollo client. (this will allow us to use the mutations that we has as a middleware on the server side)
 import { useMutation } from '@apollo/client';
 // get ADD_USER mutation
-import {  LOGIN_USER } from '../utils/mutations';
+import { LOGIN_USER } from '../utils/mutations';
 // import auth to use the token
 import Auth from '../utils/auth';
 import SignUp from './SignUp';
@@ -16,7 +14,7 @@ import Footer from '../Components/Footer';
 import 'bulma/css/bulma.min.css';
 import 'bulma-extensions';
 
-// Login component
+// Login component 
 function Login() {
   // set a state that will let me see the signup component or the login component
   const [showLogin, setShowLogin] = useState(false);

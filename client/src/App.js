@@ -16,17 +16,16 @@ import ContactPage from './pages/contactPage';
 
 function App() {
   return (
-
     <ApolloProvider client={client}> 
       <Router>
-          <div>
+          {/* <div> */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/single/:id" element={<SinglePage />}/>
               <Route path="/Contact" element= {<ContactPage />}/>
             </Routes>
-          </div>
+          {/* </div> */}
       </Router>
     </ApolloProvider>
   );

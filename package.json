@@ -2,11 +2,15 @@
   "name": "motor-bike-labs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engins": {
+    "node":"16.14.2"
+  },
+  "main": "server.js",
   "scripts": {
     "start": "node server/server.js",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
+    "seed":"cd server && npm run seed",
     "build": "cd client && npm run build"
   },
   "repository": {

@@ -1,6 +1,6 @@
 import React from 'react';
 import Auth from '../../utils/auth';
-
+import {Link} from "react-router-dom"
 function Head() {
     // check if user is logged in
     const loggedIn = Auth.loggedIn();
@@ -12,7 +12,7 @@ function Head() {
         <nav className='navbar ' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
             <a className='navbar-item logo' href='/'>
-              <h1 className='title navbar-item is-2'>Motor Bike Labs</h1>
+              <h1 className='title main-title navbar-item is-2'>Motor Bike Labs</h1>
             </a>
           </div>
 
@@ -21,9 +21,9 @@ function Head() {
               Home
             </a>
 
-            <a className='navbar-item nav-center' href='/Contact'>
+            <Link to={'/Contact'} className='navbar-item nav-center'>
               Contact
-            </a>
+            </Link>
             <a className='navbar-item nav-center' href='#Account'>
               Account
             </a>
@@ -32,9 +32,9 @@ function Head() {
               Logout
             </a>
             ):
-            <a className='navbar-item' href='/login' onClick={Auth.logout}>
+           ( <Link to='/login' className='navbar-item'>
               Login
-            </a>
+            </Link>)
             }
           </div>
         </nav>

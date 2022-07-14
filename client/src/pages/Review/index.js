@@ -60,12 +60,12 @@ function ReviewsComponent(motorId) {
         {characterCount}/280
         {error && <span className="ml-2">Something went wrong...</span>}
       </p>
-      <div className='tile is-child box'>
+      <div className='tile is-child box border-tile'>
         <h2 className='title is-3 has-text-centered'>Reviews</h2>
         <p className='subtitle has-text-centered my-3'>
           See what others think!
         </p>
-        <div className='tile is-child box'>
+        <div className='tile is-child box input-border'>
           <div className='' id='user'>
             {' '} says:{' '} 
           </div>
@@ -78,7 +78,7 @@ function ReviewsComponent(motorId) {
                 <div>
                   <textarea
                     value={reviewBody}
-                    className='textarea my-2'
+                    className='textarea my-2 input-border'
                     placeholder='Add your review'
                     onChange={handleChange}
                   ></textarea>
@@ -91,7 +91,7 @@ function ReviewsComponent(motorId) {
               )}
 
               {loggedIn ? (
-                  <button className='button my-2 reviews-button' type='submit'>
+                  <button className='button my-2 reviews-button input-border' type='submit'>
                     Add
                   </button>
                 ) : null}
@@ -125,7 +125,7 @@ function ReviewsComponent(motorId) {
           </>
         ) : (
           <div className='has-text-centered'>
-            <button className='button my-3' onClick={toggleReview}>
+            <button className='button my-3 input-border' onClick={toggleReview}>
               Add Review 
             </button>
           </div>
