@@ -46,13 +46,6 @@ As a motorcycle enthusiast, I want an ecommerce website that allows me to search
 2. Used mongoose to create a relation to database 
 
 
-
-## Deployed Application
-
-https://motor-bike-labs.herokuapp.com/
-
-
-
 ## GitHub Repository
 https://github.com/jen2ags/Motor-Bike-Labs
 
