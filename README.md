@@ -29,7 +29,7 @@ As a motorcycle enthusiast, I want an ecommerce website that allows me to search
 https://github.com/jen2ags/Motor-Bike-Labs
 
 ## Heroku Deployed Application
-https://moto-bike-labs.herokuapp.com/
+https://motor-bike-labs.herokuapp.com/
 
 
 ## Screen Shot
